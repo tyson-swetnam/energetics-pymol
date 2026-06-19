@@ -12,6 +12,10 @@ currently used for Figure A. The study system is a **softwood/conifer**, so the 
 lignin models use conifer-specific chemistry (galactoglucomannan + arabinoglucuronoxylan;
 guaiacyl-dominant lignin).
 
+**▶ Interactive gallery: https://tyson-swetnam.github.io/energetics-pymol/** — browse every
+molecule in 3D, with a per-molecule toggle between the **Mol\*** and **3Dmol.js** viewers and an
+energy readout (approx. higher heating value) that ties each structure to the paper's thesis.
+
 ![Molecule catalog](renders/_contact_sheet.png)
 
 ## Quickstart
@@ -66,6 +70,20 @@ molecules.py (SMILES manifest) ──▶ build_pdb.py ──▶ pdb/*.pdb ──
   CPK heteroatoms and black outlines.
 
 See `CLAUDE.md` for environment notes, build invariants, and how to add a molecule.
+
+## Web gallery (`docs/`)
+
+The GitHub Pages site is a static two-pane app: a category sidebar (sorted low→high energy)
+and a persistent 3D viewer that swaps between **Mol\*** and **3Dmol.js** per molecule. Rebuild
+its data + assets after changing the manifest:
+
+```bash
+python build_site.py     # writes docs/molecules.json and copies pdb/ + renders/ into docs/
+```
+
+The site shell (`docs/index.html`, `style.css`, `app.js`) is hand-authored; `build_site.py`
+only regenerates the data so the gallery stays in sync with `molecules.py`. Pages serves from
+`main` → `/docs`.
 
 ## Provenance & caveats
 

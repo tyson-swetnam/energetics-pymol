@@ -38,8 +38,22 @@ conda activate energetics-pymol
 | `build_pdb.py` | SMILES/Mol → 3D → validated `pdb/<id>.pdb` |
 | `render.py`    | emit `scripts/<id>.pml` + ray-trace `renders/<id>.png` |
 | `build_all.py` | orchestrate everything + write `renders/_contact_sheet.png` |
+| `build_site.py`| regenerate `docs/molecules.json` + copy assets for the web gallery |
 | `Makefile`     | `make env / pdb / render / all / clean` |
 | `pdb/ scripts/ renders/` | generated outputs (committed so co-authors don't have to build) |
+| `docs/`        | GitHub Pages site (Mol* + 3Dmol gallery); shell is hand-authored, data is generated |
+
+## Web gallery
+
+`docs/` is served by GitHub Pages (`main` → `/docs`) at
+https://tyson-swetnam.github.io/energetics-pymol/. The shell (`index.html`, `style.css`,
+`app.js`) is hand-authored; run `python build_site.py` to regenerate `docs/molecules.json` and
+refresh the `docs/pdb/` + `docs/img/` copies after changing the manifest or rebuilding. The app
+serializes Mol* load/clear calls (`state.molstarQueue`) to avoid render-loop races — keep that
+if you touch the viewer code. The per-molecule energy gauge values live in `build_site.py`
+(`HHV_BY_CATEGORY` / `HHV_OVERRIDE`).
+
+> The unpublished manuscript PDF is **gitignored** — the repo is public; do not commit it.
 
 ## How to add or change a molecule
 

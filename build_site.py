@@ -42,6 +42,7 @@ HHV_BY_CATEGORY = {
     "Fats": 39.5,
     "Extractives": 40.0,
     "Fossil carbon": 32.0,   # energy-dense reduced carbon (dry/model basis); approx.
+    "Intermediates": 22.0,   # activated carriers — shown for reference, not energy stores
 }
 HHV_OVERRIDE = {
     "bdglc": 15.6, "glc_open": 15.6, "bdxyl": 15.0, "alaraf": 15.0, "meglca": 14.0,

@@ -231,7 +231,7 @@ Energetics ms full draft*.pdf
 /v[0-9]*.png
 
 # figure build intermediates / dropped Claude Design export
-/docs/fig/
+/docs/fig/assets/
 /figureA*.png
 /New figure from molecules/
 /New figure from molecules.zip

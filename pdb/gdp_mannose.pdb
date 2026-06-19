@@ -1,0 +1,101 @@
+HETATM    1  O1  GDM A   1      -8.260  -1.154  -0.908  1.00  0.00           O  
+HETATM    2  C1  GDM A   1      -8.126  -0.252   0.189  1.00  0.00           C  
+HETATM    3  C2  GDM A   1      -6.770   0.475   0.220  1.00  0.00           C  
+HETATM    4  O2  GDM A   1      -5.735  -0.516   0.382  1.00  0.00           O  
+HETATM    5  C3  GDM A   1      -4.417   0.044   0.454  1.00  0.00           C  
+HETATM    6  O3  GDM A   1      -4.326   0.873   1.597  1.00  0.00           O  
+HETATM    7  P1  GDM A   1      -2.961   1.653   1.915  1.00  0.00           P  
+HETATM    8  O4  GDM A   1      -2.827   2.985   1.252  1.00  0.00           O  
+HETATM    9  O5  GDM A   1      -3.042   1.791   3.511  1.00  0.00           O  
+HETATM   10  O6  GDM A   1      -1.791   0.594   1.720  1.00  0.00           O  
+HETATM   11  P2  GDM A   1      -0.299   1.065   1.989  1.00  0.00           P  
+HETATM   12  O7  GDM A   1      -0.120   1.954   3.176  1.00  0.00           O  
+HETATM   13  O8  GDM A   1       0.511  -0.314   2.064  1.00  0.00           O  
+HETATM   14  O9  GDM A   1       0.216   1.672   0.599  1.00  0.00           O  
+HETATM   15  C4  GDM A   1       1.597   1.981   0.467  1.00  0.00           C  
+HETATM   16  C5  GDM A   1       2.192   1.053  -0.588  1.00  0.00           C  
+HETATM   17  O10 GDM A   1       2.154  -0.329  -0.142  1.00  0.00           O  
+HETATM   18  C6  GDM A   1       3.368  -0.974  -0.622  1.00  0.00           C  
+HETATM   19  N1  GDM A   1       4.150  -1.448   0.505  1.00  0.00           N  
+HETATM   20  C7  GDM A   1       3.954  -1.210   1.841  1.00  0.00           C  
+HETATM   21  N2  GDM A   1       4.840  -1.835   2.592  1.00  0.00           N  
+HETATM   22  C8  GDM A   1       5.628  -2.516   1.701  1.00  0.00           C  
+HETATM   23  C9  GDM A   1       5.226  -2.289   0.406  1.00  0.00           C  
+HETATM   24  N3  GDM A   1       5.771  -2.761  -0.744  1.00  0.00           N  
+HETATM   25  C10 GDM A   1       6.796  -3.547  -0.536  1.00  0.00           C  
+HETATM   26  N4  GDM A   1       7.447  -4.105  -1.587  1.00  0.00           N  
+HETATM   27  N5  GDM A   1       7.289  -3.856   0.716  1.00  0.00           N  
+HETATM   28  C11 GDM A   1       6.762  -3.387   1.913  1.00  0.00           C  
+HETATM   29  O11 GDM A   1       7.236  -3.705   2.999  1.00  0.00           O  
+HETATM   30  C12 GDM A   1       4.079   0.046  -1.528  1.00  0.00           C  
+HETATM   31  O12 GDM A   1       5.494  -0.015  -1.647  1.00  0.00           O  
+HETATM   32  C13 GDM A   1       3.647   1.358  -0.903  1.00  0.00           C  
+HETATM   33  O13 GDM A   1       3.797   2.446  -1.801  1.00  0.00           O  
+HETATM   34  C14 GDM A   1      -4.112   0.752  -0.878  1.00  0.00           C  
+HETATM   35  O14 GDM A   1      -2.764   1.219  -0.944  1.00  0.00           O  
+HETATM   36  C15 GDM A   1      -5.110   1.900  -1.064  1.00  0.00           C  
+HETATM   37  O15 GDM A   1      -4.876   2.535  -2.334  1.00  0.00           O  
+HETATM   38  C16 GDM A   1      -6.540   1.346  -1.035  1.00  0.00           C  
+HETATM   39  O16 GDM A   1      -6.750   0.582  -2.238  1.00  0.00           O  
+HETATM   40  H1  GDM A   1      -7.746  -0.770  -1.651  1.00  0.00           H  
+HETATM   41  H2  GDM A   1      -8.945   0.471   0.131  1.00  0.00           H  
+HETATM   42  H3  GDM A   1      -8.254  -0.844   1.102  1.00  0.00           H  
+HETATM   43  H4  GDM A   1      -6.761   1.120   1.108  1.00  0.00           H  
+HETATM   44  H5  GDM A   1      -3.721  -0.790   0.591  1.00  0.00           H  
+HETATM   45  H6  GDM A   1      -2.310   2.340   3.863  1.00  0.00           H  
+HETATM   46  H7  GDM A   1       0.587  -0.741   1.188  1.00  0.00           H  
+HETATM   47  H8  GDM A   1       1.680   3.027   0.158  1.00  0.00           H  
+HETATM   48  H9  GDM A   1       2.108   1.859   1.429  1.00  0.00           H  
+HETATM   49  H10 GDM A   1       1.574   1.106  -1.495  1.00  0.00           H  
+HETATM   50  H11 GDM A   1       3.070  -1.864  -1.189  1.00  0.00           H  
+HETATM   51  H12 GDM A   1       3.157  -0.583   2.221  1.00  0.00           H  
+HETATM   52  H13 GDM A   1       7.202  -3.695  -2.482  1.00  0.00           H  
+HETATM   53  H14 GDM A   1       8.442  -4.264  -1.486  1.00  0.00           H  
+HETATM   54  H15 GDM A   1       8.054  -4.502   0.817  1.00  0.00           H  
+HETATM   55  H16 GDM A   1       3.673  -0.023  -2.545  1.00  0.00           H  
+HETATM   56  H17 GDM A   1       5.755  -0.960  -1.650  1.00  0.00           H  
+HETATM   57  H18 GDM A   1       4.231   1.573  -0.000  1.00  0.00           H  
+HETATM   58  H19 GDM A   1       4.733   2.434  -2.084  1.00  0.00           H  
+HETATM   59  H20 GDM A   1      -4.224   0.034  -1.700  1.00  0.00           H  
+HETATM   60  H21 GDM A   1      -2.677   1.673  -1.804  1.00  0.00           H  
+HETATM   61  H22 GDM A   1      -4.988   2.663  -0.288  1.00  0.00           H  
+HETATM   62  H23 GDM A   1      -4.327   3.322  -2.150  1.00  0.00           H  
+HETATM   63  H24 GDM A   1      -7.264   2.167  -1.068  1.00  0.00           H  
+HETATM   64  H25 GDM A   1      -6.375   1.135  -2.957  1.00  0.00           H  
+CONECT    1    2   40
+CONECT    2    3   41   42
+CONECT    3    4   38   43
+CONECT    4    5
+CONECT    5    6   34   44
+CONECT    6    7
+CONECT    7    8    8    9   10
+CONECT    9   45
+CONECT   10   11
+CONECT   11   12   12   13   14
+CONECT   13   46
+CONECT   14   15
+CONECT   15   16   47   48
+CONECT   16   17   32   49
+CONECT   17   18
+CONECT   18   19   30   50
+CONECT   19   20   23
+CONECT   20   21   21   51
+CONECT   21   22
+CONECT   22   23   23   28
+CONECT   23   24
+CONECT   24   25   25
+CONECT   25   26   27
+CONECT   26   52   53
+CONECT   27   28   54
+CONECT   28   29   29
+CONECT   30   31   32   55
+CONECT   31   56
+CONECT   32   33   57
+CONECT   33   58
+CONECT   34   35   36   59
+CONECT   35   60
+CONECT   36   37   38   61
+CONECT   37   62
+CONECT   38   39   63
+CONECT   39   64
+END

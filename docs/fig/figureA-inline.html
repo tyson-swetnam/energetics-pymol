@@ -1,45 +1,4 @@
-"""
-build_figureA.py — generate the "Woody Biomass Figure" (Figure A) as a NATIVE HTML fragment
-that learn.html embeds and scales responsively. This replaces the earlier rasterize-to-PNG
-approach, which kept getting clipped by the headless screenshot tooling. Embedding the real
-HTML means the browser renders the whole figure at any width — it can never be cropped, and
-the panels are sized to hold their text.
-
-Resolves the Claude Design templating from the export:
-  - the JS-computed annual tree-ring radial gradient (ported from DCLogic.buildRings)
-  - <sc-if> conditionals -> their defaults (rings on, linkage notes on, pie not donut)
-Molecule images point at the committed renders in docs/img/ (relative to learn.html).
-
-Writes docs/fig/figureA-inline.html — the fragment that goes inside <div class="figA-stage">.
-
-    python build_figureA.py
-"""
-import os
-
-ROOT = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(ROOT, "docs", "fig", "figureA-inline.html")
-
-
-def build_ring_gradient():
-    """Port of the export's DCLogic.buildRings(): concentric earlywood/latewood annual rings."""
-    R, r, w, f, minW = 171, 7, 22, 0.88, 4
-    early, earlyHi, late = "rgba(170,120,60,0)", "rgba(255,243,216,0.16)", "rgba(52,29,11,0.58)"
-    pct = lambda v: f"{v / R * 100:.2f}%"
-    stops = ["rgba(58,36,16,0.9) 0%", "rgba(58,36,16,0.9) " + pct(r)]
-    while r < R:
-        end = min(R, r + w)
-        span = end - r
-        stops += [early + " " + pct(r), earlyHi + " " + pct(r + span * 0.28),
-                  early + " " + pct(r + span * 0.6), late + " " + pct(end)]
-        r = end
-        w = max(minW, w * f)
-    return "radial-gradient(circle at 50% 50%, " + ", ".join(stops) + ")"
-
-
-# The fragment = caption + framed figure. The wrapping 1660px white "card" + box-sizing is
-# supplied by learn.html's .figA-stage. Panels carry generous fixed heights (content-verified to
-# not overflow); the whole stage is scaled to fit the page by a small script in learn.html.
-FRAGMENT = """<div style="font-size:30px;line-height:1.4;color:#1a1a1a;margin:0 4px 22px;width:1540px;">
+<div style="font-size:30px;line-height:1.4;color:#1a1a1a;margin:0 4px 22px;width:1540px;">
   <span style="font-weight:700;">Figure A.</span> Molecular diagrams of cellulose, hemicellulose, and lignin&mdash;the most abundant molecules in woody biomass.
 </div>
 <div style="position:relative;width:1600px;height:1245px;border:1px solid #c9c6bf;background:#ffffff;overflow:hidden;">
@@ -55,7 +14,7 @@ FRAGMENT = """<div style="font-size:30px;line-height:1.4;color:#1a1a1a;margin:0 
   </div>
   <div style="position:absolute;left:620px;top:384px;width:360px;height:360px;z-index:2;">
     <div style="position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,#A9712F 0deg 107deg,#ffffff 107deg 109deg,#C68A4A 109deg 279.8deg,#ffffff 279.8deg 281.8deg,#5E3A1E 281.8deg 359deg,#ffffff 359deg 360deg);box-shadow:inset 0 0 0 4px #6b4a28, inset 0 0 0 9px #4a2f17, 0 8px 22px rgba(0,0,0,.18);"></div>
-    <div style="position:absolute;inset:9px;border-radius:50%;pointer-events:none;background:{ring_gradient};"></div>
+    <div style="position:absolute;inset:9px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 50% 50%, rgba(58,36,16,0.9) 0%, rgba(58,36,16,0.9) 4.09%, rgba(170,120,60,0) 4.09%, rgba(255,243,216,0.16) 7.70%, rgba(170,120,60,0) 11.81%, rgba(52,29,11,0.58) 16.96%, rgba(170,120,60,0) 16.96%, rgba(255,243,216,0.16) 20.13%, rgba(170,120,60,0) 23.75%, rgba(52,29,11,0.58) 28.28%, rgba(170,120,60,0) 28.28%, rgba(255,243,216,0.16) 31.07%, rgba(170,120,60,0) 34.26%, rgba(52,29,11,0.58) 38.24%, rgba(170,120,60,0) 38.24%, rgba(255,243,216,0.16) 40.70%, rgba(170,120,60,0) 43.50%, rgba(52,29,11,0.58) 47.01%, rgba(170,120,60,0) 47.01%, rgba(255,243,216,0.16) 49.17%, rgba(170,120,60,0) 51.64%, rgba(52,29,11,0.58) 54.73%, rgba(170,120,60,0) 54.73%, rgba(255,243,216,0.16) 56.63%, rgba(170,120,60,0) 58.80%, rgba(52,29,11,0.58) 61.52%, rgba(170,120,60,0) 61.52%, rgba(255,243,216,0.16) 63.19%, rgba(170,120,60,0) 65.10%, rgba(52,29,11,0.58) 67.49%, rgba(170,120,60,0) 67.49%, rgba(255,243,216,0.16) 68.96%, rgba(170,120,60,0) 70.65%, rgba(52,29,11,0.58) 72.75%, rgba(170,120,60,0) 72.75%, rgba(255,243,216,0.16) 74.04%, rgba(170,120,60,0) 75.52%, rgba(52,29,11,0.58) 77.38%, rgba(170,120,60,0) 77.38%, rgba(255,243,216,0.16) 78.52%, rgba(170,120,60,0) 79.82%, rgba(52,29,11,0.58) 81.45%, rgba(170,120,60,0) 81.45%, rgba(255,243,216,0.16) 82.45%, rgba(170,120,60,0) 83.60%, rgba(52,29,11,0.58) 85.03%, rgba(170,120,60,0) 85.03%, rgba(255,243,216,0.16) 85.91%, rgba(170,120,60,0) 86.92%, rgba(52,29,11,0.58) 88.18%, rgba(170,120,60,0) 88.18%, rgba(255,243,216,0.16) 88.96%, rgba(170,120,60,0) 89.85%, rgba(52,29,11,0.58) 90.96%, rgba(170,120,60,0) 90.96%, rgba(255,243,216,0.16) 91.64%, rgba(170,120,60,0) 92.42%, rgba(52,29,11,0.58) 93.40%, rgba(170,120,60,0) 93.40%, rgba(255,243,216,0.16) 94.05%, rgba(170,120,60,0) 94.80%, rgba(52,29,11,0.58) 95.74%, rgba(170,120,60,0) 95.74%, rgba(255,243,216,0.16) 96.39%, rgba(170,120,60,0) 97.14%, rgba(52,29,11,0.58) 98.08%, rgba(170,120,60,0) 98.08%, rgba(255,243,216,0.16) 98.62%, rgba(170,120,60,0) 99.23%, rgba(52,29,11,0.58) 100.00%);"></div>
     <div style="position:absolute;inset:9px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 40% 35%, rgba(255,238,210,0.22), rgba(255,238,210,0) 46%), radial-gradient(circle at 62% 66%, rgba(34,17,4,0.30), rgba(34,17,4,0) 60%);"></div>
     <div style="position:absolute;left:50%;top:50%;width:13px;height:13px;border-radius:50%;background:#3c2611;transform:translate(-50%,-50%);box-shadow:0 0 6px rgba(0,0,0,.35);"></div>
     <div style="position:absolute;left:258px;top:118px;transform:translate(-50%,-50%);text-align:center;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.55);">
@@ -103,15 +62,3 @@ FRAGMENT = """<div style="font-size:30px;line-height:1.4;color:#1a1a1a;margin:0 
     <div style="font-size:19px;font-style:italic;color:#6a5a45;margin-top:8px;text-align:center;">Linear &beta;-(1&rarr;4)-D-glucan; hydrogen-bonds into crystalline microfibrils.</div>
   </div>
 </div>
-"""
-
-
-def main():
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, "w") as fh:
-        fh.write(FRAGMENT.format(ring_gradient=build_ring_gradient()))
-    print(f"wrote {os.path.relpath(OUT, ROOT)} ({os.path.getsize(OUT)} bytes)")
-
-
-if __name__ == "__main__":
-    main()

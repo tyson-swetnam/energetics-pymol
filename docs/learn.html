@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>/* set theme before paint to avoid a flash */(function(){try{var t=localStorage.getItem('theme')||'system';var h=document.documentElement;h.setAttribute('data-theme',t);h.style.colorScheme=(t==='system'?'light dark':t);}catch(e){}})();</script>
 <title>How plants build it — Energetics</title>
 <meta name="description" content="How a conifer forest builds its energy-storing molecules — cellulose, hemicellulose, lignin, fats, and resin — from sunlight, air, water, and soil. Photosynthesis and the biosynthetic pathways behind 'Ecosystems as energy fields'.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolygon points='20,4 33,12 33,28 20,36 7,28 7,12' fill='none' stroke='%236f6555' stroke-width='2'/%3E%3Ccircle cx='20' cy='21' r='7.5' fill='%23e0712d'/%3E%3C/svg%3E">
@@ -28,6 +29,11 @@
     <a href="index.html">Gallery</a>
     <a href="learn.html" aria-current="page">How plants build it</a>
   </nav>
+  <div class="theme-toggle" role="group" aria-label="Colour theme">
+    <button data-theme-set="light" title="Light" aria-label="Light theme">☀</button>
+    <button data-theme-set="dark" title="Dark" aria-label="Dark theme">☾</button>
+    <button data-theme-set="system" title="Match system" aria-label="Match system">◐</button>
+  </div>
 </header>
 
 <main class="doc-main">
@@ -63,11 +69,11 @@
       <div class="fan">
         <span class="node n-glucose fan-hub">glucose<small>the hub</small></span>
         <div class="fan-rows">
-          <ol class="rxn"><li class="arr">→</li><li class="met">UDP-glucose</li><li class="arr">→</li><li class="met end"><a href="index.html#cellohexaose">cellulose<small>↗</small></a></li></ol>
-          <ol class="rxn"><li class="arr">→</li><li class="met">nucleotide sugars</li><li class="arr">→</li><li class="met end"><a href="index.html#ggm_compact">hemicellulose<small>↗</small></a></li></ol>
-          <ol class="rxn"><li class="arr">→</li><li class="met">phenylalanine</li><li class="arr">→</li><li class="met">coniferyl alcohol</li><li class="arr">→</li><li class="met end"><a href="index.html#lignin_bo4">lignin<small>↗</small></a></li></ol>
-          <ol class="rxn"><li class="arr">→</li><li class="met">acetyl-CoA</li><li class="arr">→</li><li class="met">fatty acids</li><li class="arr">→</li><li class="met end"><a href="index.html#triolein">fats<small>↗</small></a></li></ol>
-          <ol class="rxn"><li class="arr">→</li><li class="met">IPP · DMAPP</li><li class="arr">→</li><li class="met">terpenes</li><li class="arr">→</li><li class="met end"><a href="index.html#abietic_acid">resin<small>↗</small></a></li></ol>
+          <ol class="rxn"><li class="arr">→</li><li class="met"><a class="metlink" href="index.html#udp_glucose">UDP-glucose</a></li><li class="arr">→</li><li class="met end"><a href="index.html#cellohexaose">cellulose<small>↗</small></a></li></ol>
+          <ol class="rxn"><li class="arr">→</li><li class="met"><a class="metlink" href="index.html#gdp_mannose">nucleotide sugars</a></li><li class="arr">→</li><li class="met end"><a href="index.html#ggm_compact">hemicellulose<small>↗</small></a></li></ol>
+          <ol class="rxn"><li class="arr">→</li><li class="met"><a class="metlink" href="index.html#phenylalanine">phenylalanine</a></li><li class="arr">→</li><li class="met"><a class="metlink" href="index.html#coniferyl">coniferyl alcohol</a></li><li class="arr">→</li><li class="met end"><a href="index.html#lignin_bo4">lignin<small>↗</small></a></li></ol>
+          <ol class="rxn"><li class="arr">→</li><li class="met"><a class="metlink" href="index.html#acetyl_coa">acetyl-CoA</a></li><li class="arr">→</li><li class="met"><a class="metlink" href="index.html#oleic_acid">fatty acids</a></li><li class="arr">→</li><li class="met end"><a href="index.html#triolein">fats<small>↗</small></a></li></ol>
+          <ol class="rxn"><li class="arr">→</li><li class="met"><a class="metlink" href="index.html#ipp">IPP</a> · <a class="metlink" href="index.html#dmapp">DMAPP</a></li><li class="arr">→</li><li class="met"><a class="metlink" href="index.html#alpha_pinene">terpenes</a></li><li class="arr">→</li><li class="met end"><a href="index.html#abietic_acid">resin<small>↗</small></a></li></ol>
         </div>
       </div>
       <figcaption>Each arrow runs uphill in energy, paid for by sunlight — and stands for many enzyme-catalysed steps, drawn out in the chapters below. Tap a product to open its 3D model.</figcaption>
@@ -75,11 +81,9 @@
   </section>
 
   <!-- FIGURE A plate -->
-  <section class="figplate" id="figure-a">
-    <figure>
-      <img src="img/figureA-woody-biomass.png" loading="lazy"
-           alt="Figure A — molecular diagrams of cellulose, hemicellulose, and lignin, the three most abundant molecules in woody biomass, arranged around a wood cross-section pie chart of dry-wood composition (cellulose 38–50%, hemicellulose 23–32%, lignin 15–25%).">
-    </figure>
+  <section class="figplate" id="figure-a"
+           aria-label="Figure A — molecular diagrams of cellulose, hemicellulose and lignin, arranged around a wood cross-section pie chart of dry-wood composition (cellulose 38–50%, hemicellulose 23–32%, lignin 15–25%).">
+    <div class="figA-scaler"><div class="figA-stage" id="figAstage"></div></div>
     <p class="figplate-note">The three molecules this page follows make up most of a tree's dry mass — composed
       in Claude Design from this project's 3D molecule renders.</p>
   </section>
@@ -742,5 +746,33 @@
   </footer>
 
 </main>
+
+<script>
+/* Figure A: load the native figure fragment and scale it to fit the page width.
+   Native HTML means the whole figure always renders — it can't be cropped like a screenshot. */
+(function () {
+  var scaler = document.querySelector(".figA-scaler"),
+      stage = document.getElementById("figAstage");
+  if (!scaler || !stage) return;
+  var DESIGN_W = 1660;
+  function fit() {
+    var k = scaler.clientWidth / DESIGN_W;
+    stage.style.transform = "scale(" + k + ")";
+    scaler.style.height = (stage.offsetHeight * k) + "px";
+    scaler.style.aspectRatio = "auto";
+  }
+  fetch("fig/figureA-inline.html")
+    .then(function (r) { return r.text(); })
+    .then(function (html) {
+      stage.innerHTML = html;
+      fit();
+      stage.querySelectorAll("img").forEach(function (im) { im.addEventListener("load", fit); });
+      setTimeout(fit, 400);
+    })
+    .catch(function () { scaler.style.display = "none"; });
+  window.addEventListener("resize", fit);
+})();
+</script>
+<script src="theme.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
     "gaugeMax": 46.0,
     "categories": [
       "Sugar monomers",
+      "Intermediates",
       "Cellulose",
       "Hemicellulose",
       "Lignin",
@@ -15,7 +16,7 @@
       "Extractives",
       "Fossil carbon"
     ],
-    "count": 40
+    "count": 46
   },
   "molecules": [
     {
@@ -617,6 +618,96 @@
       "hhvKind": "fuel",
       "pdb": "pdb/crude_oil.pdb",
       "img": "img/crude_oil.png"
+    },
+    {
+      "id": "udp_glucose",
+      "name": "UDP-glucose",
+      "resname": "UDG",
+      "category": "Intermediates",
+      "formula": "C15H24N2O17P2",
+      "smiles": "OCC1OC(OP(=O)(O)OP(=O)(O)OCC2OC(n3ccc(=O)[nH]c3=O)C(O)C2O)C(O)C(O)C1O",
+      "note": "Activated glucose (a nucleotide sugar): the substrate cellulose synthase polymerizes into \u03b2-1,4 glucan.",
+      "size": "na",
+      "showH": false,
+      "hhv": 22.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/udp_glucose.pdb",
+      "img": "img/udp_glucose.png"
+    },
+    {
+      "id": "gdp_mannose",
+      "name": "GDP-mannose (nucleotide sugar)",
+      "resname": "GDM",
+      "category": "Intermediates",
+      "formula": "C16H25N5O16P2",
+      "smiles": "OCC1OC(OP(=O)(O)OP(=O)(O)OCC2OC(n3cnc4c3N=C(N)NC4=O)C(O)C2O)C(O)C(O)C1O",
+      "note": "A nucleotide sugar \u2014 the activated mannose donor for softwood galactoglucomannan, built in the Golgi.",
+      "size": "na",
+      "showH": false,
+      "hhv": 22.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/gdp_mannose.pdb",
+      "img": "img/gdp_mannose.png"
+    },
+    {
+      "id": "phenylalanine",
+      "name": "L-Phenylalanine",
+      "resname": "PHE",
+      "category": "Intermediates",
+      "formula": "C9H11NO2",
+      "smiles": "N[C@@H](Cc1ccccc1)C(=O)O",
+      "note": "The aromatic amino acid that enters the phenylpropanoid pathway en route to monolignols (lignin).",
+      "size": "na",
+      "showH": false,
+      "hhv": 22.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/phenylalanine.pdb",
+      "img": "img/phenylalanine.png"
+    },
+    {
+      "id": "acetyl_coa",
+      "name": "Acetyl-CoA",
+      "resname": "COA",
+      "category": "Intermediates",
+      "formula": "C23H38N7O17P3S",
+      "smiles": "CC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(=O)(O)OP(=O)(O)OCC1OC(n2cnc3c2ncnc3N)C(O)C1OP(=O)(O)O",
+      "note": "The two-carbon building block: feeds fatty-acid synthesis and the MVA isoprenoid route.",
+      "size": "na",
+      "showH": false,
+      "hhv": 22.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/acetyl_coa.pdb",
+      "img": "img/acetyl_coa.png"
+    },
+    {
+      "id": "ipp",
+      "name": "Isopentenyl diphosphate (IPP)",
+      "resname": "IPP",
+      "category": "Intermediates",
+      "formula": "C5H12O7P2",
+      "smiles": "CC(=C)CCOP(=O)(O)OP(=O)(O)O",
+      "note": "The universal C5 isoprene unit; condensed into the prenyl diphosphates that make terpenes/resin.",
+      "size": "na",
+      "showH": false,
+      "hhv": 22.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/ipp.pdb",
+      "img": "img/ipp.png"
+    },
+    {
+      "id": "dmapp",
+      "name": "Dimethylallyl diphosphate (DMAPP)",
+      "resname": "DMA",
+      "category": "Intermediates",
+      "formula": "C5H12O7P2",
+      "smiles": "CC(C)=CCOP(=O)(O)OP(=O)(O)O",
+      "note": "The reactive C5 isomer of IPP that primes prenyl-chain elongation toward terpenes.",
+      "size": "na",
+      "showH": false,
+      "hhv": 22.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/dmapp.pdb",
+      "img": "img/dmapp.png"
     }
   ]
 }

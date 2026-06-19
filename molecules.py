@@ -194,12 +194,32 @@ MANIFEST = [
        smiles="CCCCCCc1cc2ccc3c(CCCCCC)cc4ccc5c(CCCCCC)cc6ccc1c1c6c5c4c3c21",
        note="Representative model: a 'continental/island' asphaltene (Yen-Mullins) — a polycyclic aromatic "
             "core with alkyl chains, the canonical heavy molecule of crude oil (a complex mixture)."),
+
+    # ---- Biosynthetic intermediates (the activated carriers in the build pathways) ------
+    _m("udp_glucose", "UDP-glucose", "UDG", "Intermediates", "C15H24N2O17P2",
+       smiles="OCC1OC(OP(=O)(O)OP(=O)(O)OCC2OC(n3ccc(=O)[nH]c3=O)C(O)C2O)C(O)C(O)C1O",
+       note="Activated glucose (a nucleotide sugar): the substrate cellulose synthase polymerizes into β-1,4 glucan."),
+    _m("gdp_mannose", "GDP-mannose (nucleotide sugar)", "GDM", "Intermediates", "C16H25N5O16P2",
+       smiles="OCC1OC(OP(=O)(O)OP(=O)(O)OCC2OC(n3cnc4c3N=C(N)NC4=O)C(O)C2O)C(O)C(O)C1O",
+       note="A nucleotide sugar — the activated mannose donor for softwood galactoglucomannan, built in the Golgi."),
+    _m("phenylalanine", "L-Phenylalanine", "PHE", "Intermediates", "C9H11NO2",
+       smiles="N[C@@H](Cc1ccccc1)C(=O)O",
+       note="The aromatic amino acid that enters the phenylpropanoid pathway en route to monolignols (lignin)."),
+    _m("acetyl_coa", "Acetyl-CoA", "COA", "Intermediates", "C23H38N7O17P3S",
+       smiles="CC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(=O)(O)OP(=O)(O)OCC1OC(n2cnc3c2ncnc3N)C(O)C1OP(=O)(O)O",
+       note="The two-carbon building block: feeds fatty-acid synthesis and the MVA isoprenoid route."),
+    _m("ipp", "Isopentenyl diphosphate (IPP)", "IPP", "Intermediates", "C5H12O7P2",
+       smiles="CC(=C)CCOP(=O)(O)OP(=O)(O)O",
+       note="The universal C5 isoprene unit; condensed into the prenyl diphosphates that make terpenes/resin."),
+    _m("dmapp", "Dimethylallyl diphosphate (DMAPP)", "DMA", "Intermediates", "C5H12O7P2",
+       smiles="CC(C)=CCOP(=O)(O)OP(=O)(O)O",
+       note="The reactive C5 isomer of IPP that primes prenyl-chain elongation toward terpenes."),
 ]
 
 # id -> record, for convenience
 BY_ID = {m["id"]: m for m in MANIFEST}
 
-CATEGORIES = ["Sugar monomers", "Cellulose", "Hemicellulose", "Lignin",
+CATEGORIES = ["Sugar monomers", "Intermediates", "Cellulose", "Hemicellulose", "Lignin",
               "Combustion", "Fats", "Extractives", "Fossil carbon"]
 
 if __name__ == "__main__":

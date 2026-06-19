@@ -7,11 +7,11 @@ window.addEventListener("error", () => { window.__errs++; });
 window.addEventListener("unhandledrejection", (e) => { window.__errs++; e.preventDefault(); });
 
 // category accent, ordered low -> high energy density (matches the CSS energy gradient)
-const ENERGY_ORDER = ["Sugar monomers", "Hemicellulose", "Cellulose", "Lignin",
+const ENERGY_ORDER = ["Sugar monomers", "Intermediates", "Hemicellulose", "Cellulose", "Lignin",
                       "Fats", "Extractives", "Fossil carbon", "Combustion"];
 const CAT_COLOR = {
-  "Sugar monomers": "#8aa06a", "Hemicellulose": "#9ba06a", "Cellulose": "#b9a96a",
-  "Lignin": "#d98a3a", "Fats": "#e0712d", "Extractives": "#f4a93b",
+  "Sugar monomers": "#8aa06a", "Intermediates": "#6f8f8a", "Hemicellulose": "#9ba06a",
+  "Cellulose": "#b9a96a", "Lignin": "#d98a3a", "Fats": "#e0712d", "Extractives": "#f4a93b",
   "Fossil carbon": "#7a5238", "Combustion": "#c2402f",
 };
 
@@ -243,6 +243,16 @@ function wireControls() {
     if (id && state.byId[id] && id !== state.current) select(id);
   });
 }
+
+// theme.js calls this when the light/dark/system theme resolves — keep the 3D viewer in sync
+window.onThemeChange = function (dark) {
+  state.bg = dark ? "dark" : "light";
+  document.body.dataset.viewerBg = state.bg;
+  const btn = document.getElementById("ctlBg");
+  if (btn) btn.textContent = state.bg === "dark" ? "Light background" : "Dark background";
+  if (state.engine === "molstar") applyMolstarBg();
+  else if (state.gl) { state.gl.setBackgroundColor(state.bg === "light" ? "#fbfaf7" : "#0d0b08"); state.gl.render(); }
+};
 
 init().catch((e) => {
   console.error(e);

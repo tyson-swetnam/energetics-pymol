@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>/* set theme before paint to avoid a flash */(function(){try{var t=localStorage.getItem('theme')||'system';var h=document.documentElement;h.setAttribute('data-theme',t);h.style.colorScheme=(t==='system'?'light dark':t);}catch(e){}})();</script>
 <title>Energetics — the molecules that store a forest's energy</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolygon points='20,4 33,12 33,28 20,36 7,28 7,12' fill='none' stroke='%236f6555' stroke-width='2'/%3E%3Ccircle cx='20' cy='21' r='7.5' fill='%23e0712d'/%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%2316130f'/%3E%3Ccircle cx='20' cy='20' r='9' fill='%23e0712d'/%3E%3C/svg%3E">
@@ -47,6 +48,11 @@
   </nav>
   <div class="topbar-meta">
     <span class="meta-stat" id="metaStat"></span>
+    <div class="theme-toggle" role="group" aria-label="Colour theme">
+      <button data-theme-set="light" title="Light" aria-label="Light theme">☀</button>
+      <button data-theme-set="dark" title="Dark" aria-label="Dark theme">☾</button>
+      <button data-theme-set="system" title="Match system" aria-label="Match system">◐</button>
+    </div>
   </div>
 </header>
 
@@ -108,5 +114,6 @@
 </main>
 
 <script src="app.js"></script>
+<script src="theme.js"></script>
 </body>
 </html>

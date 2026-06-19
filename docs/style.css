@@ -85,8 +85,8 @@ a{color:inherit}
   background:transparent; color:var(--paper); font-family:inherit; transition:background .12s,border-color .12s}
 .mol:hover{background:var(--bark-2)}
 .mol.active{background:var(--bark-3); border-color:var(--line-2)}
-.mol-thumb{width:38px; height:30px; border-radius:5px; flex:0 0 auto; object-fit:cover;
-  background:#fff; border:1px solid var(--line-2)}
+.mol-thumb{width:48px; height:38px; border-radius:5px; flex:0 0 auto; object-fit:contain;
+  background:transparent}
 .mol-meta{min-width:0; flex:1; display:flex; flex-direction:column; gap:1px}
 .mol-nm{font-size:13px; line-height:1.2; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
 .mol-fm{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--paper-faint);
@@ -189,27 +189,59 @@ body.doc{overflow-y:auto}
 .lede a, .inline-link{color:var(--flame); text-decoration:none; border-bottom:1px solid rgba(244,169,59,.35)}
 .lede a:hover, .inline-link:hover{border-color:var(--flame)}
 
-/* flow diagram (the signature) */
-.flow{display:flex; align-items:center; gap:12px; margin:34px 0 6px; padding:24px;
-  background:#1b1610; border:1px solid var(--line-2); border-radius:14px; flex-wrap:wrap}
-.flow-col{display:flex; flex-direction:column; gap:9px; flex:1; min-width:0}
-.flow .node{position:relative; display:flex; flex-direction:column; gap:1px;
-  padding:9px 12px; border-radius:9px; background:var(--bark-2); border:1px solid var(--line-2);
-  font-family:"IBM Plex Sans",sans-serif; font-size:13.5px; color:var(--paper); text-decoration:none; line-height:1.15}
-.flow .node small{font-family:"IBM Plex Mono",monospace; font-size:9.5px; letter-spacing:.05em;
+/* flow diagram (the signature): capture strip + fan of biosynthetic pathways */
+.flow{margin:34px 0 6px; padding:24px; background:#1b1610; border:1px solid var(--line-2); border-radius:14px}
+.capture{display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap}
+.capture .inputs{display:flex; gap:8px; flex-wrap:wrap; justify-content:center}
+.node{display:inline-flex; flex-direction:column; gap:1px; padding:8px 12px; border-radius:9px;
+  background:var(--bark-2); border:1px solid var(--line-2); font-family:"IBM Plex Sans",sans-serif;
+  font-size:13px; color:var(--paper); text-decoration:none; line-height:1.15; white-space:nowrap}
+.node small{font-family:"IBM Plex Mono",monospace; font-size:9px; letter-spacing:.05em;
   text-transform:uppercase; color:var(--paper-faint)}
-.n-sun{border-left:3px solid var(--flame)}
-.n-air{border-left:3px solid #9aa7b0}
-.n-water{border-left:3px solid #6f93a8}
-.n-soil{border-left:3px solid var(--moss)}
+.n-sun{border-left:3px solid var(--flame)} .n-air{border-left:3px solid #9aa7b0}
+.n-water{border-left:3px solid #6f93a8} .n-soil{border-left:3px solid var(--moss)}
 .n-photo{background:var(--bark-3); border-left:3px solid var(--ember)}
 .n-glucose{background:var(--bark-3); border-left:3px solid var(--flame)}
-.flow .out{border-left:3px solid transparent; border-image:var(--grad-energy) 1; transition:.14s}
-.flow .out small{color:var(--ember)}
-.flow .out:hover{background:var(--bark-3); transform:translateX(2px)}
-.flow-link{flex:0 0 26px; align-self:center; text-align:center; color:var(--paper-faint); font-size:18px}
+.flow-link{color:var(--paper-faint); font-size:18px}
 .flow-link::before{content:"→"}
-.flow figcaption{flex-basis:100%; margin-top:14px; font-size:12px; color:var(--paper-faint); text-align:center}
+.fan-intro{margin:18px 0 12px; font-size:13.5px; color:var(--paper-dim); text-align:center}
+.fan{display:flex; gap:16px; align-items:center; justify-content:center; flex-wrap:wrap}
+.fan-hub{flex:0 0 auto}
+.fan-rows{display:flex; flex-direction:column; gap:9px; border-left:2px solid var(--line-2); padding-left:16px}
+.flow figcaption{margin-top:16px; font-size:12px; color:var(--paper-faint); text-align:center}
+
+/* horizontal reaction chain (hero fan rows) */
+.rxn{display:flex; flex-wrap:wrap; align-items:center; gap:6px; list-style:none; margin:0; padding:0}
+.rxn .arr{color:var(--paper-faint); font-size:13px}
+.rxn .met{padding:6px 11px; border-radius:8px; background:var(--bark-2); border:1px solid var(--line-2);
+  font-size:12.5px; color:var(--paper); white-space:nowrap}
+.rxn .met small{font-family:"IBM Plex Mono",monospace; font-size:8.5px; color:var(--paper-faint); margin-left:3px}
+.rxn .met.start{border-color:var(--flame); color:var(--flame)}
+.rxn .met.end{border:1px solid transparent; border-image:var(--grad-energy) 1; padding:0; background:var(--bark-2)}
+.rxn .met.end a{display:block; padding:6px 12px; color:var(--paper); text-decoration:none; font-weight:500}
+.rxn .met.end a small{color:var(--ember); margin-left:3px}
+.rxn .met.end a:hover{color:var(--flame)}
+
+/* vertical reaction pathway (go-deeper diagrams) */
+.pathway{list-style:none; margin:16px 0 4px; padding:18px 14px; display:flex; flex-direction:column;
+  align-items:center; gap:0; background:#19140f; border:1px solid var(--line-2); border-radius:12px}
+.pathway .head{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--paper-faint); margin-bottom:10px}
+.pathway .met{padding:7px 14px; border-radius:8px; background:var(--bark-2); border:1px solid var(--line-2);
+  font-size:13px; color:var(--paper); text-align:center; line-height:1.2; max-width:96%}
+.pathway .met small{display:block; font-family:"IBM Plex Mono",monospace; font-size:9px; color:var(--paper-faint); margin-top:1px}
+.pathway .met.start{border-color:var(--flame); color:var(--flame)}
+.pathway .met.end{border:1px solid transparent; border-image:var(--grad-energy) 1}
+.pathway .met.end a{color:var(--paper); text-decoration:none}
+.pathway .met.end a:hover{color:var(--flame)}
+.pathway .step{display:flex; align-items:center; gap:8px; min-height:28px; padding:3px 0}
+.pathway .step::before{content:"↓"; font-size:15px; color:var(--ember); line-height:1; flex:0 0 auto}
+.pathway .step .enz{font-family:"IBM Plex Mono",monospace; font-size:10px; color:var(--flame); white-space:nowrap}
+.pathway .step .cof{font-family:"IBM Plex Mono",monospace; font-size:9.5px; color:var(--moss); white-space:nowrap}
+.pathway-pair{display:flex; gap:14px; flex-wrap:wrap; justify-content:center; align-items:flex-start; margin:16px 0 4px}
+.pathway-pair .pathway{flex:1 1 220px; margin:0}
+.pathway-cap{text-align:center; font-size:11.5px; color:var(--paper-faint); margin:9px 0 2px}
+details .pathway, details .pathway-pair{margin-left:18px; margin-right:18px}
 
 /* chapters */
 .chapter{padding:40px 0; border-bottom:1px solid var(--line)}
@@ -223,13 +255,16 @@ body.doc{overflow-y:auto}
 .chapter p strong{color:var(--paper); font-weight:600}
 .chapter p em{color:var(--paper); font-style:italic}
 
-/* molecule cross-link chips */
-.molchips{display:flex; flex-wrap:wrap; gap:8px; max-width:none !important}
-.molref{display:inline-flex; align-items:center; gap:8px; padding:5px 11px 5px 5px; border-radius:99px;
-  background:var(--bark); border:1px solid var(--line-2); text-decoration:none; color:var(--paper);
-  font-size:12.5px; transition:.14s}
-.molref img{width:30px; height:24px; object-fit:cover; border-radius:5px; background:#fff; flex:0 0 auto}
-.molref:hover{background:var(--bark-2); border-color:var(--ember); color:var(--flame)}
+/* molecule cross-link chips — cards with a large, transparent molecule render */
+.molchips{display:flex; flex-wrap:wrap; gap:10px; margin:10px 0 16px; max-width:none !important}
+.molref{display:flex; flex-direction:column; align-items:center; gap:6px; width:126px; padding:10px 9px 9px;
+  border-radius:12px; background:var(--bark); border:1px solid var(--line-2); text-decoration:none;
+  color:var(--paper-dim); font-size:12px; line-height:1.2; text-align:center; transition:.14s}
+.molref img{width:100%; height:84px; object-fit:contain; background:transparent;
+  filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+.molref span{display:block}
+.molref small{font-family:"IBM Plex Mono",monospace; font-size:9.5px; color:var(--paper-faint)}
+.molref:hover{background:var(--bark-2); border-color:var(--ember); color:var(--flame); transform:translateY(-2px)}
 
 /* "go deeper" disclosures */
 details{margin:8px 0 4px; background:var(--bark); border:1px solid var(--line-2); border-radius:11px;
@@ -275,10 +310,45 @@ details p em{color:var(--paper-dim); font-style:italic}
 .doc-foot p{font-size:12px; color:var(--paper-faint); max-width:64ch}
 .doc-foot em{font-style:italic}
 
+/* part divider (Part II — releasing it) */
+.part-intro{padding:56px 0 6px; border-top:1px solid var(--line)}
+.part-intro h2{font-family:"Space Grotesk",sans-serif; font-size:clamp(30px,5vw,46px); line-height:1.05;
+  letter-spacing:-.02em; margin:8px 0 0}
+.part-intro h2 em{font-style:normal; color:var(--flame)}
+.part-intro .lede{margin-top:18px}
+.part-intro > p{font-size:15.5px; line-height:1.66; color:var(--paper-dim); max-width:64ch; margin:18px 0 0}
+
+/* tree-part composition stacked bars */
+.comp-figure{margin:20px 0 8px; padding:20px; background:#1b1610; border:1px solid var(--line-2); border-radius:14px}
+.comp-legend{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:16px}
+.comp-legend span{display:inline-flex; align-items:center; gap:6px; font-size:11.5px; color:var(--paper-dim)}
+.comp-legend i{width:12px; height:12px; border-radius:3px; flex:0 0 auto}
+.comp{display:grid; grid-template-columns:104px 1fr; gap:9px 14px; align-items:center}
+.comp-lab{font-size:12.5px; color:var(--paper); text-align:right; line-height:1.15}
+.comp-lab small{display:block; font-family:"IBM Plex Mono",monospace; font-size:8.5px; color:var(--paper-faint); text-transform:uppercase; letter-spacing:.04em}
+.comp-bar{display:flex; height:24px; border-radius:6px; overflow:hidden; border:1px solid var(--line-2)}
+.comp-bar i{height:100%; transition:filter .14s}
+.comp-bar i:hover{filter:brightness(1.18)}
+.seg-cell{background:#c2b06a} .seg-hemi{background:#8aa06a} .seg-lig{background:#d98a3a}
+.seg-ext{background:#e0712d} .seg-oth{background:#5b5346}
+.comp-cap{margin:15px 0 0; font-size:11.5px; color:var(--paper-faint)}
+
+/* thermal-decomposition track (fire chapter) */
+.thermo{margin:16px 0 4px; padding:18px 16px 14px; background:#19140f; border:1px solid var(--line-2); border-radius:12px}
+.thermo-row{display:grid; grid-template-columns:128px 1fr; gap:12px; align-items:center; margin:8px 0}
+.thermo-lab{font-size:12px; color:var(--paper); text-align:right; line-height:1.15}
+.thermo-lab small{display:block; font-family:"IBM Plex Mono",monospace; font-size:8.5px; color:var(--paper-faint)}
+.thermo-track{position:relative; height:15px; background:var(--bark); border-radius:5px; border:1px solid var(--line-2)}
+.thermo-bar{position:absolute; top:-1px; bottom:-1px; border-radius:5px; background:var(--grad-energy); opacity:.92}
+.thermo-axis{display:grid; grid-template-columns:128px 1fr; gap:12px; margin-top:8px}
+.thermo-ticks{display:flex; justify-content:space-between; font-family:"IBM Plex Mono",monospace; font-size:9px; color:var(--paper-faint)}
+
 @media (max-width:760px){
-  .flow{flex-direction:column; align-items:stretch}
-  .flow-col{flex:none}
-  .flow-link{transform:rotate(90deg); align-self:center}
+  .flow-link{transform:rotate(90deg)}
+  .fan{flex-direction:column; align-items:stretch}
+  .fan-hub{align-self:center}
+  .fan-rows{border-left:0; border-top:2px solid var(--line-2); padding-left:0; padding-top:14px}
+  .molref{width:calc(50% - 5px)}
   .hhv-row{grid-template-columns:120px 1fr auto}
   .hhv-lab{font-size:11px}
 }

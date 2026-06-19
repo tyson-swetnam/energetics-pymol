@@ -45,27 +45,32 @@
       <a href="index.html">the study</a> measures. This page follows that build, step by step.
     </p>
 
-    <figure class="flow" aria-label="Inputs become glucose, which becomes the energy-storing molecules of wood">
-      <div class="flow-col flow-in">
-        <span class="node n-sun">☀ sunlight<small>energy</small></span>
-        <span class="node n-air">CO₂<small>air</small></span>
-        <span class="node n-water">H₂O<small>water</small></span>
-        <span class="node n-soil">N · P · K · Mg…<small>soil</small></span>
-      </div>
-      <span class="flow-link" aria-hidden="true"></span>
-      <div class="flow-col flow-mid">
+    <figure class="flow" aria-label="Inputs become glucose, which is rebuilt into the energy-storing molecules of wood">
+      <div class="capture">
+        <div class="inputs">
+          <span class="node n-sun">☀ sunlight<small>energy</small></span>
+          <span class="node n-air">CO₂<small>air</small></span>
+          <span class="node n-water">H₂O<small>water</small></span>
+          <span class="node n-soil">N·P·K·Mg…<small>soil</small></span>
+        </div>
+        <span class="flow-link" aria-hidden="true"></span>
         <span class="node n-photo">photosynthesis<small>chloroplast</small></span>
+        <span class="flow-link" aria-hidden="true"></span>
         <span class="node n-glucose">glucose<small>C₆H₁₂O₆</small></span>
       </div>
-      <span class="flow-link" aria-hidden="true"></span>
-      <div class="flow-col flow-out">
-        <a class="node out" href="index.html#cellohexaose">cellulose<small>↗ view</small></a>
-        <a class="node out" href="index.html#ggm_compact">hemicellulose<small>↗ view</small></a>
-        <a class="node out" href="index.html#lignin_bo4">lignin<small>↗ view</small></a>
-        <a class="node out" href="index.html#triolein">fats<small>↗ view</small></a>
-        <a class="node out" href="index.html#abietic_acid">resin<small>↗ view</small></a>
+
+      <p class="fan-intro">…then glucose is rebuilt into five higher-energy molecules — each through its own chain of enzyme reactions:</p>
+      <div class="fan">
+        <span class="node n-glucose fan-hub">glucose<small>the hub</small></span>
+        <div class="fan-rows">
+          <ol class="rxn"><li class="arr">→</li><li class="met">UDP-glucose</li><li class="arr">→</li><li class="met end"><a href="index.html#cellohexaose">cellulose<small>↗</small></a></li></ol>
+          <ol class="rxn"><li class="arr">→</li><li class="met">nucleotide sugars</li><li class="arr">→</li><li class="met end"><a href="index.html#ggm_compact">hemicellulose<small>↗</small></a></li></ol>
+          <ol class="rxn"><li class="arr">→</li><li class="met">phenylalanine</li><li class="arr">→</li><li class="met">coniferyl alcohol</li><li class="arr">→</li><li class="met end"><a href="index.html#lignin_bo4">lignin<small>↗</small></a></li></ol>
+          <ol class="rxn"><li class="arr">→</li><li class="met">acetyl-CoA</li><li class="arr">→</li><li class="met">fatty acids</li><li class="arr">→</li><li class="met end"><a href="index.html#triolein">fats<small>↗</small></a></li></ol>
+          <ol class="rxn"><li class="arr">→</li><li class="met">IPP · DMAPP</li><li class="arr">→</li><li class="met">terpenes</li><li class="arr">→</li><li class="met end"><a href="index.html#abietic_acid">resin<small>↗</small></a></li></ol>
+        </div>
       </div>
-      <figcaption>Every arrow runs uphill in energy, paid for by sunlight. Tap a product to open its 3D model.</figcaption>
+      <figcaption>Each arrow runs uphill in energy, paid for by sunlight — and stands for many enzyme-catalysed steps, drawn out in the chapters below. Tap a product to open its 3D model.</figcaption>
     </figure>
   </section>
 
@@ -107,6 +112,18 @@
       </p>
       <p class="myth"><strong>Common myth:</strong> the released O₂ does <em>not</em> come from CO₂ — it comes
         from the water that is split at Photosystem II.</p>
+      <p class="pathway-cap">The Calvin cycle — turning CO₂ into sugar (stroma):</p>
+      <ol class="pathway">
+        <li class="met start">CO₂<small>from air</small></li>
+        <li class="step"><span class="enz">RuBisCO</span><span class="cof">+ RuBP, fixation</span></li>
+        <li class="met">3-phosphoglycerate<small>2 × C3</small></li>
+        <li class="step"><span class="enz">PGK</span><span class="cof">ATP</span></li>
+        <li class="met">1,3-bisphosphoglycerate</li>
+        <li class="step"><span class="enz">GAPDH</span><span class="cof">NADPH → energy stored</span></li>
+        <li class="met">G3P<small>triose phosphate</small></li>
+        <li class="step"><span class="enz">6 turns, then cytosol</span></li>
+        <li class="met end"><a href="index.html#glc_open">glucose · sucrose</a></li>
+      </ol>
     </details>
   </section>
 
@@ -143,6 +160,16 @@
         the membrane act as guide rails (via the CSI1/POM2 tether), setting the grain of the wood. This is the
         headline contrast with the matrix sugars next door, which are made indoors in the Golgi.
       </p>
+      <p class="pathway-cap">Sugar to crystalline fibre, at the plasma membrane:</p>
+      <ol class="pathway">
+        <li class="met start">sucrose<small>from the phloem</small></li>
+        <li class="step"><span class="enz">sucrose synthase</span><span class="cof">+ UDP</span></li>
+        <li class="met">UDP-glucose<small>activated</small></li>
+        <li class="step"><span class="enz">CesA rosette</span><span class="cof">plasma membrane · β-1,4</span></li>
+        <li class="met">β-1,4-glucan chain</li>
+        <li class="step"><span class="enz">H-bonding</span><span class="cof">crystallization</span></li>
+        <li class="met end"><a href="index.html#cellohexaose">cellulose microfibril</a></li>
+      </ol>
     </details>
   </section>
 
@@ -177,6 +204,18 @@
       <p class="myth"><strong>Worth knowing:</strong> all these sugars share the same (CH₂O)ₙ make-up, so a
         mannose-rich matrix is no more energy-dense than a xylose-rich one. Conifer wood burns hot because of its
         <em>lignin and resin</em>, not its hemicellulose.</p>
+      <p class="pathway-cap">Building the sugar toolkit (cytosol), then assembling in the Golgi:</p>
+      <ol class="pathway">
+        <li class="met start">UDP-glucose<small>the hub</small></li>
+        <li class="step"><span class="enz">UGD</span><span class="cof">2 NAD⁺</span></li>
+        <li class="met">UDP-glucuronic acid</li>
+        <li class="step"><span class="enz">UXS</span><span class="cof">− CO₂ (decarboxylation)</span></li>
+        <li class="met">UDP-xylose</li>
+        <li class="step"><span class="enz">4-epimerase / mutase</span><span class="cof">→ UDP-arabinose</span></li>
+        <li class="met">UDP-Xyl · UDP-Ara · UDP-Gal · GDP-Man<small>nucleotide sugars</small></li>
+        <li class="step"><span class="enz">Golgi glycosyltransferases</span><span class="cof">CSLA · GT43/47 · branches</span></li>
+        <li class="met end"><a href="index.html#ggm_compact">galactoglucomannan · xylan</a></li>
+      </ol>
     </details>
   </section>
 
@@ -224,6 +263,24 @@
         rings are far more reduced than sugar rings, it is the most energy-dense major fraction of wood
         (~23–26 MJ/kg).
       </p>
+      <ol class="pathway">
+        <li class="head">the monolignol pathway → coniferyl alcohol</li>
+        <li class="met start">phenylalanine<small>from the shikimate pathway</small></li>
+        <li class="step"><span class="enz">PAL</span><span class="cof">− NH₃</span></li>
+        <li class="met">cinnamic acid</li>
+        <li class="step"><span class="enz">C4H · P450</span><span class="cof">+ O₂</span></li>
+        <li class="met">p-coumaric acid</li>
+        <li class="step"><span class="enz">4CL</span><span class="cof">+ CoA, ATP</span></li>
+        <li class="met">p-coumaroyl-CoA</li>
+        <li class="step"><span class="enz">HCT → C3′H → CCoAOMT</span><span class="cof">+ OCH₃ (from SAM) = guaiacyl</span></li>
+        <li class="met">feruloyl-CoA</li>
+        <li class="step"><span class="enz">CCR</span><span class="cof">NADPH</span></li>
+        <li class="met">coniferaldehyde</li>
+        <li class="step"><span class="enz">CAD</span><span class="cof">NADPH</span></li>
+        <li class="met"><a href="index.html#coniferyl" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--paper-faint)">coniferyl alcohol</a><small>the softwood monolignol</small></li>
+        <li class="step"><span class="enz">laccase · peroxidase</span><span class="cof">O₂ / H₂O₂ · radical coupling</span></li>
+        <li class="met end"><a href="index.html#lignin_bo4">lignin network</a></li>
+      </ol>
     </details>
   </section>
 
@@ -257,6 +314,20 @@
       <p class="myth"><strong>Why so energy-rich:</strong> combustion energy tracks how reduced a molecule is.
         Fats yield ~37–39 kJ/g versus ~16–17 kJ/g for carbohydrates, whose ring carbons already each carry an
         oxygen.</p>
+      <ol class="pathway">
+        <li class="head">sugar → two-carbon units → fat</li>
+        <li class="met start">glucose</li>
+        <li class="step"><span class="enz">glycolysis → PDH</span><span class="cof">in the plastid</span></li>
+        <li class="met">acetyl-CoA<small>2-carbon unit</small></li>
+        <li class="step"><span class="enz">ACCase</span><span class="cof">ATP, + CO₂ (committed step)</span></li>
+        <li class="met">malonyl-CoA</li>
+        <li class="step"><span class="enz">fatty-acid synthase</span><span class="cof">7 cycles, NADPH</span></li>
+        <li class="met">stearoyl-ACP<small>18:0, saturated</small></li>
+        <li class="step"><span class="enz">stearoyl-ACP Δ9 desaturase</span><span class="cof">adds the double bond</span></li>
+        <li class="met">oleic acid<small>18:1</small></li>
+        <li class="step"><span class="enz">Kennedy pathway</span><span class="cof">×3 on glycerol, at the ER</span></li>
+        <li class="met end"><a href="index.html#triolein">triacylglycerol</a></li>
+      </ol>
     </details>
   </section>
 
@@ -290,6 +361,29 @@
         regulated immune response. At ~40–44 MJ/kg, in the range of petroleum fuels, it is costly to make, so the
         tree is deliberately banking captured energy into a high-density defensive reserve.
       </p>
+      <p class="pathway-cap">From two-carbon and three-carbon units to the volatile (turpentine) and solid (rosin) fractions:</p>
+      <div class="pathway-pair">
+        <ol class="pathway">
+          <li class="head">monoterpenes → turpentine</li>
+          <li class="met start">acetyl-CoA · pyruvate + G3P</li>
+          <li class="step"><span class="enz">MVA · MEP</span><span class="cof">cytosol / plastid</span></li>
+          <li class="met">IPP + DMAPP<small>C5 units</small></li>
+          <li class="step"><span class="enz">GPP synthase</span></li>
+          <li class="met">geranyl-PP<small>C10</small></li>
+          <li class="step"><span class="enz">pinene synthase</span><span class="cof">Mn²⁺</span></li>
+          <li class="met end"><a href="index.html#alpha_pinene">α / β-pinene</a></li>
+        </ol>
+        <ol class="pathway">
+          <li class="head">diterpenes → resin acids</li>
+          <li class="met start">IPP + DMAPP</li>
+          <li class="step"><span class="enz">GGPP synthase</span></li>
+          <li class="met">geranylgeranyl-PP<small>C20</small></li>
+          <li class="step"><span class="enz">abietadiene synthase</span><span class="cof">bifunctional cyclase</span></li>
+          <li class="met">abietadiene</li>
+          <li class="step"><span class="enz">CYP720B · P450</span><span class="cof">3 × O₂ oxidation</span></li>
+          <li class="met end"><a href="index.html#abietic_acid">abietic acid</a></li>
+        </ol>
+      </div>
     </details>
   </section>
 
@@ -318,6 +412,188 @@
       Pines don't forage alone: they are <strong>ectomycorrhizal</strong>, partnering with fungi that sheath the
       root tips and mine nitrogen and phosphorus far beyond the root's reach, traded for photosynthetic sugar.
     </p>
+  </section>
+
+  <!-- ============ PART II — RELEASING IT ============ -->
+  <section class="part-intro" id="release">
+    <p class="eyebrow">Part II · releasing it</p>
+    <h2>How nature <em>releases</em> it</h2>
+    <p class="lede">
+      Building ran uphill. Releasing runs back down — and there are three main routes:
+      <strong>fire</strong>, <strong>herbivory</strong>, and <strong>decay</strong>. All three do the same
+      chemistry in the end: they oxidize the tree's reduced carbon back to CO₂ and water, returning the solar
+      energy banked in its bonds (minus whatever the burner, browser, or fungus keeps for itself).
+    </p>
+    <p>
+      But a tree is not chemically uniform — and what each part is <em>made of</em> controls how it burns, whether
+      anything can eat it, and how fast it rots. Energy and decay-resistance both rise with lignin and extractives;
+      the fine, foliage-rich parts are where the easy energy lives:
+    </p>
+
+    <figure class="comp-figure" aria-label="Approximate biochemical composition of conifer tree parts">
+      <div class="comp-legend">
+        <span><i class="seg-cell"></i>cellulose</span>
+        <span><i class="seg-hemi"></i>hemicellulose</span>
+        <span><i class="seg-lig"></i>lignin</span>
+        <span><i class="seg-ext"></i>extractives (resin, terpenes, fats)</span>
+        <span><i class="seg-oth"></i>protein · ash · suberin</span>
+      </div>
+      <div class="comp">
+        <span class="comp-lab">needles<small>fine fuel</small></span>
+        <span class="comp-bar"><i class="seg-cell" style="width:26%"></i><i class="seg-hemi" style="width:19%"></i><i class="seg-lig" style="width:40%"></i><i class="seg-ext" style="width:12%"></i><i class="seg-oth" style="width:3%"></i></span>
+        <span class="comp-lab">cones</span>
+        <span class="comp-bar"><i class="seg-cell" style="width:37%"></i><i class="seg-hemi" style="width:24%"></i><i class="seg-lig" style="width:28%"></i><i class="seg-ext" style="width:9%"></i><i class="seg-oth" style="width:2%"></i></span>
+        <span class="comp-lab">fine twigs<small>fine fuel</small></span>
+        <span class="comp-bar"><i class="seg-cell" style="width:38%"></i><i class="seg-hemi" style="width:20%"></i><i class="seg-lig" style="width:30%"></i><i class="seg-ext" style="width:8%"></i><i class="seg-oth" style="width:4%"></i></span>
+        <span class="comp-lab">bark<small>heat shield</small></span>
+        <span class="comp-bar"><i class="seg-cell" style="width:25%"></i><i class="seg-hemi" style="width:13%"></i><i class="seg-lig" style="width:34%"></i><i class="seg-ext" style="width:19%"></i><i class="seg-oth" style="width:9%"></i></span>
+        <span class="comp-lab">sapwood</span>
+        <span class="comp-bar"><i class="seg-cell" style="width:43%"></i><i class="seg-hemi" style="width:20%"></i><i class="seg-lig" style="width:28%"></i><i class="seg-ext" style="width:4%"></i><i class="seg-oth" style="width:5%"></i></span>
+        <span class="comp-lab">heartwood</span>
+        <span class="comp-bar"><i class="seg-cell" style="width:40%"></i><i class="seg-hemi" style="width:20%"></i><i class="seg-lig" style="width:29%"></i><i class="seg-ext" style="width:8%"></i><i class="seg-oth" style="width:3%"></i></span>
+        <span class="comp-lab">roots</span>
+        <span class="comp-bar"><i class="seg-cell" style="width:38%"></i><i class="seg-hemi" style="width:20%"></i><i class="seg-lig" style="width:32%"></i><i class="seg-ext" style="width:5%"></i><i class="seg-oth" style="width:5%"></i></span>
+      </div>
+      <p class="comp-cap">Approximate dry-mass composition for a pine; ranges vary widely with species, age, site, and
+        assay (e.g. needle data from loblolly pine; heartwood gains resin acids as living cells die). Sapwood and
+        heartwood hold most of the tree's mass and energy — yet in a fire they usually survive, while the
+        lignin- and resin-rich fine fuels carry the flame.</p>
+    </figure>
+  </section>
+
+  <!-- 08 FIRE -->
+  <section class="chapter" id="fire">
+    <div class="chapter-head"><span class="step">08</span><h3>Fire — unzipping the polymers</h3></div>
+    <p class="standfirst">A flame doesn't burn solid wood; it burns the gas the wood gives off when heated.</p>
+    <p>
+      Combustion happens in stages. Heat first drives off water, then <strong>pyrolysis</strong> cracks the cell-wall
+      polymers into flammable gases and tar — and <em>that</em> is what the visible flame burns — leaving behind a
+      carbon-rich <strong>char</strong>. The polymers come apart at different temperatures, and
+      <a class="inline-link" href="index.html#lignin_bo4">lignin</a> leaves the most char. Conifer
+      <a class="inline-link" href="index.html#alpha_pinene">resin and terpenes</a>, with very low flash points
+      (~32 °C) and high energy, help fine fuels catch. Crucially, real fires are <em>incomplete</em>: needles, twigs,
+      and bark flakes carry the flame, while the energy-dense trunk and roots mostly char or survive — so most of a
+      forest's stored energy is <em>not</em> released in any one fire, and some carbon is locked away as long-lived charcoal.
+    </p>
+    <details>
+      <summary>Go deeper: the thermal staircase, char, and incomplete combustion</summary>
+      <p>
+        Each polymer has its own decomposition window. <strong>Hemicellulose</strong> is least stable and goes first
+        (~220–315 °C); <strong>cellulose</strong> follows in a sharp burst (~315–400 °C, peak ~340 °C); and
+        <strong>lignin</strong> decomposes slowly across a huge range (~160–900 °C), yielding ~40–45% of its mass as
+        char. Cellulose pyrolysis is endothermic (it soaks up heat), while hemicellulose and lignin are exothermic.
+      </p>
+      <ol class="thermo" aria-label="Decomposition temperature ranges by polymer">
+        <li class="thermo-row"><span class="thermo-lab">water<small>drying</small></span><span class="thermo-track"><span class="thermo-bar" style="left:1%;width:11%"></span></span></li>
+        <li class="thermo-row"><span class="thermo-lab">hemicellulose<small>char ~23%</small></span><span class="thermo-track"><span class="thermo-bar" style="left:20%;width:11%"></span></span></li>
+        <li class="thermo-row"><span class="thermo-lab">cellulose<small>char ~8%</small></span><span class="thermo-track"><span class="thermo-bar" style="left:31%;width:10%"></span></span></li>
+        <li class="thermo-row"><span class="thermo-lab">lignin<small>char ~45%</small></span><span class="thermo-track"><span class="thermo-bar" style="left:13%;width:87%"></span></span></li>
+        <li class="thermo-axis"><span></span><span class="thermo-ticks"><b>~100 °C</b><b>300</b><b>500</b><b>700</b><b>900 °C</b></span></li>
+      </ol>
+      <p>
+        About <strong>70%</strong> of dry wood leaves as volatiles that feed the flame; the rest is char that glows
+        and smolders. Burning efficiency is measured by the modified combustion efficiency (MCE): vigorous
+        <em>flaming</em> runs ~0.95–0.99, while <em>smoldering</em> char drops to ~0.65–0.85, releasing more carbon
+        monoxide and smoke. Char oxidation can account for roughly a third of the energy in vegetation fuels — but
+        much char never fully burns. A pine charcoal is ~50–90% carbon and can persist in soils for decades to
+        millennia, so fire both releases energy <em>and</em> banks a slow-cycling carbon residue.
+      </p>
+      <p class="myth"><strong>Worth knowing:</strong> even a crown fire consumes only ~56–66% of the canopy foliage,
+        and almost none of the bole — incomplete combustion is the rule, not the exception.</p>
+    </details>
+  </section>
+
+  <!-- 09 HERBIVORY -->
+  <section class="chapter" id="consumption">
+    <div class="chapter-head"><span class="step">09</span><h3>Herbivory — renting a microbe</h3></div>
+    <p class="standfirst">Most of a tree is indigestible to animals — unless they borrow the right enzymes.</p>
+    <p>
+      Animals eat plants to capture the same bond energy, but there's a catch: <strong>no animal makes the enzyme to
+      digest cellulose</strong>, and lignin is essentially indigestible. So herbivores either eat the easy,
+      energy-rich tissues — sugars, starch, fats, and protein in foliage and seeds, digested directly to ATP — or
+      they <strong>rent gut microbes</strong> that ferment cellulose into short-chain fatty acids the animal can
+      absorb (deer and other ruminants, horses, and termites all do this). In conifer forests vertebrate browsing is
+      modest, but insects — above all <strong>bark beetles</strong> — can kill whole landscapes; conifers fight back
+      with the very <a class="inline-link" href="index.html#abietic_acid">terpene resin</a> that also makes them flammable.
+    </p>
+    <div class="hhv-compare" aria-label="Fraction of plant production eaten by herbivores">
+      <div class="hhv-row"><span class="hhv-lab">forest</span><span class="hhv-bar"><i style="width:6%"></i></span><span class="hhv-val">~1–10%</span></div>
+      <div class="hhv-row"><span class="hhv-lab">terrestrial average</span><span class="hhv-bar"><i style="width:18%"></i></span><span class="hhv-val">~18%</span></div>
+      <div class="hhv-row"><span class="hhv-lab">grassland (Serengeti)</span><span class="hhv-bar"><i style="width:66%"></i></span><span class="hhv-val">~66%</span></div>
+    </div>
+    <details>
+      <summary>Go deeper: gut fermentation and how the energy becomes ATP</summary>
+      <p>
+        A ruminant (deer, elk) houses trillions of microbes that <em>do</em> make cellulases. In the rumen, microbes
+        depolymerise cellulose to sugars and ferment them to <strong>volatile fatty acids</strong> — acetate,
+        propionate, and butyrate (roughly 70:20:10 on browse) — which the animal absorbs through the gut wall and
+        oxidises for energy. These VFAs supply ~70–80% of a ruminant's energy; the microbes themselves are then
+        digested as protein. Termites do the same for wood, their gut symbionts removing 74–99% of the cellulose.
+      </p>
+      <ol class="pathway">
+        <li class="head">how a browser extracts wood energy</li>
+        <li class="met start">cellulose · hemicellulose</li>
+        <li class="step"><span class="enz">microbial cellulases</span><span class="cof">rumen / hindgut symbionts</span></li>
+        <li class="met">sugars</li>
+        <li class="step"><span class="enz">fermentation</span><span class="cof">→ acetate · propionate · butyrate</span></li>
+        <li class="met">volatile fatty acids<small>absorbed by the animal</small></li>
+        <li class="step"><span class="enz">β-oxidation · TCA · ox-phos</span><span class="cof">in mitochondria</span></li>
+        <li class="met end">ATP<small>~30–32 per glucose</small></li>
+      </ol>
+      <p class="myth"><strong>Lignin's last trick:</strong> it passes through the gut almost untouched and physically
+        shields the digestible sugars, which is why woody, lignin-rich tissue is poor forage — and why the easy
+        calories are in young needles, sap, and seeds (fat at ~9 kcal/g vs ~4 for carbohydrate). Soluble sugars,
+        starch, fat, and protein need no microbes — the animal's own enzymes handle them directly.</p>
+    </details>
+  </section>
+
+  <!-- 10 DECAY -->
+  <section class="chapter" id="decay">
+    <div class="chapter-head"><span class="step">10</span><h3>Decay — the slow fire</h3></div>
+    <p class="standfirst">Fungi and microbes burn wood at room temperature, over years instead of minutes.</p>
+    <p>
+      Most biomass is neither burned nor eaten — it is <strong>decomposed</strong>, mostly by fungi.
+      <strong>White-rot fungi</strong> are the only organisms that fully dismantle lignin, using the same kind of
+      oxidative enzymes (laccases and peroxidases) that <em>built</em> it, and they take the cellulose too.
+      <strong>Brown-rot fungi</strong> — characteristic of conifer deadwood — skip enzymes for the cellulose and
+      instead deploy a chemical bomb: a Fenton reaction that makes hydroxyl radicals to shred the carbohydrate,
+      leaving a brown, lignin-rich crumble. Bacteria, water, and litter invertebrates pitch in. All of them
+      <strong>respire</strong> the reduced carbon back to CO₂ + water + heat — the same total energy as burning, just
+      released slowly. Lignin, extractives, and dense heartwood resist all this, which is why heartwood and bark last,
+      and roughly 10–30% of the carbon ends up stabilised in soil rather than respired.
+    </p>
+    <details>
+      <summary>Go deeper: white rot vs brown rot, and how long it lingers</summary>
+      <div class="pathway-pair">
+        <ol class="pathway">
+          <li class="head">white rot</li>
+          <li class="met start"><a href="index.html#lignin_bo4" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--paper-faint)">lignin</a> + cellulose</li>
+          <li class="step"><span class="enz">laccase · LiP · MnP</span><span class="cof">O₂ / H₂O₂ oxidation</span></li>
+          <li class="met">cracked aromatics + sugars</li>
+          <li class="step"><span class="enz">respiration</span></li>
+          <li class="met end">CO₂ + H₂O + heat</li>
+        </ol>
+        <ol class="pathway">
+          <li class="head">brown rot (conifer-associated)</li>
+          <li class="met start">cellulose + hemicellulose</li>
+          <li class="step"><span class="enz">Fenton: Fe²⁺ + H₂O₂</span><span class="cof">→ hydroxyl radical (OH•)</span></li>
+          <li class="met">depolymerised sugars<small>+ brown lignin residue</small></li>
+          <li class="step"><span class="enz">respiration</span></li>
+          <li class="met end">CO₂ + H₂O + heat</li>
+        </ol>
+      </div>
+      <p>
+        Decay speed tracks composition. Ponderosa needle litter turns over in ~6–13 years
+        (<span class="eq">k ≈ 0.08–0.18 yr⁻¹</span>); a fallen white-fir log takes a half-life of ~14 years, and large
+        conifer logs persist for 50–120 years. Gymnosperm wood decays roughly 2–3× slower than angiosperm wood
+        (occasionally 10× for rot-resistant species), and standing dead snags decay far slower than logs on the moist
+        ground. Of the carbon that <em>is</em> decomposed, ~70–90% is respired straight back to CO₂; the remainder
+        becomes humus and soil organic matter — the forest's long-term carbon (and energy) savings account.
+      </p>
+      <p class="myth"><strong>Full circle:</strong> the enzymes white-rot fungi use to take lignin apart are
+        mechanistic cousins of the laccases and peroxidases the tree used to <em>build</em> it — the same oxidative
+        chemistry, run in reverse.</p>
+    </details>
   </section>
 
   <!-- CLOSING: energy tie-back -->

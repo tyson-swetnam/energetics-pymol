@@ -229,3 +229,10 @@ Energetics ms full draft*.pdf
 /live-*.png
 /rel-*.png
 /v[0-9]*.png
+
+# figure build intermediates / dropped Claude Design export
+/docs/fig/
+/figureA*.png
+/New figure from molecules/
+/New figure from molecules.zip
+/Woody Biomass Figure (standalone).html

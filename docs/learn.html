@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How plants build it — Energetics</title>
+<meta name="description" content="How a conifer forest builds its energy-storing molecules — cellulose, hemicellulose, lignin, fats, and resin — from sunlight, air, water, and soil. Photosynthesis and the biosynthetic pathways behind 'Ecosystems as energy fields'.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolygon points='20,4 33,12 33,28 20,36 7,28 7,12' fill='none' stroke='%236f6555' stroke-width='2'/%3E%3Ccircle cx='20' cy='21' r='7.5' fill='%23e0712d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="doc">
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="ember" cx="50%" cy="58%" r="60%">
+        <stop offset="0%" stop-color="#f6c64b"/><stop offset="45%" stop-color="#e0712d"/><stop offset="100%" stop-color="#7c2d12"/>
+      </radialGradient></defs>
+      <polygon points="20,4 33,12 33,28 20,36 7,28 7,12" fill="none" stroke="#6f6555" stroke-width="1.6"/>
+      <circle cx="20" cy="21" r="7.5" fill="url(#ember)"/>
+    </svg>
+    <div class="brand-text"><h1>Energetics</h1><p>The molecules that store a forest's energy</p></div>
+  </a>
+  <nav class="topnav">
+    <a href="index.html">Gallery</a>
+    <a href="learn.html" aria-current="page">How plants build it</a>
+  </nav>
+</header>
+
+<main class="doc-main">
+
+  <!-- HERO: the thesis -->
+  <section class="hero">
+    <p class="eyebrow">From a photon to a forest</p>
+    <h2 class="hero-title">A forest is <em>crystallized sunlight.</em></h2>
+    <p class="lede">
+      Almost every atom of a ponderosa pine is assembled from four free, abundant things:
+      <strong>light</strong>, <strong>air</strong>, <strong>water</strong>, and a pinch of
+      <strong>soil minerals</strong>. Photosynthesis captures sunlight and writes it into the bonds of
+      a simple sugar — and the tree spends a little of that captured energy to rebuild the sugar into
+      the cellulose, hemicellulose, lignin, fats, and resin whose chemical bonds hold the energy that
+      <a href="index.html">the study</a> measures. This page follows that build, step by step.
+    </p>
+
+    <figure class="flow" aria-label="Inputs become glucose, which becomes the energy-storing molecules of wood">
+      <div class="flow-col flow-in">
+        <span class="node n-sun">☀ sunlight<small>energy</small></span>
+        <span class="node n-air">CO₂<small>air</small></span>
+        <span class="node n-water">H₂O<small>water</small></span>
+        <span class="node n-soil">N · P · K · Mg…<small>soil</small></span>
+      </div>
+      <span class="flow-link" aria-hidden="true"></span>
+      <div class="flow-col flow-mid">
+        <span class="node n-photo">photosynthesis<small>chloroplast</small></span>
+        <span class="node n-glucose">glucose<small>C₆H₁₂O₆</small></span>
+      </div>
+      <span class="flow-link" aria-hidden="true"></span>
+      <div class="flow-col flow-out">
+        <a class="node out" href="index.html#cellohexaose">cellulose<small>↗ view</small></a>
+        <a class="node out" href="index.html#ggm_compact">hemicellulose<small>↗ view</small></a>
+        <a class="node out" href="index.html#lignin_bo4">lignin<small>↗ view</small></a>
+        <a class="node out" href="index.html#triolein">fats<small>↗ view</small></a>
+        <a class="node out" href="index.html#abietic_acid">resin<small>↗ view</small></a>
+      </div>
+      <figcaption>Every arrow runs uphill in energy, paid for by sunlight. Tap a product to open its 3D model.</figcaption>
+    </figure>
+  </section>
+
+  <!-- 1. PHOTOSYNTHESIS -->
+  <section class="chapter" id="photosynthesis">
+    <div class="chapter-head"><span class="step">01</span><h3>Capturing the light</h3></div>
+    <p class="standfirst">Photosynthesis splits water and fixes carbon dioxide from the air into sugar.</p>
+    <p>
+      Inside a needle's chloroplasts, sunlight does two jobs. It <strong>splits water</strong> — releasing
+      the oxygen a forest exhales — and uses the energy to <strong>grab carbon dioxide from the air</strong>
+      and stitch its carbon into sugar. The result is glucose, shipped through the tree as sucrose, the raw
+      material for everything that follows. The headline facts are worth stating plainly: the carbon in wood
+      comes from <em>thin air</em>; the hydrogen and the released oxygen come from <em>water</em>; the energy
+      comes from <em>sunlight</em>.
+    </p>
+    <p class="molchips">
+      <a class="molref" href="index.html#glc_open"><img src="img/glc_open.png" alt="">D-glucose</a>
+      <a class="molref" href="index.html#co2"><img src="img/co2.png" alt="">CO₂</a>
+      <a class="molref" href="index.html#h2o"><img src="img/h2o.png" alt="">H₂O</a>
+      <a class="molref" href="index.html#o2"><img src="img/o2.png" alt="">O₂</a>
+    </p>
+    <details>
+      <summary>Go deeper: the light reactions and the Calvin cycle</summary>
+      <p>
+        The chloroplast separates the work into two stages. In the <strong>light reactions</strong> (on the
+        thylakoid membranes), chlorophyll — a porphyrin ring with a single <strong>magnesium</strong> ion at
+        its heart — funnels light to two reaction centres. At Photosystem II a manganese cluster (Mn₄CaO₅)
+        splits water: <span class="eq">2 H₂O → O₂ + 4 H⁺ + 4 e⁻</span>. The electrons run a "Z-scheme"
+        (PSII → plastoquinone → cytochrome b6f → the copper protein plastocyanin → Photosystem I → ferredoxin),
+        building <strong>NADPH</strong>, while the proton gradient drives ATP synthase to make <strong>ATP</strong>.
+      </p>
+      <p>
+        In the <strong>Calvin cycle</strong> (in the surrounding stroma), the enzyme <strong>RuBisCO</strong>
+        attaches CO₂ to a five-carbon acceptor; the product splits into two molecules of 3-phosphoglycerate,
+        which ATP and NADPH reduce to the three-carbon sugar G3P. That reduction is the exact moment solar
+        energy becomes chemical-bond energy. It takes six turns (≈18 ATP + 12 NADPH) to net one extra sugar;
+        five of every six G3P are recycled to regenerate the acceptor. The triose sugar is exported to the
+        cytosol and assembled into sucrose, with surplus carbon banked as starch.
+      </p>
+      <p class="myth"><strong>Common myth:</strong> the released O₂ does <em>not</em> come from CO₂ — it comes
+        from the water that is split at Photosystem II.</p>
+    </details>
+  </section>
+
+  <!-- 2. CELLULOSE -->
+  <section class="chapter" id="cellulose">
+    <div class="chapter-head"><span class="step">02</span><h3>Cellulose — spun at the cell's skin</h3></div>
+    <p class="standfirst">The main mass of wood is glucose strung into crystalline cables.</p>
+    <p>
+      Cellulose is the most abundant polymer in wood (~40–45% of softwood) — long chains of glucose linked
+      <strong>β-1,4</strong>. What makes it special is <em>where</em> it's made: rosette-shaped machines sitting
+      <strong>in the cell's outer membrane</strong> spin the chains straight out into the wall, where about
+      eighteen of them crystallise side-by-side into a stiff, water-shedding
+      <a class="inline-link" href="index.html#cellohexaose">microfibril</a> — the load-bearing cable of wood.
+    </p>
+    <p class="molchips">
+      <a class="molref" href="index.html#cellohexaose"><img src="img/cellohexaose.png" alt="">cellohexaose</a>
+      <a class="molref" href="index.html#cellobiose"><img src="img/cellobiose.png" alt="">cellobiose</a>
+      <a class="molref" href="index.html#bdglc"><img src="img/bdglc.png" alt="">β-D-glucose</a>
+    </p>
+    <details>
+      <summary>Go deeper: UDP-glucose, rosettes, and a machine that walks</summary>
+      <p>
+        The actual building block isn't free glucose but <strong>UDP-glucose</strong> — "activated" glucose
+        carrying its own reactive energy (made from sucrose by sucrose synthase, though recent work shows other
+        routes can supply it too). Cellulose-synthase (CesA) proteins assemble into six-lobed <strong>rosettes</strong>
+        in the plasma membrane — current evidence favours ≈18 subunits, built from three secondary-wall isoforms
+        (conifers express the orthologous triplet in xylem). Each cycle adds one glucose to the <em>non-reducing
+        end</em>, releasing UDP; because alternate units are flipped 180°, the true repeat is cellobiose, and the
+        β linkage (not the α of starch) is exactly why cellulose is rigid and indigestible.
+      </p>
+      <p>
+        As the new fibril crystallises and anchors in the wall, the resistance pushes the enzyme <em>forward</em>
+        through the fluid membrane — the machine walks while the fibril stays put. Cortical microtubules beneath
+        the membrane act as guide rails (via the CSI1/POM2 tether), setting the grain of the wood. This is the
+        headline contrast with the matrix sugars next door, which are made indoors in the Golgi.
+      </p>
+    </details>
+  </section>
+
+  <!-- 3. HEMICELLULOSE -->
+  <section class="chapter" id="hemicellulose">
+    <div class="chapter-head"><span class="step">03</span><h3>Hemicellulose — assembled indoors, shipped out</h3></div>
+    <p class="standfirst">The flexible matrix that ties the cellulose cables together.</p>
+    <p>
+      Hemicelluloses fill the space between cellulose fibrils and lignin. In softwoods the main one is
+      <a class="inline-link" href="index.html#ggm_compact">galactoglucomannan</a>, with a minor
+      <a class="inline-link" href="index.html#agx_compact">arabinoglucuronoxylan</a> — branched chains built from
+      a toolkit of several different sugars. Unlike cellulose, they are assembled <strong>inside the Golgi</strong>
+      and delivered to the wall in vesicles.
+    </p>
+    <p class="molchips">
+      <a class="molref" href="index.html#ggm_compact"><img src="img/ggm_compact.png" alt="">galactoglucomannan</a>
+      <a class="molref" href="index.html#agx_compact"><img src="img/agx_compact.png" alt="">arabinoglucuronoxylan</a>
+      <a class="molref" href="index.html#bdman"><img src="img/bdman.png" alt="">mannose</a>
+      <a class="molref" href="index.html#bdxyl"><img src="img/bdxyl.png" alt="">xylose</a>
+    </p>
+    <details>
+      <summary>Go deeper: nucleotide sugars and Golgi glycosyltransferases</summary>
+      <p>
+        First the cytosol builds a set of <strong>activated nucleotide sugars</strong> from the central hub
+        UDP-glucose: UDP-galactose, UDP-glucuronic acid → UDP-xylose → UDP-arabinose, plus GDP-mannose from the
+        fructose-6-phosphate pool. These are imported into the Golgi, where the chains are polymerised and
+        decorated. The galactoglucomannan backbone is built by a <strong>cellulose-synthase-<em>like</em></strong>
+        enzyme (CSLA, using GDP-sugars) — but the xylan backbone is built by entirely different families
+        (GT43/GT47), and the branches are added by yet others: galactose, 4-O-methyl-glucuronic acid (its methyl
+        from the cofactor SAM), and arabinofuranose, plus O-acetyl groups from acetyl-CoA.
+      </p>
+      <p class="myth"><strong>Worth knowing:</strong> all these sugars share the same (CH₂O)ₙ make-up, so a
+        mannose-rich matrix is no more energy-dense than a xylose-rich one. Conifer wood burns hot because of its
+        <em>lignin and resin</em>, not its hemicellulose.</p>
+    </details>
+  </section>
+
+  <!-- 4. LIGNIN -->
+  <section class="chapter" id="lignin">
+    <div class="chapter-head"><span class="step">04</span><h3>Lignin — the glue that makes wood</h3></div>
+    <p class="standfirst">A tough, energy-dense aromatic network, polymerised by chemistry alone.</p>
+    <p>
+      Lignin is what turns soft cellulose into <em>wood</em>: a water-shedding, decay-resistant, energy-dense
+      polymer that fills and stiffens the wall. Conifers build it almost entirely from one monomer,
+      <a class="inline-link" href="index.html#coniferyl">coniferyl alcohol</a>, which is exported into the wall
+      and then linked together by a <strong>template-free radical reaction</strong> — so every lignin molecule is
+      a unique, irregular network rather than a regular polymer.
+    </p>
+    <p class="molchips">
+      <a class="molref" href="index.html#coniferyl"><img src="img/coniferyl.png" alt="">coniferyl alcohol</a>
+      <a class="molref" href="index.html#lignin_bo4"><img src="img/lignin_bo4.png" alt="">β-O-4 linkage</a>
+      <a class="molref" href="index.html#lignin_bb"><img src="img/lignin_bb.png" alt="">pinoresinol</a>
+      <a class="molref" href="index.html#sinapyl"><img src="img/sinapyl.png" alt="">sinapyl (hardwood)</a>
+    </p>
+    <details>
+      <summary>Go deeper: the shikimate &amp; phenylpropanoid pathways, then radical coupling</summary>
+      <p>
+        <strong>Stage 1 — make the amino acid.</strong> In plastids, the seven-step shikimate pathway condenses
+        two photosynthetic intermediates (PEP and erythrose-4-phosphate) into the amino acid
+        <strong>phenylalanine</strong> (its nitrogen drawn from soil). Animals lack this pathway — which is why
+        phenylalanine is "essential" in our diet, and why the herbicide glyphosate, which blocks one shikimate
+        enzyme, kills plants but not us.
+      </p>
+      <p>
+        <strong>Stage 2 — the phenylpropanoid trunk.</strong> PAL strips the amino group (→ cinnamic acid); a
+        P450 enzyme adds a hydroxyl (→ p-coumaric acid, using O₂); 4CL attaches coenzyme A.
+        <strong>Stage 3 — the monolignol branch.</strong> A methyl group from the cofactor SAM installs the single
+        methoxyl that defines a <em>guaiacyl</em> unit, and two NADPH-driven reductions finish
+        <strong>coniferyl alcohol</strong>. Softwoods make essentially no <a class="inline-link" href="index.html#sinapyl">sinapyl
+        (syringyl) alcohol</a> because they lack the enzyme F5H — which is exactly why softwood lignin is guaiacyl-rich.
+      </p>
+      <p>
+        <strong>In the wall</strong>, copper <strong>laccases</strong> (using O₂) and iron
+        <strong>peroxidases</strong> (using H₂O₂) pull one electron off each monomer's phenol, making a radical;
+        two radicals couple — most often at the <a class="inline-link" href="index.html#lignin_bo4">β-O-4 ether</a>,
+        also β-5, β-β, and 5-5. There's no DNA template, so the bonds form by chemistry alone, giving a different,
+        irregular network every time — though "dirigent" proteins can steer specific couplings (such as the
+        symmetric <a class="inline-link" href="index.html#lignin_bb">pinoresinol</a>). Because lignin's aromatic
+        rings are far more reduced than sugar rings, it is the most energy-dense major fraction of wood
+        (~23–26 MJ/kg).
+      </p>
+    </details>
+  </section>
+
+  <!-- 5. FATS -->
+  <section class="chapter" id="fats">
+    <div class="chapter-head"><span class="step">05</span><h3>Fats — concentrating the energy</h3></div>
+    <p class="standfirst">The most energy-dense molecule a plant makes, built from two-carbon units.</p>
+    <p>
+      Fats pack more energy per gram than anything else a plant builds, because their long carbon chains are
+      highly <strong>reduced</strong> — rich in C–H bonds and almost free of oxygen. Plants assemble them from
+      sugar-derived two-carbon units, mostly as a concentrated reserve in seeds.
+    </p>
+    <p class="molchips">
+      <a class="molref" href="index.html#oleic_acid"><img src="img/oleic_acid.png" alt="">oleic acid</a>
+      <a class="molref" href="index.html#triolein"><img src="img/triolein.png" alt="">triolein</a>
+      <a class="molref" href="index.html#palmitic_acid"><img src="img/palmitic_acid.png" alt="">palmitic acid</a>
+    </p>
+    <details>
+      <summary>Go deeper: plastid fatty-acid synthesis and the Kennedy pathway</summary>
+      <p>
+        Sugar is broken down to <strong>acetyl-CoA</strong>, and fatty acids are built <strong>inside the
+        plastid</strong> by a bacteria-like assembly line. The committed step is acetyl-CoA carboxylase (making
+        malonyl-CoA); condensing enzymes then add two carbons per cycle — each followed by NADPH-driven reductions
+        — up to 16- and 18-carbon saturated chains. The first double bond, which makes
+        <a class="inline-link" href="index.html#oleic_acid">oleic acid</a>, is added by a separate soluble
+        <strong>stearoyl-ACP Δ9 desaturase</strong>. The chains are then exported to the endoplasmic reticulum
+        and assembled three-at-a-time onto a glycerol backbone (the Kennedy pathway) to make a
+        <a class="inline-link" href="index.html#triolein">triacylglycerol</a>, stored in oil bodies. Conifers add
+        an unusual signature: a Δ5 desaturase makes "pinolenic"-type fatty acids found almost nowhere else.
+      </p>
+      <p class="myth"><strong>Why so energy-rich:</strong> combustion energy tracks how reduced a molecule is.
+        Fats yield ~37–39 kJ/g versus ~16–17 kJ/g for carbohydrates, whose ring carbons already each carry an
+        oxygen.</p>
+    </details>
+  </section>
+
+  <!-- 6. EXTRACTIVES -->
+  <section class="chapter" id="extractives">
+    <div class="chapter-head"><span class="step">06</span><h3>Resin — the volatile, flammable fraction</h3></div>
+    <p class="standfirst">A small, energy-dense, defensive fraction that also drives how conifers burn.</p>
+    <p>
+      Conifers make <strong>oleoresin</strong> — the turpentine (<a class="inline-link" href="index.html#alpha_pinene">pinenes</a>)
+      and rosin (<a class="inline-link" href="index.html#abietic_acid">resin acids</a>) you can smell in a pine
+      forest. It floods wounds to repel and trap bark beetles and seal injuries, and because it is a highly
+      reduced hydrocarbon, it is extraordinarily energy-dense — a few percent of the biomass that carries an
+      outsized share of stored energy and helps resinous conifer fuels burn so fiercely.
+    </p>
+    <p class="molchips">
+      <a class="molref" href="index.html#alpha_pinene"><img src="img/alpha_pinene.png" alt="">α-pinene</a>
+      <a class="molref" href="index.html#beta_pinene"><img src="img/beta_pinene.png" alt="">β-pinene</a>
+      <a class="molref" href="index.html#abietic_acid"><img src="img/abietic_acid.png" alt="">abietic acid</a>
+    </p>
+    <details>
+      <summary>Go deeper: the isoprenoid pathways and resin ducts</summary>
+      <p>
+        Terpenoids are built from a universal five-carbon unit (isopentenyl diphosphate) made by two routes — the
+        <strong>MEP pathway</strong> in plastids and the <strong>MVA pathway</strong> in the cytosol. Joining these
+        units gives a C10 precursor that <em>terpene synthases</em> cyclise into the
+        <a class="inline-link" href="index.html#alpha_pinene">pinenes</a> (conifer versions unusually need
+        manganese), and a C20 precursor that a bifunctional diterpene synthase folds into abietadiene; cytochrome
+        P450 enzymes then oxidise it to <a class="inline-link" href="index.html#abietic_acid">resin acids</a> like
+        abietic acid. The finished oleoresin is stored under pressure in a network of <strong>resin ducts</strong>
+        lined by living cells, and the whole system is switched up by wound signals (jasmonate) — making resin a
+        regulated immune response. At ~40–44 MJ/kg, in the range of petroleum fuels, it is costly to make, so the
+        tree is deliberately banking captured energy into a high-density defensive reserve.
+      </p>
+    </details>
+  </section>
+
+  <!-- 7. NUTRIENTS -->
+  <section class="chapter" id="nutrients">
+    <div class="chapter-head"><span class="step">07</span><h3>Where every atom comes from</h3></div>
+    <p class="standfirst">Mostly air and water — with a pinch of soil minerals as the tools, not the fuel.</p>
+    <p>
+      Step back and the accounting is striking. The bulk of a tree — the carbon skeleton that holds the energy —
+      is built from <strong>CO₂ in the air</strong> and <strong>water</strong>. The soil supplies only small
+      quantities of mineral nutrients, and crucially these are <em>never the fuel</em>: they are the catalysts,
+      cofactors, and cross-linkers that build and run the machinery, and they mostly stay behind as ash when wood
+      burns.
+    </p>
+    <ul class="nutrients">
+      <li><b>Nitrogen</b> — the usual limiting nutrient; every enzyme and amino acid, chlorophyll, and the huge
+        pool of RuBisCO. Conifers take it up mostly as ammonium and fungal-delivered organic N.</li>
+      <li><b>Phosphorus</b> — the backbone of ATP, NADPH, DNA, membranes, and the activated nucleotide sugars that
+        feed wall-building.</li>
+      <li><b>Magnesium</b> sits at the centre of every chlorophyll; <b>potassium</b> runs the stomata that admit
+        CO₂; <b>sulfur</b> builds cysteine and the methyl-donor SAM; <b>calcium</b> cross-links the wall.</li>
+      <li><b>Iron, manganese, copper</b> — catalytic metals that split water and shuttle electrons in
+        photosynthesis, and that power the very <strong>laccases and peroxidases</strong> that build lignin.</li>
+    </ul>
+    <p>
+      Pines don't forage alone: they are <strong>ectomycorrhizal</strong>, partnering with fungi that sheath the
+      root tips and mine nitrogen and phosphorus far beyond the root's reach, traded for photosynthetic sugar.
+    </p>
+  </section>
+
+  <!-- CLOSING: energy tie-back -->
+  <section class="closing">
+    <h3>It all comes back as heat</h3>
+    <p>
+      Building these molecules runs <em>uphill</em>: sunlight lifts low-energy CO₂ and water into the high-energy
+      C–H and C–C bonds of reduced carbon. The more reduced the molecule, the more energy it stores — which is why
+      the same forest holds its energy so unevenly:
+    </p>
+    <div class="hhv-compare" aria-label="Approximate higher heating value by component">
+      <div class="hhv-row"><span class="hhv-lab">carbohydrate (cellulose)</span><span class="hhv-bar"><i style="width:38%"></i></span><span class="hhv-val">~17 MJ/kg</span></div>
+      <div class="hhv-row"><span class="hhv-lab">lignin</span><span class="hhv-bar"><i style="width:57%"></i></span><span class="hhv-val">~26 MJ/kg</span></div>
+      <div class="hhv-row"><span class="hhv-lab">fats</span><span class="hhv-bar"><i style="width:86%"></i></span><span class="hhv-val">~39 MJ/kg</span></div>
+      <div class="hhv-row"><span class="hhv-lab">resin terpenes</span><span class="hhv-bar"><i style="width:96%"></i></span><span class="hhv-val">~44 MJ/kg</span></div>
+    </div>
+    <p>
+      Combustion — or slow decay — simply runs the whole thing backwards: the reduced carbon falls back to CO₂
+      and water, releasing the solar energy banked in its bonds. That released enthalpy, summed across hundreds of
+      thousands of trees, is what <em>Ecosystems as energy fields</em> measures for a whole landscape.
+    </p>
+    <p class="closing-cta">
+      <a class="btn-primary" href="index.html">Explore the molecules in 3D →</a>
+    </p>
+  </section>
+
+  <footer class="doc-foot">
+    <p>Built with RDKit &amp; PyMOL. Biochemistry compiled for the manuscript
+       <em>Ecosystems as energy fields</em> (Falk, Swetnam &amp; McKenzie, 2026); figures are defined
+       representatives, captioned as such.</p>
+  </footer>
+
+</main>
+</body>
+</html>

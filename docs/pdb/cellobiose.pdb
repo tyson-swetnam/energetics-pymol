@@ -1,0 +1,69 @@
+HETATM    1  O1  BGC A   1       4.371  -1.516   0.671  1.00  0.00           O  
+HETATM    2  C1  BGC A   1       3.217  -1.339  -0.143  1.00  0.00           C  
+HETATM    3  C2  BGC A   1       2.806   0.141  -0.235  1.00  0.00           C  
+HETATM    4  O2  BGC A   1       1.642   0.195  -1.076  1.00  0.00           O  
+HETATM    5  C3  BGC A   1       0.786   1.325  -0.875  1.00  0.00           C  
+HETATM    6  O3  BGC A   1      -0.254   0.976   0.045  1.00  0.00           O  
+HETATM    7  C4  BGC A   1      -1.302   0.151  -0.524  1.00  0.00           C  
+HETATM    8  C5  BGC A   1      -0.880  -1.327  -0.415  1.00  0.00           C  
+HETATM    9  O4  BGC A   1      -0.135  -1.740  -1.576  1.00  0.00           O  
+HETATM   10  C6  BGC A   1      -2.088  -2.249  -0.293  1.00  0.00           C  
+HETATM   11  O5  BGC A   1      -1.632  -3.611  -0.202  1.00  0.00           O  
+HETATM   12  C7  BGC A   1      -2.920  -1.866   0.945  1.00  0.00           C  
+HETATM   13  O6  BGC A   1      -4.300  -2.100   0.695  1.00  0.00           O  
+HETATM   14  O7  BGC A   1      -2.753  -0.513   1.355  1.00  0.00           O  
+HETATM   15  C8  BGC A   1      -2.592   0.433   0.289  1.00  0.00           C  
+HETATM   16  C9  BGC A   1      -3.848   0.551  -0.592  1.00  0.00           C  
+HETATM   17  O8  BGC A   1      -3.719   1.647  -1.492  1.00  0.00           O  
+HETATM   18  C10 BGC A   1       1.516   2.568  -0.330  1.00  0.00           C  
+HETATM   19  O9  BGC A   1       2.501   3.013  -1.274  1.00  0.00           O  
+HETATM   20  C11 BGC A   1       2.167   2.249   1.025  1.00  0.00           C  
+HETATM   21  O10 BGC A   1       1.262   2.600   2.087  1.00  0.00           O  
+HETATM   22  C12 BGC A   1       2.584   0.768   1.156  1.00  0.00           C  
+HETATM   23  O11 BGC A   1       3.757   0.706   1.976  1.00  0.00           O  
+HETATM   24  H1  BGC A   1       4.632  -2.452   0.588  1.00  0.00           H  
+HETATM   25  H2  BGC A   1       3.427  -1.730  -1.145  1.00  0.00           H  
+HETATM   26  H3  BGC A   1       2.401  -1.938   0.275  1.00  0.00           H  
+HETATM   27  H4  BGC A   1       3.625   0.673  -0.735  1.00  0.00           H  
+HETATM   28  H5  BGC A   1       0.357   1.578  -1.851  1.00  0.00           H  
+HETATM   29  H6  BGC A   1      -1.445   0.448  -1.569  1.00  0.00           H  
+HETATM   30  H7  BGC A   1      -0.210  -1.481   0.440  1.00  0.00           H  
+HETATM   31  H8  BGC A   1       0.631  -1.130  -1.638  1.00  0.00           H  
+HETATM   32  H9  BGC A   1      -2.695  -2.208  -1.204  1.00  0.00           H  
+HETATM   33  H10 BGC A   1      -0.995  -3.706  -0.939  1.00  0.00           H  
+HETATM   34  H11 BGC A   1      -2.631  -2.500   1.791  1.00  0.00           H  
+HETATM   35  H12 BGC A   1      -4.685  -2.314   1.563  1.00  0.00           H  
+HETATM   36  H13 BGC A   1      -2.469   1.407   0.780  1.00  0.00           H  
+HETATM   37  H14 BGC A   1      -4.731   0.714   0.037  1.00  0.00           H  
+HETATM   38  H15 BGC A   1      -4.024  -0.349  -1.186  1.00  0.00           H  
+HETATM   39  H16 BGC A   1      -4.576   1.738  -1.948  1.00  0.00           H  
+HETATM   40  H17 BGC A   1       0.790   3.381  -0.209  1.00  0.00           H  
+HETATM   41  H18 BGC A   1       2.888   3.833  -0.917  1.00  0.00           H  
+HETATM   42  H19 BGC A   1       3.046   2.889   1.167  1.00  0.00           H  
+HETATM   43  H20 BGC A   1       0.478   2.024   2.005  1.00  0.00           H  
+HETATM   44  H21 BGC A   1       1.803   0.210   1.687  1.00  0.00           H  
+HETATM   45  H22 BGC A   1       4.198  -0.152   1.791  1.00  0.00           H  
+CONECT    1    2   24
+CONECT    2    3   25   26
+CONECT    3    4   22   27
+CONECT    4    5
+CONECT    5    6   18   28
+CONECT    6    7
+CONECT    7    8   15   29
+CONECT    8    9   10   30
+CONECT    9   31
+CONECT   10   11   12   32
+CONECT   11   33
+CONECT   12   13   14   34
+CONECT   13   35
+CONECT   14   15
+CONECT   15   16   36
+CONECT   16   17   37   38
+CONECT   17   39
+CONECT   18   19   20   40
+CONECT   19   41
+CONECT   20   21   22   42
+CONECT   21   43
+CONECT   22   23   44
+CONECT   23   45
+END

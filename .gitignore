@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# project housekeeping
+.DS_Store
+
+# unpublished manuscript draft — do NOT publish to the public repo
+Energetics ms full draft*.pdf
+# browser-test artifacts
+.playwright-mcp/
+/verify-*.png
+/energetics-*.png

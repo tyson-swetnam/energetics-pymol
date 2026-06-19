@@ -1,0 +1,261 @@
+HETATM    1  O1  BGC A   1     -11.669   5.167  -1.621  1.00  0.00           O  
+HETATM    2  C1  BGC A   1     -12.978   5.119  -1.052  1.00  0.00           C  
+HETATM    3  C2  BGC A   1     -13.403   3.656  -0.885  1.00  0.00           C  
+HETATM    4  O2  BGC A   1     -12.430   3.051  -0.002  1.00  0.00           O  
+HETATM    5  C3  BGC A   1     -12.846   1.749   0.414  1.00  0.00           C  
+HETATM    6  O3  BGC A   1     -11.762   1.125   1.100  1.00  0.00           O  
+HETATM    7  C4  BGC A   1     -10.991   0.199   0.314  1.00  0.00           C  
+HETATM    8  C5  BGC A   1     -10.203   0.854  -0.842  1.00  0.00           C  
+HETATM    9  O4  BGC A   1     -11.090   1.345  -1.865  1.00  0.00           O  
+HETATM   10  C6  BGC A   1      -9.237  -0.137  -1.518  1.00  0.00           C  
+HETATM   11  O5  BGC A   1      -7.991   0.546  -1.758  1.00  0.00           O  
+HETATM   12  C7  BGC A   1      -9.034  -1.398  -0.662  1.00  0.00           C  
+HETATM   13  O6  BGC A   1      -7.908  -2.117  -1.183  1.00  0.00           O  
+HETATM   14  C8  BGC A   1      -7.789  -3.436  -0.616  1.00  0.00           C  
+HETATM   15  C9  BGC A   1      -7.201  -4.368  -1.695  1.00  0.00           C  
+HETATM   16  O7  BGC A   1      -7.505  -5.735  -1.386  1.00  0.00           O  
+HETATM   17  C10 BGC A   1      -5.684  -4.217  -1.844  1.00  0.00           C  
+HETATM   18  O8  BGC A   1      -5.367  -2.958  -2.455  1.00  0.00           O  
+HETATM   19  C11 BGC A   1      -5.018  -4.340  -0.459  1.00  0.00           C  
+HETATM   20  O9  BGC A   1      -3.596  -4.240  -0.634  1.00  0.00           O  
+HETATM   21  C12 BGC A   1      -2.877  -3.966   0.582  1.00  0.00           C  
+HETATM   22  C13 BGC A   1      -1.522  -4.680   0.451  1.00  0.00           C  
+HETATM   23  O10 BGC A   1      -1.694  -6.089   0.704  1.00  0.00           O  
+HETATM   24  C14 BGC A   1      -0.547  -4.107   1.472  1.00  0.00           C  
+HETATM   25  O11 BGC A   1       0.649  -4.894   1.548  1.00  0.00           O  
+HETATM   26  C15 BGC A   1      -0.282  -2.623   1.121  1.00  0.00           C  
+HETATM   27  O12 BGC A   1       0.855  -2.572   0.258  1.00  0.00           O  
+HETATM   28  C16 BGC A   1       1.644  -1.377   0.377  1.00  0.00           C  
+HETATM   29  C17 BGC A   1       3.023  -1.752  -0.173  1.00  0.00           C  
+HETATM   30  O13 BGC A   1       3.552  -2.888   0.541  1.00  0.00           O  
+HETATM   31  C18 BGC A   1       4.012  -0.590  -0.065  1.00  0.00           C  
+HETATM   32  O14 BGC A   1       5.088  -0.840  -0.991  1.00  0.00           O  
+HETATM   33  C19 BGC A   1       3.292   0.762  -0.300  1.00  0.00           C  
+HETATM   34  O15 BGC A   1       4.129   1.707  -0.974  1.00  0.00           O  
+HETATM   35  C20 BGC A   1       4.647   2.757  -0.142  1.00  0.00           C  
+HETATM   36  C21 BGC A   1       5.731   2.207   0.800  1.00  0.00           C  
+HETATM   37  O16 BGC A   1       5.119   1.761   2.025  1.00  0.00           O  
+HETATM   38  C22 BGC A   1       6.751   3.286   1.137  1.00  0.00           C  
+HETATM   39  O17 BGC A   1       7.705   2.791   2.095  1.00  0.00           O  
+HETATM   40  C23 BGC A   1       7.439   3.762  -0.154  1.00  0.00           C  
+HETATM   41  O18 BGC A   1       8.499   2.830  -0.399  1.00  0.00           O  
+HETATM   42  C24 BGC A   1       9.537   3.332  -1.256  1.00  0.00           C  
+HETATM   43  C25 BGC A   1      10.613   4.027  -0.400  1.00  0.00           C  
+HETATM   44  O19 BGC A   1      11.523   4.736  -1.248  1.00  0.00           O  
+HETATM   45  C26 BGC A   1      11.365   3.019   0.484  1.00  0.00           C  
+HETATM   46  O20 BGC A   1      10.517   2.563   1.551  1.00  0.00           O  
+HETATM   47  C27 BGC A   1      11.869   1.828  -0.369  1.00  0.00           C  
+HETATM   48  O21 BGC A   1      12.483   0.872   0.511  1.00  0.00           O  
+HETATM   49  C28 BGC A   1      12.933  -0.312  -0.159  1.00  0.00           C  
+HETATM   50  C29 BGC A   1      14.441  -0.449   0.098  1.00  0.00           C  
+HETATM   51  O22 BGC A   1      15.162   0.642  -0.501  1.00  0.00           O  
+HETATM   52  C30 BGC A   1      14.964  -1.762  -0.479  1.00  0.00           C  
+HETATM   53  O23 BGC A   1      16.358  -1.916  -0.182  1.00  0.00           O  
+HETATM   54  C31 BGC A   1      14.153  -2.934   0.100  1.00  0.00           C  
+HETATM   55  O24 BGC A   1      14.601  -4.157  -0.471  1.00  0.00           O  
+HETATM   56  O25 BGC A   1      12.772  -2.757  -0.203  1.00  0.00           O  
+HETATM   57  C32 BGC A   1      12.232  -1.563   0.402  1.00  0.00           C  
+HETATM   58  C33 BGC A   1      10.723  -1.569   0.142  1.00  0.00           C  
+HETATM   59  O26 BGC A   1      10.166  -2.782   0.660  1.00  0.00           O  
+HETATM   60  O27 BGC A   1      10.821   1.227  -1.124  1.00  0.00           O  
+HETATM   61  C34 BGC A   1      10.131   2.126  -2.015  1.00  0.00           C  
+HETATM   62  C35 BGC A   1      11.010   2.488  -3.229  1.00  0.00           C  
+HETATM   63  O28 BGC A   1      10.437   3.501  -4.044  1.00  0.00           O  
+HETATM   64  O29 BGC A   1       6.608   3.794  -1.306  1.00  0.00           O  
+HETATM   65  C36 BGC A   1       5.190   3.858  -1.084  1.00  0.00           C  
+HETATM   66  C37 BGC A   1       4.808   5.279  -0.633  1.00  0.00           C  
+HETATM   67  O30 BGC A   1       5.379   6.255  -1.508  1.00  0.00           O  
+HETATM   68  O31 BGC A   1       2.119   0.571  -1.101  1.00  0.00           O  
+HETATM   69  C38 BGC A   1       1.081  -0.196  -0.448  1.00  0.00           C  
+HETATM   70  C39 BGC A   1       0.176   0.757   0.353  1.00  0.00           C  
+HETATM   71  O32 BGC A   1       0.759   1.125   1.603  1.00  0.00           O  
+HETATM   72  O33 BGC A   1      -1.365  -2.023   0.416  1.00  0.00           O  
+HETATM   73  C40 BGC A   1      -2.689  -2.440   0.785  1.00  0.00           C  
+HETATM   74  C41 BGC A   1      -3.046  -1.998   2.219  1.00  0.00           C  
+HETATM   75  O34 BGC A   1      -2.855  -0.593   2.375  1.00  0.00           O  
+HETATM   76  O35 BGC A   1      -5.519  -3.356   0.441  1.00  0.00           O  
+HETATM   77  C42 BGC A   1      -6.933  -3.423   0.677  1.00  0.00           C  
+HETATM   78  C43 BGC A   1      -7.293  -4.579   1.626  1.00  0.00           C  
+HETATM   79  O36 BGC A   1      -8.666  -4.497   2.016  1.00  0.00           O  
+HETATM   80  O37 BGC A   1      -8.816  -1.013   0.685  1.00  0.00           O  
+HETATM   81  C44 BGC A   1      -9.985  -0.453   1.300  1.00  0.00           C  
+HETATM   82  C45 BGC A   1     -10.644  -1.516   2.193  1.00  0.00           C  
+HETATM   83  O38 BGC A   1     -10.880  -2.726   1.470  1.00  0.00           O  
+HETATM   84  C46 BGC A   1     -14.035   1.885   1.407  1.00  0.00           C  
+HETATM   85  O39 BGC A   1     -14.928   0.767   1.245  1.00  0.00           O  
+HETATM   86  C47 BGC A   1     -14.797   3.210   1.177  1.00  0.00           C  
+HETATM   87  O40 BGC A   1     -14.207   4.297   1.896  1.00  0.00           O  
+HETATM   88  C48 BGC A   1     -14.837   3.530  -0.326  1.00  0.00           C  
+HETATM   89  O41 BGC A   1     -15.512   2.441  -0.985  1.00  0.00           O  
+HETATM   90  H1  BGC A   1     -11.132   4.542  -1.094  1.00  0.00           H  
+HETATM   91  H2  BGC A   1     -12.935   5.641  -0.092  1.00  0.00           H  
+HETATM   92  H3  BGC A   1     -13.657   5.657  -1.719  1.00  0.00           H  
+HETATM   93  H4  BGC A   1     -13.314   3.152  -1.856  1.00  0.00           H  
+HETATM   94  H5  BGC A   1     -13.148   1.140  -0.448  1.00  0.00           H  
+HETATM   95  H6  BGC A   1     -11.678  -0.557  -0.089  1.00  0.00           H  
+HETATM   96  H7  BGC A   1      -9.671   1.733  -0.456  1.00  0.00           H  
+HETATM   97  H8  BGC A   1     -10.528   1.870  -2.468  1.00  0.00           H  
+HETATM   98  H9  BGC A   1      -9.593  -0.439  -2.510  1.00  0.00           H  
+HETATM   99  H10 BGC A   1      -7.298  -0.146  -1.705  1.00  0.00           H  
+HETATM  100  H11 BGC A   1      -9.926  -2.030  -0.750  1.00  0.00           H  
+HETATM  101  H12 BGC A   1      -8.797  -3.803  -0.386  1.00  0.00           H  
+HETATM  102  H13 BGC A   1      -7.669  -4.139  -2.661  1.00  0.00           H  
+HETATM  103  H14 BGC A   1      -8.459  -5.863  -1.546  1.00  0.00           H  
+HETATM  104  H15 BGC A   1      -5.277  -5.001  -2.495  1.00  0.00           H  
+HETATM  105  H16 BGC A   1      -5.603  -3.015  -3.396  1.00  0.00           H  
+HETATM  106  H17 BGC A   1      -5.203  -5.336  -0.040  1.00  0.00           H  
+HETATM  107  H18 BGC A   1      -3.434  -4.412   1.418  1.00  0.00           H  
+HETATM  108  H19 BGC A   1      -1.111  -4.603  -0.563  1.00  0.00           H  
+HETATM  109  H20 BGC A   1      -2.236  -6.416  -0.039  1.00  0.00           H  
+HETATM  110  H21 BGC A   1      -1.004  -4.176   2.466  1.00  0.00           H  
+HETATM  111  H22 BGC A   1       0.355  -5.817   1.408  1.00  0.00           H  
+HETATM  112  H23 BGC A   1      -0.084  -2.069   2.046  1.00  0.00           H  
+HETATM  113  H24 BGC A   1       1.763  -1.134   1.440  1.00  0.00           H  
+HETATM  114  H25 BGC A   1       2.933  -2.085  -1.215  1.00  0.00           H  
+HETATM  115  H26 BGC A   1       2.802  -3.517   0.608  1.00  0.00           H  
+HETATM  116  H27 BGC A   1       4.485  -0.574   0.923  1.00  0.00           H  
+HETATM  117  H28 BGC A   1       5.406  -1.738  -0.781  1.00  0.00           H  
+HETATM  118  H29 BGC A   1       2.968   1.170   0.661  1.00  0.00           H  
+HETATM  119  H30 BGC A   1       3.801   3.167   0.424  1.00  0.00           H  
+HETATM  120  H31 BGC A   1       6.229   1.331   0.371  1.00  0.00           H  
+HETATM  121  H32 BGC A   1       5.865   1.589   2.635  1.00  0.00           H  
+HETATM  122  H33 BGC A   1       6.239   4.117   1.635  1.00  0.00           H  
+HETATM  123  H34 BGC A   1       8.370   2.283   1.571  1.00  0.00           H  
+HETATM  124  H35 BGC A   1       7.860   4.759   0.017  1.00  0.00           H  
+HETATM  125  H36 BGC A   1       9.107   4.036  -1.978  1.00  0.00           H  
+HETATM  126  H37 BGC A   1      10.127   4.767   0.247  1.00  0.00           H  
+HETATM  127  H38 BGC A   1      11.973   5.407  -0.701  1.00  0.00           H  
+HETATM  128  H39 BGC A   1      12.235   3.491   0.957  1.00  0.00           H  
+HETATM  129  H40 BGC A   1      10.386   3.293   2.181  1.00  0.00           H  
+HETATM  130  H41 BGC A   1      12.654   2.180  -1.047  1.00  0.00           H  
+HETATM  131  H42 BGC A   1      12.781  -0.242  -1.245  1.00  0.00           H  
+HETATM  132  H43 BGC A   1      14.660  -0.394   1.172  1.00  0.00           H  
+HETATM  133  H44 BGC A   1      14.843   1.444  -0.048  1.00  0.00           H  
+HETATM  134  H45 BGC A   1      14.882  -1.751  -1.573  1.00  0.00           H  
+HETATM  135  H46 BGC A   1      16.766  -1.062  -0.432  1.00  0.00           H  
+HETATM  136  H47 BGC A   1      14.296  -3.020   1.184  1.00  0.00           H  
+HETATM  137  H48 BGC A   1      15.522  -3.997  -0.750  1.00  0.00           H  
+HETATM  138  H49 BGC A   1      12.380  -1.635   1.489  1.00  0.00           H  
+HETATM  139  H50 BGC A   1      10.504  -1.545  -0.931  1.00  0.00           H  
+HETATM  140  H51 BGC A   1      10.222  -0.731   0.634  1.00  0.00           H  
+HETATM  141  H52 BGC A   1      10.725  -3.497   0.297  1.00  0.00           H  
+HETATM  142  H53 BGC A   1       9.281   1.550  -2.403  1.00  0.00           H  
+HETATM  143  H54 BGC A   1      12.018   2.805  -2.951  1.00  0.00           H  
+HETATM  144  H55 BGC A   1      11.146   1.593  -3.846  1.00  0.00           H  
+HETATM  145  H56 BGC A   1      10.705   4.357  -3.663  1.00  0.00           H  
+HETATM  146  H57 BGC A   1       4.754   3.722  -2.082  1.00  0.00           H  
+HETATM  147  H58 BGC A   1       3.722   5.409  -0.637  1.00  0.00           H  
+HETATM  148  H59 BGC A   1       5.173   5.508   0.370  1.00  0.00           H  
+HETATM  149  H60 BGC A   1       6.018   5.787  -2.080  1.00  0.00           H  
+HETATM  150  H61 BGC A   1       0.471  -0.591  -1.270  1.00  0.00           H  
+HETATM  151  H62 BGC A   1      -0.793   0.303   0.565  1.00  0.00           H  
+HETATM  152  H63 BGC A   1       0.006   1.679  -0.215  1.00  0.00           H  
+HETATM  153  H64 BGC A   1       0.098   1.679   2.054  1.00  0.00           H  
+HETATM  154  H65 BGC A   1      -3.348  -1.891   0.102  1.00  0.00           H  
+HETATM  155  H66 BGC A   1      -4.093  -2.228   2.439  1.00  0.00           H  
+HETATM  156  H67 BGC A   1      -2.420  -2.492   2.966  1.00  0.00           H  
+HETATM  157  H68 BGC A   1      -3.273  -0.337   3.215  1.00  0.00           H  
+HETATM  158  H69 BGC A   1      -7.149  -2.507   1.230  1.00  0.00           H  
+HETATM  159  H70 BGC A   1      -7.120  -5.557   1.169  1.00  0.00           H  
+HETATM  160  H71 BGC A   1      -6.671  -4.527   2.526  1.00  0.00           H  
+HETATM  161  H72 BGC A   1      -8.812  -5.221   2.655  1.00  0.00           H  
+HETATM  162  H73 BGC A   1      -9.619   0.332   1.976  1.00  0.00           H  
+HETATM  163  H74 BGC A   1      -9.986  -1.761   3.035  1.00  0.00           H  
+HETATM  164  H75 BGC A   1     -11.596  -1.162   2.600  1.00  0.00           H  
+HETATM  165  H76 BGC A   1     -10.095  -3.294   1.633  1.00  0.00           H  
+HETATM  166  H77 BGC A   1     -13.669   1.844   2.440  1.00  0.00           H  
+HETATM  167  H78 BGC A   1     -15.401   0.914   0.399  1.00  0.00           H  
+HETATM  168  H79 BGC A   1     -15.824   3.098   1.544  1.00  0.00           H  
+HETATM  169  H80 BGC A   1     -13.237   4.186   1.860  1.00  0.00           H  
+HETATM  170  H81 BGC A   1     -15.418   4.439  -0.518  1.00  0.00           H  
+HETATM  171  H82 BGC A   1     -15.685   2.721  -1.904  1.00  0.00           H  
+CONECT    1    2   90
+CONECT    2    3   91   92
+CONECT    3    4   88   93
+CONECT    4    5
+CONECT    5    6   84   94
+CONECT    6    7
+CONECT    7    8   81   95
+CONECT    8    9   10   96
+CONECT    9   97
+CONECT   10   11   12   98
+CONECT   11   99
+CONECT   12   13   80  100
+CONECT   13   14
+CONECT   14   15   77  101
+CONECT   15   16   17  102
+CONECT   16  103
+CONECT   17   18   19  104
+CONECT   18  105
+CONECT   19   20   76  106
+CONECT   20   21
+CONECT   21   22   73  107
+CONECT   22   23   24  108
+CONECT   23  109
+CONECT   24   25   26  110
+CONECT   25  111
+CONECT   26   27   72  112
+CONECT   27   28
+CONECT   28   29   69  113
+CONECT   29   30   31  114
+CONECT   30  115
+CONECT   31   32   33  116
+CONECT   32  117
+CONECT   33   34   68  118
+CONECT   34   35
+CONECT   35   36   65  119
+CONECT   36   37   38  120
+CONECT   37  121
+CONECT   38   39   40  122
+CONECT   39  123
+CONECT   40   41   64  124
+CONECT   41   42
+CONECT   42   43   61  125
+CONECT   43   44   45  126
+CONECT   44  127
+CONECT   45   46   47  128
+CONECT   46  129
+CONECT   47   48   60  130
+CONECT   48   49
+CONECT   49   50   57  131
+CONECT   50   51   52  132
+CONECT   51  133
+CONECT   52   53   54  134
+CONECT   53  135
+CONECT   54   55   56  136
+CONECT   55  137
+CONECT   56   57
+CONECT   57   58  138
+CONECT   58   59  139  140
+CONECT   59  141
+CONECT   60   61
+CONECT   61   62  142
+CONECT   62   63  143  144
+CONECT   63  145
+CONECT   64   65
+CONECT   65   66  146
+CONECT   66   67  147  148
+CONECT   67  149
+CONECT   68   69
+CONECT   69   70  150
+CONECT   70   71  151  152
+CONECT   71  153
+CONECT   72   73
+CONECT   73   74  154
+CONECT   74   75  155  156
+CONECT   75  157
+CONECT   76   77
+CONECT   77   78  158
+CONECT   78   79  159  160
+CONECT   79  161
+CONECT   80   81
+CONECT   81   82  162
+CONECT   82   83  163  164
+CONECT   83  165
+CONECT   84   85   86  166
+CONECT   85  167
+CONECT   86   87   88  168
+CONECT   87  169
+CONECT   88   89  170
+CONECT   89  171
+END

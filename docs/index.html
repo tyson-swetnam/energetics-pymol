@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Energetics — the molecules that store a forest's energy</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolygon points='20,4 33,12 33,28 20,36 7,28 7,12' fill='none' stroke='%236f6555' stroke-width='2'/%3E%3Ccircle cx='20' cy='21' r='7.5' fill='%23e0712d'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%2316130f'/%3E%3Ccircle cx='20' cy='20' r='9' fill='%23e0712d'/%3E%3C/svg%3E">
+<meta name="description" content="Interactive 3D models of the molecules that store chemical-bond energy in woody biomass — cellulose, hemicellulose, lignin and more — for the manuscript 'Ecosystems as energy fields'.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Mol* (RCSB/PDBe-grade WebGL viewer) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/molstar@5.10.1/build/viewer/molstar.css">
+<script src="https://cdn.jsdelivr.net/npm/molstar@5.10.1/build/viewer/molstar.js"></script>
+<!-- 3Dmol.js (lightweight small-molecule viewer) -->
+<script src="https://cdn.jsdelivr.net/npm/3dmol@2.5.5/build/3Dmol-min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-viewer-bg="dark">
+
+<header class="topbar">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <defs>
+        <radialGradient id="ember" cx="50%" cy="58%" r="60%">
+          <stop offset="0%" stop-color="#f6c64b"/>
+          <stop offset="45%" stop-color="#e0712d"/>
+          <stop offset="100%" stop-color="#7c2d12"/>
+        </radialGradient>
+      </defs>
+      <polygon points="20,4 33,12 33,28 20,36 7,28 7,12" fill="none" stroke="#6f6555" stroke-width="1.6"/>
+      <circle cx="20" cy="21" r="7.5" fill="url(#ember)"/>
+      <circle cx="20" cy="21" r="7.5" fill="none" stroke="#f6c64b" stroke-width="0.6" opacity="0.6"/>
+    </svg>
+    <div class="brand-text">
+      <h1>Energetics</h1>
+      <p id="subtitle">The molecules that store a forest's energy</p>
+    </div>
+  </div>
+  <div class="topbar-meta">
+    <span class="meta-stat" id="metaStat"></span>
+    <a class="paper-link" id="paperLink" href="#about">Ecosystems as energy fields ↗</a>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Filter molecules…" autocomplete="off" spellcheck="false">
+    </div>
+    <nav class="nav" id="nav" aria-label="Molecule catalog"></nav>
+    <p class="sidebar-foot">Sorted low→high energy. <span class="legend-swatch"></span> energy density.</p>
+  </aside>
+
+  <section class="stage" id="stage">
+    <div class="stage-head">
+      <div class="mol-id">
+        <h2 id="molName">Select a molecule</h2>
+        <div class="mol-sub">
+          <span id="molFormula" class="formula"></span>
+          <span id="molTag" class="tag"></span>
+        </div>
+      </div>
+      <div class="engine-toggle" role="group" aria-label="Viewer engine">
+        <button id="engMolstar" class="eng" data-engine="molstar" aria-pressed="true">Mol*</button>
+        <button id="eng3dmol" class="eng" data-engine="threedmol" aria-pressed="false">3Dmol</button>
+      </div>
+    </div>
+
+    <div class="viewport" id="viewport">
+      <div class="viewport-empty" id="viewportEmpty">
+        <svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path fill="currentColor" d="M12 2 4 6v8l8 4 8-4V6l-8-4Zm0 2.2 5.5 2.8L12 9.8 6.5 7 12 4.2ZM6 8.6l5 2.5v5.6l-5-2.5V8.6Zm12 0v5.6l-5 2.5v-5.6l5-2.5Z"/></svg>
+        <p>Choose a molecule from the left to inspect it in 3D.</p>
+      </div>
+    </div>
+
+    <div class="stage-controls">
+      <button id="ctlSpin" class="ctl" aria-pressed="false">Spin</button>
+      <button id="ctlReset" class="ctl">Reset view</button>
+      <button id="ctlBg" class="ctl">Light background</button>
+      <a id="ctlPdb" class="ctl" download>Download .pdb</a>
+      <span class="ctl-hint" id="engineHint">Drag to rotate · scroll to zoom</span>
+    </div>
+
+    <div class="readout" id="readout" hidden>
+      <div class="energy">
+        <div class="energy-head">
+          <label>Approx. higher heating value</label>
+          <span class="hhv-num" id="hhvNum"></span>
+        </div>
+        <div class="gauge" id="gauge">
+          <div class="gauge-fill" id="gaugeFill"></div>
+          <div class="gauge-ref" id="gaugeRef" title="whole-tree mean"></div>
+        </div>
+        <p class="gauge-cap" id="gaugeCap"></p>
+      </div>
+      <dl class="facts" id="facts"></dl>
+      <p class="note" id="molNote"></p>
+    </div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

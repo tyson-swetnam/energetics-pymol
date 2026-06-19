@@ -12,9 +12,10 @@
       "Lignin",
       "Combustion",
       "Fats",
-      "Extractives"
+      "Extractives",
+      "Fossil carbon"
     ],
-    "count": 33
+    "count": 40
   },
   "molecules": [
     {
@@ -511,6 +512,111 @@
       "hhvKind": "fuel",
       "pdb": "pdb/abietic_acid.pdb",
       "img": "img/abietic_acid.png"
+    },
+    {
+      "id": "charcoal",
+      "name": "Charcoal \u2014 polycyclic aromatic cluster",
+      "resname": "CHA",
+      "category": "Fossil carbon",
+      "formula": "C24H12",
+      "smiles": "c1cc2ccc3ccc4ccc5ccc6ccc1c1c2c3c4c5c61",
+      "note": "Representative model: coronene, a small graphene-like fused-aromatic sheet. Real charcoal/pyrogenic carbon is defect-rich, polydisperse fused aromatic clusters with residual O and ash.",
+      "size": "na",
+      "showH": false,
+      "hhv": 33.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/charcoal.pdb",
+      "img": "img/charcoal.png"
+    },
+    {
+      "id": "lignite",
+      "name": "Lignite \u2014 O-rich coal fragment",
+      "resname": "LGN",
+      "category": "Fossil carbon",
+      "formula": "C17H18O7",
+      "smiles": "COc1cc(C(=O)O)ccc1OCC(O)c1ccc(O)c(OC)c1",
+      "note": "Representative model: lowest-rank coal, still lignin-derived \u2014 small aromatics with methoxyl, phenol, carboxyl and ether/aliphatic bridges (high O/C). The O-rich end of the rank series.",
+      "size": "na",
+      "showH": false,
+      "hhv": 24.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/lignite.pdb",
+      "img": "img/lignite.png"
+    },
+    {
+      "id": "sub_bituminous",
+      "name": "Sub-bituminous \u2014 intermediate coal fragment",
+      "resname": "SBC",
+      "category": "Fossil carbon",
+      "formula": "C18H14O",
+      "smiles": "CCc1ccc2ccc3c(O)ccc4ccc1c2c34",
+      "note": "Representative model: a hydroxy-pyrene with a short alkyl chain \u2014 larger aromatic unit and far less oxygen than lignite, sitting between lignite and bituminous in rank.",
+      "size": "na",
+      "showH": false,
+      "hhv": 28.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/sub_bituminous.pdb",
+      "img": "img/sub_bituminous.png"
+    },
+    {
+      "id": "bituminous",
+      "name": "Bituminous \u2014 classic coal model fragment",
+      "resname": "BIT",
+      "category": "Fossil carbon",
+      "formula": "C29H24O",
+      "smiles": "CC1Cc2ccc3ccc4cc5ccccc5cc4c3c2C1Cc1ccc(O)cc1",
+      "note": "Representative model (Shinn/Wiser-style): fused aromatic clusters linked by short methylene bridges with a hydroaromatic ring and trace oxygen \u2014 the hallmark mid-rank coal motif.",
+      "size": "na",
+      "showH": false,
+      "hhv": 33.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/bituminous.pdb",
+      "img": "img/bituminous.png"
+    },
+    {
+      "id": "anthracite",
+      "name": "Anthracite \u2014 near-graphitic aromatic sheet",
+      "resname": "ANT",
+      "category": "Fossil carbon",
+      "formula": "C38H16",
+      "smiles": "c1cc2ccc3ccc4ccc5ccc6ccc7ccc8ccc1c1c2c2c3c4c3c5c6c4c7c8c1c2c34",
+      "note": "Representative model: a large peri-fused PAH (circumcoronene class) \u2014 highest-rank coal, near-pure fused aromatic carbon approaching graphite (minimal H, ~no O).",
+      "size": "na",
+      "showH": false,
+      "hhv": 34.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/anthracite.pdb",
+      "img": "img/anthracite.png"
+    },
+    {
+      "id": "kerogen",
+      "name": "Kerogen \u2014 Type II (marine) fragment",
+      "resname": "KER",
+      "category": "Fossil carbon",
+      "formula": "C26H28OS",
+      "smiles": "CCCCCc1cc2ccc3ccc4sc(C(=O)CCCC)cc4c3c2cc1",
+      "note": "Representative model: a fused-aromatic core with aliphatic chains, a thiophene (organic sulfur) and a carbonyl \u2014 the insoluble organic matter that cracks to petroleum on burial.",
+      "size": "na",
+      "showH": false,
+      "hhv": 30.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/kerogen.pdb",
+      "img": "img/kerogen.png"
+    },
+    {
+      "id": "crude_oil",
+      "name": "Crude oil \u2014 island asphaltene archetype",
+      "resname": "OIL",
+      "category": "Fossil carbon",
+      "formula": "C42H48",
+      "smiles": "CCCCCCc1cc2ccc3c(CCCCCC)cc4ccc5c(CCCCCC)cc6ccc1c1c6c5c4c3c21",
+      "note": "Representative model: a 'continental/island' asphaltene (Yen-Mullins) \u2014 a polycyclic aromatic core with alkyl chains, the canonical heavy molecule of crude oil (a complex mixture).",
+      "size": "na",
+      "showH": false,
+      "hhv": 44.0,
+      "hhvKind": "fuel",
+      "pdb": "pdb/crude_oil.pdb",
+      "img": "img/crude_oil.png"
     }
   ]
 }

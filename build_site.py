@@ -41,11 +41,15 @@ HHV_BY_CATEGORY = {
     "Lignin": 26.5,
     "Fats": 39.5,
     "Extractives": 40.0,
+    "Fossil carbon": 32.0,   # energy-dense reduced carbon (dry/model basis); approx.
 }
 HHV_OVERRIDE = {
     "bdglc": 15.6, "glc_open": 15.6, "bdxyl": 15.0, "alaraf": 15.0, "meglca": 14.0,
     "oleic_acid": 39.3, "palmitic_acid": 39.0, "triolein": 39.6, "tripalmitin": 39.1,
     "alpha_pinene": 44.0, "beta_pinene": 44.0, "abietic_acid": 36.5,
+    # fossil carbon (approx., dry/dmmf or model basis; coalification concentrates energy)
+    "charcoal": 33.0, "lignite": 24.0, "sub_bituminous": 28.0, "bituminous": 33.0,
+    "anthracite": 34.0, "kerogen": 30.0, "crude_oil": 44.0,
 }
 # Combustion molecules are not fuels:
 HHV_KIND = {"o2": "oxidant", "co2": "product", "h2o": "product"}

@@ -51,7 +51,7 @@ body{{background:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif
   <div style="font-size:30px;line-height:1.4;color:#1a1a1a;margin:0 4px 22px;width:1540px;">
     <span style="font-weight:700;">Figure A.</span> Molecular diagrams of cellulose, hemicellulose, and lignin&mdash;the most abundant molecules in woody biomass.
   </div>
-  <div style="position:relative;width:1600px;height:1180px;border:1px solid #c9c6bf;background:#ffffff;overflow:hidden;">
+  <div style="position:relative;width:1600px;height:1240px;border:1px solid #c9c6bf;background:#ffffff;overflow:hidden;">
     <svg viewBox="0 0 1600 1180" width="1600" height="1180" style="position:absolute;top:0;left:0;pointer-events:none;z-index:1;">
       <defs><marker id="ah" markerWidth="10" markerHeight="10" refX="6.5" refY="3.4" orient="auto">
         <path d="M0,0 L7.4,3.4 L0,6.8 Z" fill="#8a6a4a"></path></marker></defs>
@@ -74,7 +74,7 @@ body{{background:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif
       <div style="position:absolute;left:116px;top:102px;transform:translate(-50%,-50%);text-align:center;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.6);">
         <div style="font-size:26px;font-weight:700;">Lignin</div><div style="font-size:21px;font-weight:500;">15&ndash;25%</div></div>
     </div>
-    <div style="position:absolute;left:30px;top:110px;width:472px;height:440px;border:1px solid #ddd9d1;border-top:4px solid #5E3A1E;background:#fcfbf9;padding:16px 18px;z-index:2;">
+    <div style="position:absolute;left:30px;top:110px;width:472px;height:486px;border:1px solid #ddd9d1;border-top:4px solid #5E3A1E;background:#fcfbf9;padding:16px 18px;z-index:2;">
       <div style="display:flex;align-items:baseline;gap:11px;"><span style="width:13px;height:13px;border-radius:50%;background:#5E3A1E;display:inline-block;"></span>
         <span style="font-size:33px;font-weight:700;color:#2a1c10;">Lignin</span>
         <span style="font-size:21px;font-weight:600;color:#5E3A1E;background:#f0e7dd;padding:3px 10px;border-radius:11px;">15&ndash;25%</span></div>
@@ -86,9 +86,9 @@ body{{background:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif
           <div style="font-family:Menlo,Consolas,monospace;font-size:19px;color:#8a7a64;text-align:center;">&beta;-5 phenylcoumaran</div></div>
         <div style="flex:1;"><div style="height:112px;"><img src="assets/coniferyl.png" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
           <div style="font-family:Menlo,Consolas,monospace;font-size:19px;color:#8a7a64;text-align:center;">coniferyl alcohol &mdash; monomer</div></div></div>
-      <div style="font-size:21px;font-style:italic;color:#6a5a45;margin-top:9px;">Cross-links via &beta;-O-4, &beta;-5 and &beta;&ndash;&beta; bonds.</div>
+      <div style="font-size:19px;font-style:italic;color:#6a5a45;margin-top:8px;">Cross-links via &beta;-O-4, &beta;-5 and &beta;&ndash;&beta; bonds.</div>
     </div>
-    <div style="position:absolute;left:1098px;top:110px;width:472px;height:440px;border:1px solid #ddd9d1;border-top:4px solid #A9712F;background:#fcfbf9;padding:16px 18px;z-index:2;">
+    <div style="position:absolute;left:1098px;top:110px;width:472px;height:486px;border:1px solid #ddd9d1;border-top:4px solid #A9712F;background:#fcfbf9;padding:16px 18px;z-index:2;">
       <div style="display:flex;align-items:baseline;gap:11px;"><span style="width:13px;height:13px;border-radius:50%;background:#A9712F;display:inline-block;"></span>
         <span style="font-size:33px;font-weight:700;color:#2a1c10;">Hemicellulose</span>
         <span style="font-size:21px;font-weight:600;color:#8a5a24;background:#f4ebe0;padding:3px 10px;border-radius:11px;">23&ndash;32%</span></div>
@@ -97,17 +97,17 @@ body{{background:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif
       <div style="font-family:Menlo,Consolas,monospace;font-size:19px;color:#8a7a64;text-align:center;margin-bottom:8px;">galactoglucomannan</div>
       <div style="height:104px;"><img src="assets/agx_compact.png" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
       <div style="font-family:Menlo,Consolas,monospace;font-size:19px;color:#8a7a64;text-align:center;">arabinoglucuronoxylan</div>
-      <div style="font-size:21px;font-style:italic;color:#6a5a45;margin-top:9px;">&beta;-(1&rarr;4) backbone with galactose, arabinose &amp; glucuronic-acid side groups.</div>
+      <div style="font-size:19px;font-style:italic;color:#6a5a45;margin-top:8px;">&beta;-(1&rarr;4) backbone with galactose, arabinose &amp; glucuronic-acid side groups.</div>
     </div>
-    <div style="position:absolute;left:360px;top:840px;width:880px;height:320px;border:1px solid #ddd9d1;border-top:4px solid #C68A4A;background:#fcfbf9;padding:16px 20px;z-index:2;">
+    <div style="position:absolute;left:360px;top:852px;width:880px;height:360px;border:1px solid #ddd9d1;border-top:4px solid #C68A4A;background:#fcfbf9;padding:16px 20px;z-index:2;">
       <div style="display:flex;align-items:baseline;gap:11px;"><span style="width:13px;height:13px;border-radius:50%;background:#C68A4A;display:inline-block;"></span>
         <span style="font-size:33px;font-weight:700;color:#2a1c10;">Cellulose</span>
         <span style="font-size:21px;font-weight:600;color:#9a6a2a;background:#f6efe4;padding:3px 10px;border-radius:11px;">38&ndash;50%</span></div>
       <div style="font-size:21px;color:#7a6a55;margin:6px 0 10px 24px;">Linear, crystalline glucan chains</div>
       <div style="display:flex;gap:28px;align-items:center;">
-        <div style="flex:1;"><div style="height:160px;"><img src="assets/cellohexaose.png" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
+        <div style="flex:1;"><div style="height:140px;"><img src="assets/cellohexaose.png" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
           <div style="font-family:Menlo,Consolas,monospace;font-size:19px;color:#8a7a64;text-align:center;">cellohexaose (DP 6)</div></div>
-        <div style="flex:1;"><div style="height:160px;"><img src="assets/cellooctaose.png" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
+        <div style="flex:1;"><div style="height:140px;"><img src="assets/cellooctaose.png" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
           <div style="font-family:Menlo,Consolas,monospace;font-size:19px;color:#8a7a64;text-align:center;">cellooctaose (DP 8)</div></div></div>
       <div style="font-size:21px;font-style:italic;color:#6a5a45;margin-top:8px;text-align:center;">Linear &beta;-(1&rarr;4)-D-glucan; hydrogen-bonds into crystalline microfibrils.</div>
     </div>

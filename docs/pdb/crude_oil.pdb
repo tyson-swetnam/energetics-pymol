@@ -1,0 +1,132 @@
+HETATM    1  C1  OIL A   1      -6.910  -6.009   2.649  1.00  0.00           C  
+HETATM    2  C2  OIL A   1      -6.278  -5.187   1.535  1.00  0.00           C  
+HETATM    3  C3  OIL A   1      -5.656  -6.085   0.464  1.00  0.00           C  
+HETATM    4  C4  OIL A   1      -5.109  -5.310  -0.737  1.00  0.00           C  
+HETATM    5  C5  OIL A   1      -3.914  -4.418  -0.393  1.00  0.00           C  
+HETATM    6  C6  OIL A   1      -3.341  -3.755  -1.649  1.00  0.00           C  
+HETATM    7  C7  OIL A   1      -2.163  -2.856  -1.326  1.00  0.00           C  
+HETATM    8  C8  OIL A   1      -0.878  -3.408  -1.447  1.00  0.00           C  
+HETATM    9  C9  OIL A   1       0.267  -2.660  -1.163  1.00  0.00           C  
+HETATM   10  C10 OIL A   1       1.532  -3.232  -1.297  1.00  0.00           C  
+HETATM   11  C11 OIL A   1       2.677  -2.489  -1.019  1.00  0.00           C  
+HETATM   12  C12 OIL A   1       2.604  -1.147  -0.599  1.00  0.00           C  
+HETATM   13  C13 OIL A   1       3.754  -0.367  -0.316  1.00  0.00           C  
+HETATM   14  C14 OIL A   1       5.169  -0.901  -0.432  1.00  0.00           C  
+HETATM   15  C15 OIL A   1       5.604  -1.640   0.837  1.00  0.00           C  
+HETATM   16  C16 OIL A   1       6.978  -2.305   0.710  1.00  0.00           C  
+HETATM   17  C17 OIL A   1       8.121  -1.302   0.532  1.00  0.00           C  
+HETATM   18  C18 OIL A   1       9.507  -1.946   0.623  1.00  0.00           C  
+HETATM   19  C19 OIL A   1       9.792  -2.933  -0.498  1.00  0.00           C  
+HETATM   20  C20 OIL A   1       3.598   0.959   0.116  1.00  0.00           C  
+HETATM   21  C21 OIL A   1       2.333   1.535   0.261  1.00  0.00           C  
+HETATM   22  C22 OIL A   1       2.207   2.857   0.686  1.00  0.00           C  
+HETATM   23  C23 OIL A   1       0.949   3.437   0.833  1.00  0.00           C  
+HETATM   24  C24 OIL A   1      -0.231   2.718   0.563  1.00  0.00           C  
+HETATM   25  C25 OIL A   1      -1.524   3.282   0.709  1.00  0.00           C  
+HETATM   26  C26 OIL A   1      -1.761   4.711   1.156  1.00  0.00           C  
+HETATM   27  C27 OIL A   1      -1.666   5.698  -0.012  1.00  0.00           C  
+HETATM   28  C28 OIL A   1      -1.916   7.133   0.458  1.00  0.00           C  
+HETATM   29  C29 OIL A   1      -1.724   8.177  -0.647  1.00  0.00           C  
+HETATM   30  C30 OIL A   1      -2.635   8.029  -1.867  1.00  0.00           C  
+HETATM   31  C31 OIL A   1      -4.117   8.104  -1.534  1.00  0.00           C  
+HETATM   32  C32 OIL A   1      -2.653   2.505   0.408  1.00  0.00           C  
+HETATM   33  C33 OIL A   1      -2.533   1.180  -0.021  1.00  0.00           C  
+HETATM   34  C34 OIL A   1      -3.673   0.428  -0.306  1.00  0.00           C  
+HETATM   35  C35 OIL A   1      -3.560  -0.894  -0.732  1.00  0.00           C  
+HETATM   36  C36 OIL A   1      -2.306  -1.514  -0.892  1.00  0.00           C  
+HETATM   37  C37 OIL A   1      -1.142  -0.747  -0.600  1.00  0.00           C  
+HETATM   38  C38 OIL A   1      -1.257   0.599  -0.165  1.00  0.00           C  
+HETATM   39  C39 OIL A   1      -0.104   1.369   0.126  1.00  0.00           C  
+HETATM   40  C40 OIL A   1       1.178   0.778  -0.024  1.00  0.00           C  
+HETATM   41  C41 OIL A   1       1.313  -0.564  -0.455  1.00  0.00           C  
+HETATM   42  C42 OIL A   1       0.146  -1.321  -0.739  1.00  0.00           C  
+HETATM   43  H1  OIL A   1      -7.706  -6.651   2.260  1.00  0.00           H  
+HETATM   44  H2  OIL A   1      -6.165  -6.643   3.139  1.00  0.00           H  
+HETATM   45  H3  OIL A   1      -7.345  -5.349   3.406  1.00  0.00           H  
+HETATM   46  H4  OIL A   1      -5.517  -4.533   1.973  1.00  0.00           H  
+HETATM   47  H5  OIL A   1      -7.043  -4.545   1.084  1.00  0.00           H  
+HETATM   48  H6  OIL A   1      -6.418  -6.787   0.100  1.00  0.00           H  
+HETATM   49  H7  OIL A   1      -4.856  -6.691   0.907  1.00  0.00           H  
+HETATM   50  H8  OIL A   1      -4.804  -6.036  -1.501  1.00  0.00           H  
+HETATM   51  H9  OIL A   1      -5.909  -4.704  -1.179  1.00  0.00           H  
+HETATM   52  H10 OIL A   1      -3.137  -5.018   0.097  1.00  0.00           H  
+HETATM   53  H11 OIL A   1      -4.218  -3.649   0.326  1.00  0.00           H  
+HETATM   54  H12 OIL A   1      -4.113  -3.191  -2.185  1.00  0.00           H  
+HETATM   55  H13 OIL A   1      -3.021  -4.531  -2.357  1.00  0.00           H  
+HETATM   56  H14 OIL A   1      -0.774  -4.443  -1.769  1.00  0.00           H  
+HETATM   57  H15 OIL A   1       1.643  -4.264  -1.619  1.00  0.00           H  
+HETATM   58  H16 OIL A   1       3.635  -2.989  -1.138  1.00  0.00           H  
+HETATM   59  H17 OIL A   1       5.262  -1.544  -1.314  1.00  0.00           H  
+HETATM   60  H18 OIL A   1       5.849  -0.061  -0.625  1.00  0.00           H  
+HETATM   61  H19 OIL A   1       4.872  -2.420   1.082  1.00  0.00           H  
+HETATM   62  H20 OIL A   1       5.608  -0.948   1.689  1.00  0.00           H  
+HETATM   63  H21 OIL A   1       7.157  -2.896   1.616  1.00  0.00           H  
+HETATM   64  H22 OIL A   1       6.959  -3.008  -0.130  1.00  0.00           H  
+HETATM   65  H23 OIL A   1       8.049  -0.532   1.311  1.00  0.00           H  
+HETATM   66  H24 OIL A   1       8.028  -0.789  -0.432  1.00  0.00           H  
+HETATM   67  H25 OIL A   1       9.623  -2.449   1.590  1.00  0.00           H  
+HETATM   68  H26 OIL A   1      10.262  -1.151   0.588  1.00  0.00           H  
+HETATM   69  H27 OIL A   1       9.138  -3.808  -0.438  1.00  0.00           H  
+HETATM   70  H28 OIL A   1      10.825  -3.287  -0.433  1.00  0.00           H  
+HETATM   71  H29 OIL A   1       9.655  -2.465  -1.478  1.00  0.00           H  
+HETATM   72  H30 OIL A   1       4.484   1.550   0.343  1.00  0.00           H  
+HETATM   73  H31 OIL A   1       3.088   3.455   0.908  1.00  0.00           H  
+HETATM   74  H32 OIL A   1       0.913   4.471   1.163  1.00  0.00           H  
+HETATM   75  H33 OIL A   1      -1.063   4.979   1.958  1.00  0.00           H  
+HETATM   76  H34 OIL A   1      -2.756   4.787   1.616  1.00  0.00           H  
+HETATM   77  H35 OIL A   1      -2.400   5.421  -0.778  1.00  0.00           H  
+HETATM   78  H36 OIL A   1      -0.678   5.635  -0.483  1.00  0.00           H  
+HETATM   79  H37 OIL A   1      -2.923   7.215   0.882  1.00  0.00           H  
+HETATM   80  H38 OIL A   1      -1.219   7.369   1.271  1.00  0.00           H  
+HETATM   81  H39 OIL A   1      -0.681   8.147  -0.986  1.00  0.00           H  
+HETATM   82  H40 OIL A   1      -1.876   9.172  -0.210  1.00  0.00           H  
+HETATM   83  H41 OIL A   1      -2.396   8.834  -2.574  1.00  0.00           H  
+HETATM   84  H42 OIL A   1      -2.425   7.089  -2.390  1.00  0.00           H  
+HETATM   85  H43 OIL A   1      -4.710   8.096  -2.454  1.00  0.00           H  
+HETATM   86  H44 OIL A   1      -4.435   7.251  -0.927  1.00  0.00           H  
+HETATM   87  H45 OIL A   1      -4.351   9.024  -0.989  1.00  0.00           H  
+HETATM   88  H46 OIL A   1      -3.643   2.946   0.511  1.00  0.00           H  
+HETATM   89  H47 OIL A   1      -4.665   0.860  -0.198  1.00  0.00           H  
+HETATM   90  H48 OIL A   1      -4.482  -1.432  -0.934  1.00  0.00           H  
+CONECT    1    2   43   44   45
+CONECT    2    3   46   47
+CONECT    3    4   48   49
+CONECT    4    5   50   51
+CONECT    5    6   52   53
+CONECT    6    7   54   55
+CONECT    7    8    8   36
+CONECT    8    9   56
+CONECT    9   10   10   42
+CONECT   10   11   57
+CONECT   11   12   12   58
+CONECT   12   13   41
+CONECT   13   14   20   20
+CONECT   14   15   59   60
+CONECT   15   16   61   62
+CONECT   16   17   63   64
+CONECT   17   18   65   66
+CONECT   18   19   67   68
+CONECT   19   69   70   71
+CONECT   20   21   72
+CONECT   21   22   22   40
+CONECT   22   23   73
+CONECT   23   24   24   74
+CONECT   24   25   39
+CONECT   25   26   32   32
+CONECT   26   27   75   76
+CONECT   27   28   77   78
+CONECT   28   29   79   80
+CONECT   29   30   81   82
+CONECT   30   31   83   84
+CONECT   31   85   86   87
+CONECT   32   33   88
+CONECT   33   34   34   38
+CONECT   34   35   89
+CONECT   35   36   36   90
+CONECT   36   37
+CONECT   37   38   38   42
+CONECT   38   39
+CONECT   39   40   40
+CONECT   40   41
+CONECT   41   42   42
+END

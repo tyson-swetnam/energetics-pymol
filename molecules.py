@@ -161,13 +161,46 @@ MANIFEST = [
     _m("abietic_acid", "Abietic acid", "ABT", "Extractives", "C20H30O2",
        smiles="CC(C)C1=CC2=CC[C@@H]3[C@@]([C@H]2CC1)(CCC[C@@]3(C)C(=O)O)C",
        note="Signature conifer diterpene resin acid (rosin); conjugated 7,13-diene (PubChem CID 10569)."),
+
+    # ---- Fossil carbon: representative MODELS for the long-term carbon vaults ----------
+    # Coal, char, kerogen and oil are heterogeneous macromolecular solids/mixtures, not
+    # single compounds. Each entry is a defensible representative MODEL (verified, RDKit-
+    # buildable). Across coal rank, aromaticity rises and O falls: lignite -> anthracite.
+    _m("charcoal", "Charcoal — polycyclic aromatic cluster", "CHA", "Fossil carbon", "C24H12",
+       smiles="c1cc2ccc3ccc4ccc5ccc6ccc1c1c2c3c4c5c61",
+       note="Representative model: coronene, a small graphene-like fused-aromatic sheet. Real charcoal/"
+            "pyrogenic carbon is defect-rich, polydisperse fused aromatic clusters with residual O and ash."),
+    _m("lignite", "Lignite — O-rich coal fragment", "LGN", "Fossil carbon", "C17H18O7",
+       smiles="COc1cc(C(=O)O)ccc1OCC(O)c1ccc(O)c(OC)c1",
+       note="Representative model: lowest-rank coal, still lignin-derived — small aromatics with methoxyl, "
+            "phenol, carboxyl and ether/aliphatic bridges (high O/C). The O-rich end of the rank series."),
+    _m("sub_bituminous", "Sub-bituminous — intermediate coal fragment", "SBC", "Fossil carbon", "C18H14O",
+       smiles="CCc1ccc2ccc3c(O)ccc4ccc1c2c34",
+       note="Representative model: a hydroxy-pyrene with a short alkyl chain — larger aromatic unit and far "
+            "less oxygen than lignite, sitting between lignite and bituminous in rank."),
+    _m("bituminous", "Bituminous — classic coal model fragment", "BIT", "Fossil carbon", "C29H24O",
+       smiles="CC1Cc2ccc3ccc4cc5ccccc5cc4c3c2C1Cc1ccc(O)cc1",
+       note="Representative model (Shinn/Wiser-style): fused aromatic clusters linked by short methylene "
+            "bridges with a hydroaromatic ring and trace oxygen — the hallmark mid-rank coal motif."),
+    _m("anthracite", "Anthracite — near-graphitic aromatic sheet", "ANT", "Fossil carbon", "C38H16",
+       smiles="c1cc2ccc3ccc4ccc5ccc6ccc7ccc8ccc1c1c2c2c3c4c3c5c6c4c7c8c1c2c34",
+       note="Representative model: a large peri-fused PAH (circumcoronene class) — highest-rank coal, "
+            "near-pure fused aromatic carbon approaching graphite (minimal H, ~no O)."),
+    _m("kerogen", "Kerogen — Type II (marine) fragment", "KER", "Fossil carbon", "C26H28OS",
+       smiles="CCCCCc1cc2ccc3ccc4sc(C(=O)CCCC)cc4c3c2cc1",
+       note="Representative model: a fused-aromatic core with aliphatic chains, a thiophene (organic sulfur) "
+            "and a carbonyl — the insoluble organic matter that cracks to petroleum on burial."),
+    _m("crude_oil", "Crude oil — island asphaltene archetype", "OIL", "Fossil carbon", "C42H48",
+       smiles="CCCCCCc1cc2ccc3c(CCCCCC)cc4ccc5c(CCCCCC)cc6ccc1c1c6c5c4c3c21",
+       note="Representative model: a 'continental/island' asphaltene (Yen-Mullins) — a polycyclic aromatic "
+            "core with alkyl chains, the canonical heavy molecule of crude oil (a complex mixture)."),
 ]
 
 # id -> record, for convenience
 BY_ID = {m["id"]: m for m in MANIFEST}
 
 CATEGORIES = ["Sugar monomers", "Cellulose", "Hemicellulose", "Lignin",
-              "Combustion", "Fats", "Extractives"]
+              "Combustion", "Fats", "Extractives", "Fossil carbon"]
 
 if __name__ == "__main__":
     # quick textual catalog (no RDKit needed)

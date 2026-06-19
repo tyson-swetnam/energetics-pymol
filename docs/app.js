@@ -8,10 +8,11 @@ window.addEventListener("unhandledrejection", (e) => { window.__errs++; e.preven
 
 // category accent, ordered low -> high energy density (matches the CSS energy gradient)
 const ENERGY_ORDER = ["Sugar monomers", "Hemicellulose", "Cellulose", "Lignin",
-                      "Fats", "Extractives", "Combustion"];
+                      "Fats", "Extractives", "Fossil carbon", "Combustion"];
 const CAT_COLOR = {
   "Sugar monomers": "#8aa06a", "Hemicellulose": "#9ba06a", "Cellulose": "#b9a96a",
-  "Lignin": "#d98a3a", "Fats": "#e0712d", "Extractives": "#f4a93b", "Combustion": "#c2402f",
+  "Lignin": "#d98a3a", "Fats": "#e0712d", "Extractives": "#f4a93b",
+  "Fossil carbon": "#7a5238", "Combustion": "#c2402f",
 };
 
 const $ = (id) => document.getElementById(id);

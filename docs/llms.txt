@@ -1,0 +1,103 @@
+# Energetics — The molecules that store a forest's energy
+
+> 46 reproducible 3D molecular models (PDB with CONECT bonds + ray-traced PNG) of the organic molecules that store chemical-bond energy in a Pinus ponderosa (ponderosa pine, conifer/softwood) forest, built for the manuscript "Falk, Swetnam & McKenzie — Ecosystems as energy fields (2026)". Every model is annotated with OBO Foundry ontology terms (ChEBI, GO, ENVO, PO, NCBITaxon).
+
+Key facts for agents:
+
+- Study system is a conifer, so hemicellulose = softwood galactoglucomannan + arabinoglucuronoxylan and lignin = guaiacyl (G) lignin. Cellulose is clade-invariant.
+- Oligomers (cellulose N=2–8, hemicellulose fragments, lignin dimers/trimer) and the fossil-carbon entries are *defined representative models*, not the real randomized macromolecules or materials; cite them as such.
+- Energy values (HHV, MJ/kg) are approximate literature values for the gauge, not measurements. Whole-tree Pinus reference: 20.25 MJ/kg.
+- Ontology `match` levels: `exact` = same full InChIKey as the ChEBI entity; `stereo_unspecified` = same constitution (InChIKey block 1); stereo differs or is undefined; `close` = near-identical entity (e.g. anomer/ionization/tautomer variant); `broader` = ChEBI parent class; no entity exists for this exact model; `none` = no suitable ChEBI entity.
+- Source code and build pipeline: https://github.com/tyson-swetnam/energetics-pymol. Data mirror (CyVerse Data Store, MESA/DuckLake-tracked metadata): iRODS `/iplant/home/tswetnam/energetics-pymol`.
+
+## Pages
+
+- [Molecule gallery](https://tyson-swetnam.github.io/energetics-pymol/index.html): Interactive 3D viewer (Mol* / 3Dmol.js) for every molecule, with an approximate higher-heating-value energy gauge.
+- [How plants build it — and how nature releases it](https://tyson-swetnam.github.io/energetics-pymol/learn.html): Narrative explainer: photosynthesis, the biosynthesis of cellulose, hemicellulose, lignin, fats and resin, then fire, consumption, decay and charcoal/fossil carbon.
+
+## Machine-readable data
+
+- [llms-full.txt](https://tyson-swetnam.github.io/energetics-pymol/llms-full.txt): the entire site — full molecule catalog with SMILES, InChIKeys, formulas, energy values and ontology terms, plus the full text of the explainer page — as one Markdown file
+- [molecules.json](https://tyson-swetnam.github.io/energetics-pymol/molecules.json): structured catalog (JSON), one record per molecule with `ontology.structure` / `ontology.represents`; category- and project-level terms are in `meta.ontology`
+- [molecules.jsonld](https://tyson-swetnam.github.io/energetics-pymol/molecules.jsonld): schema.org Dataset of Bioschemas MolecularEntity records cross-referenced to ChEBI (JSON-LD; `sameAs` only for exact matches)
+- [sitemap.xml](https://tyson-swetnam.github.io/energetics-pymol/sitemap.xml): every page and file
+
+## Molecules (3D coordinate files)
+
+### Sugar monomers
+
+- [beta-D-glucopyranose](https://tyson-swetnam.github.io/energetics-pymol/pdb/bdglc.pdb): C6H12O6; CHEBI:15903 (exact)
+- [D-glucose (open-chain, Fischer aldehyde)](https://tyson-swetnam.github.io/energetics-pymol/pdb/glc_open.pdb): C6H12O6; CHEBI:42758 (exact)
+- [beta-D-mannopyranose](https://tyson-swetnam.github.io/energetics-pymol/pdb/bdman.pdb): C6H12O6; CHEBI:28563 (exact)
+- [beta-D-galactopyranose](https://tyson-swetnam.github.io/energetics-pymol/pdb/bdgal.pdb): C6H12O6; CHEBI:27667 (exact)
+- [beta-D-xylopyranose](https://tyson-swetnam.github.io/energetics-pymol/pdb/bdxyl.pdb): C5H10O5; CHEBI:28161 (exact)
+- [alpha-L-arabinofuranose](https://tyson-swetnam.github.io/energetics-pymol/pdb/alaraf.pdb): C5H10O5; CHEBI:28772 (exact)
+- [4-O-methyl-alpha-D-glucuronic acid](https://tyson-swetnam.github.io/energetics-pymol/pdb/meglca.pdb): C7H12O7; CHEBI:234000 (close)
+
+### Intermediates
+
+- [UDP-glucose](https://tyson-swetnam.github.io/energetics-pymol/pdb/udp_glucose.pdb): C15H24N2O17P2; CHEBI:46229 (exact)
+- [GDP-mannose (nucleotide sugar)](https://tyson-swetnam.github.io/energetics-pymol/pdb/gdp_mannose.pdb): C16H25N5O16P2; CHEBI:15820 (exact)
+- [L-Phenylalanine](https://tyson-swetnam.github.io/energetics-pymol/pdb/phenylalanine.pdb): C9H11NO2; CHEBI:17295 (exact)
+- [Acetyl-CoA](https://tyson-swetnam.github.io/energetics-pymol/pdb/acetyl_coa.pdb): C23H38N7O17P3S; CHEBI:15351 (exact)
+- [Isopentenyl diphosphate (IPP)](https://tyson-swetnam.github.io/energetics-pymol/pdb/ipp.pdb): C5H12O7P2; CHEBI:16584 (exact)
+- [Dimethylallyl diphosphate (DMAPP)](https://tyson-swetnam.github.io/energetics-pymol/pdb/dmapp.pdb): C5H12O7P2; CHEBI:16057 (exact)
+
+### Cellulose
+
+- [Cellobiose (beta-D-Glcp-(1->4)-D-Glcp)](https://tyson-swetnam.github.io/energetics-pymol/pdb/cellobiose.pdb): C12H22O11; CHEBI:36217 (exact)
+- [Cellotetraose (cellulose, N=4)](https://tyson-swetnam.github.io/energetics-pymol/pdb/cellotetraose.pdb): C24H42O21; CHEBI:62974 (stereo_unspecified)
+- [Cellohexaose (cellulose, N=6)](https://tyson-swetnam.github.io/energetics-pymol/pdb/cellohexaose.pdb): C36H62O31; CHEBI:49533 (exact)
+- [Cellooctaose (cellulose, N=8)](https://tyson-swetnam.github.io/energetics-pymol/pdb/cellooctaose.pdb): C48H82O41; CHEBI:49542 (exact)
+
+### Hemicellulose
+
+- [Galactoglucomannan fragment (compact)](https://tyson-swetnam.github.io/energetics-pymol/pdb/ggm_compact.pdb): C42H72O36; CHEBI:24144 (broader)
+- [Galactoglucomannan fragment (extended, acetylated)](https://tyson-swetnam.github.io/energetics-pymol/pdb/ggm_extended.pdb): C76H126O63; CHEBI:24144 (broader)
+- [Arabinoglucuronoxylan fragment (compact)](https://tyson-swetnam.github.io/energetics-pymol/pdb/agx_compact.pdb): C37H60O31; CHEBI:28302 (broader)
+- [Arabinoglucuronoxylan fragment (extended)](https://tyson-swetnam.github.io/energetics-pymol/pdb/agx_extended.pdb): C64H102O53; CHEBI:28302 (broader)
+
+### Lignin
+
+- [p-Coumaryl alcohol (H monolignol)](https://tyson-swetnam.github.io/energetics-pymol/pdb/pcoumaryl.pdb): C9H10O2; CHEBI:64555 (exact)
+- [Coniferyl alcohol (G monolignol)](https://tyson-swetnam.github.io/energetics-pymol/pdb/coniferyl.pdb): C10H12O3; CHEBI:17745 (exact)
+- [Sinapyl alcohol (S monolignol)](https://tyson-swetnam.github.io/energetics-pymol/pdb/sinapyl.pdb): C11H14O4; CHEBI:64557 (exact)
+- [Guaiacylglycerol-beta-guaiacyl ether (beta-O-4)](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_bo4.pdb): C17H20O6; CHEBI:53650 (exact)
+- [Dehydrodiconiferyl alcohol (beta-5 phenylcoumaran)](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_b5.pdb): C20H22O6; CHEBI:91184 (exact)
+- [Pinoresinol (beta-beta resinol)](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_bb.pdb): C20H22O6; CHEBI:40 (exact)
+- [5-5' biphenyl diconiferyl alcohol](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_55.pdb): C20H22O6; CHEBI:64475 (broader)
+- [G-(beta-O-4)-G-(beta-5)-G lignin trimer](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_trimer.pdb): C30H34O10; CHEBI:64475 (broader)
+
+### Combustion
+
+- [Dioxygen (O2)](https://tyson-swetnam.github.io/energetics-pymol/pdb/o2.pdb): O2; CHEBI:15379 (exact)
+- [Carbon dioxide (CO2)](https://tyson-swetnam.github.io/energetics-pymol/pdb/co2.pdb): CO2; CHEBI:16526 (exact)
+- [Water (H2O)](https://tyson-swetnam.github.io/energetics-pymol/pdb/h2o.pdb): H2O; CHEBI:15377 (exact)
+
+### Fats
+
+- [Oleic acid (18:1 cis-9)](https://tyson-swetnam.github.io/energetics-pymol/pdb/oleic_acid.pdb): C18H34O2; CHEBI:16196 (exact)
+- [Palmitic acid (16:0)](https://tyson-swetnam.github.io/energetics-pymol/pdb/palmitic_acid.pdb): C16H32O2; CHEBI:15756 (exact)
+- [Triolein (glyceryl trioleate)](https://tyson-swetnam.github.io/energetics-pymol/pdb/triolein.pdb): C57H104O6; CHEBI:53753 (exact)
+- [Tripalmitin (glyceryl tripalmitate)](https://tyson-swetnam.github.io/energetics-pymol/pdb/tripalmitin.pdb): C51H98O6; CHEBI:77393 (exact)
+
+### Extractives
+
+- [alpha-Pinene](https://tyson-swetnam.github.io/energetics-pymol/pdb/alpha_pinene.pdb): C10H16; CHEBI:28660 (exact)
+- [beta-Pinene](https://tyson-swetnam.github.io/energetics-pymol/pdb/beta_pinene.pdb): C10H16; CHEBI:28359 (exact)
+- [Abietic acid](https://tyson-swetnam.github.io/energetics-pymol/pdb/abietic_acid.pdb): C20H30O2; CHEBI:28987 (exact)
+
+### Fossil carbon
+
+- [Charcoal — polycyclic aromatic cluster](https://tyson-swetnam.github.io/energetics-pymol/pdb/charcoal.pdb): C24H12; CHEBI:29863 (exact)
+- [Lignite — O-rich coal fragment](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignite.pdb): C17H18O7; CHEBI:25238 (broader)
+- [Sub-bituminous — intermediate coal fragment](https://tyson-swetnam.github.io/energetics-pymol/pdb/sub_bituminous.pdb): C18H14O; CHEBI:59659 (broader)
+- [Bituminous — classic coal model fragment](https://tyson-swetnam.github.io/energetics-pymol/pdb/bituminous.pdb): C29H24O; CHEBI:33853 (broader)
+- [Anthracite — near-graphitic aromatic sheet](https://tyson-swetnam.github.io/energetics-pymol/pdb/anthracite.pdb): C38H16; CHEBI:35300 (broader)
+- [Kerogen — Type II (marine) fragment](https://tyson-swetnam.github.io/energetics-pymol/pdb/kerogen.pdb): C26H28OS; CHEBI:38836 (broader)
+- [Crude oil — island asphaltene archetype](https://tyson-swetnam.github.io/energetics-pymol/pdb/crude_oil.pdb): C42H48; CHEBI:35300 (broader)
+
+## Optional
+
+- [Source repository](https://github.com/tyson-swetnam/energetics-pymol): RDKit/PyMOL build pipeline (`molecules.py` is the single source of truth; `ontology.py` holds the OBO term tables)
+- [Rendered figures](https://tyson-swetnam.github.io/energetics-pymol/img/cellohexaose.png): one ray-traced PNG per molecule at `img/<id>.png` (each molecules.json record's `img` field)

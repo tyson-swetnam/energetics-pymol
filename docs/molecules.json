@@ -16,7 +16,177 @@
       "Extractives",
       "Fossil carbon"
     ],
-    "count": 46
+    "count": 46,
+    "site": "https://tyson-swetnam.github.io/energetics-pymol/",
+    "repo": "https://github.com/tyson-swetnam/energetics-pymol",
+    "mesaProject": "/iplant/home/tswetnam/energetics-pymol",
+    "ontology": {
+      "matchLevels": {
+        "exact": "same full InChIKey as the ChEBI entity",
+        "stereo_unspecified": "same constitution (InChIKey block 1); stereo differs or is undefined",
+        "close": "near-identical entity (e.g. anomer/ionization/tautomer variant)",
+        "broader": "ChEBI parent class; no entity exists for this exact model",
+        "none": "no suitable ChEBI entity"
+      },
+      "project": [
+        {
+          "curie": "NCBITaxon:55062",
+          "label": "Pinus ponderosa",
+          "relation": "source organism (study system)",
+          "iri": "http://purl.obolibrary.org/obo/NCBITaxon_55062"
+        },
+        {
+          "curie": "ENVO:01000211",
+          "label": "temperate coniferous forest biome",
+          "relation": "biome",
+          "iri": "http://purl.obolibrary.org/obo/ENVO_01000211"
+        },
+        {
+          "curie": "ENVO:01001243",
+          "label": "forest ecosystem",
+          "relation": "ecosystem whose bond energy is estimated",
+          "iri": "http://purl.obolibrary.org/obo/ENVO_01001243"
+        },
+        {
+          "curie": "PO:0005848",
+          "label": "secondary xylem",
+          "relation": "plant tissue (wood) holding the polymers",
+          "iri": "http://purl.obolibrary.org/obo/PO_0005848"
+        },
+        {
+          "curie": "ENVO:00002040",
+          "label": "wood",
+          "relation": "environmental material",
+          "iri": "http://purl.obolibrary.org/obo/ENVO_00002040"
+        },
+        {
+          "curie": "ENVO:01000155",
+          "label": "organic material",
+          "relation": "biomass (closest OBO class)",
+          "iri": "http://purl.obolibrary.org/obo/ENVO_01000155"
+        },
+        {
+          "curie": "GO:0015979",
+          "label": "photosynthesis",
+          "relation": "process that captures the stored energy",
+          "iri": "http://purl.obolibrary.org/obo/GO_0015979"
+        }
+      ],
+      "categories": {
+        "Sugar monomers": [
+          {
+            "curie": "CHEBI:35381",
+            "label": "monosaccharide",
+            "relation": "chemical class",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_35381"
+          },
+          {
+            "curie": "GO:0046364",
+            "label": "monosaccharide biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0046364"
+          }
+        ],
+        "Cellulose": [
+          {
+            "curie": "CHEBI:18246",
+            "label": "(1->4)-beta-D-glucan",
+            "relation": "cellulose; models are oligomers of it",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_18246"
+          },
+          {
+            "curie": "GO:0030244",
+            "label": "cellulose biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0030244"
+          },
+          {
+            "curie": "GO:0052324",
+            "label": "plant-type cell wall cellulose biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0052324"
+          }
+        ],
+        "Hemicellulose": [
+          {
+            "curie": "CHEBI:61266",
+            "label": "hemicellulose",
+            "relation": "defined representative fragment of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_61266"
+          },
+          {
+            "curie": "GO:0070592",
+            "label": "cell wall polysaccharide biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0070592"
+          }
+        ],
+        "Lignin": [
+          {
+            "curie": "CHEBI:6457",
+            "label": "lignin",
+            "relation": "monomer precursor or linkage model of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_6457"
+          },
+          {
+            "curie": "GO:0009809",
+            "label": "lignin biosynthetic process",
+            "relation": "produced by / participant in",
+            "iri": "http://purl.obolibrary.org/obo/GO_0009809"
+          }
+        ],
+        "Combustion": [
+          {
+            "curie": "ENVO:01000839",
+            "label": "combustion process",
+            "relation": "reactant or product",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_01000839"
+          },
+          {
+            "curie": "ENVO:01000791",
+            "label": "forest fire",
+            "relation": "reactant or product",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_01000791"
+          },
+          {
+            "curie": "GO:0009060",
+            "label": "aerobic respiration",
+            "relation": "same reactants/products",
+            "iri": "http://purl.obolibrary.org/obo/GO_0009060"
+          }
+        ],
+        "Fats": [
+          {
+            "curie": "CHEBI:18059",
+            "label": "lipid",
+            "relation": "chemical class",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_18059"
+          },
+          {
+            "curie": "GO:0006633",
+            "label": "fatty acid biosynthetic process",
+            "relation": "acyl chains produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0006633"
+          }
+        ],
+        "Extractives": [
+          {
+            "curie": "CHEBI:24913",
+            "label": "isoprenoid",
+            "relation": "chemical class",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_24913"
+          },
+          {
+            "curie": "GO:0016114",
+            "label": "terpenoid biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0016114"
+          }
+        ],
+        "Fossil carbon": [],
+        "Intermediates": []
+      }
+    }
   },
   "molecules": [
     {
@@ -26,13 +196,42 @@
       "category": "Sugar monomers",
       "formula": "C6H12O6",
       "smiles": "OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@@H]1O",
+      "inchikey": "WQZGKKKJIJFFOK-VFUOTHLCSA-N",
       "note": "Cellulose building block & primary photosynthate (PubChem CID 64689).",
       "size": "na",
       "showH": false,
       "hhv": 15.6,
       "hhvKind": "fuel",
       "pdb": "pdb/bdglc.pdb",
-      "img": "img/bdglc.png"
+      "img": "img/bdglc.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:15903",
+          "label": "beta-D-glucose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_15903"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:18246",
+            "label": "(1->4)-beta-D-glucan",
+            "relation": "is the repeat unit (monomer) of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_18246"
+          },
+          {
+            "curie": "CHEBI:17634",
+            "label": "D-glucose",
+            "relation": "is the beta-pyranose anomer of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17634"
+          },
+          {
+            "curie": "CHEBI:4167",
+            "label": "D-glucopyranose",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_4167"
+          }
+        ]
+      }
     },
     {
       "id": "glc_open",
@@ -41,13 +240,36 @@
       "category": "Sugar monomers",
       "formula": "C6H12O6",
       "smiles": "OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C=O",
+      "inchikey": "GZCGUPFRVQAUEE-SLPGGIOYSA-N",
       "note": "Acyclic aldohexose: the photosynthesis product before ring closure (ChEBI aldehydo-D-glucose).",
       "size": "na",
       "showH": false,
       "hhv": 15.6,
       "hhvKind": "fuel",
       "pdb": "pdb/glc_open.pdb",
-      "img": "img/glc_open.png"
+      "img": "img/glc_open.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:42758",
+          "label": "aldehydo-D-glucose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_42758"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:17634",
+            "label": "D-glucose",
+            "relation": "is an open-chain tautomer of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17634"
+          },
+          {
+            "curie": "CHEBI:33917",
+            "label": "aldohexose",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_33917"
+          }
+        ]
+      }
     },
     {
       "id": "bdman",
@@ -56,13 +278,42 @@
       "category": "Sugar monomers",
       "formula": "C6H12O6",
       "smiles": "OC[C@H]1O[C@@H](O)[C@@H](O)[C@@H](O)[C@@H]1O",
+      "inchikey": "WQZGKKKJIJFFOK-RWOPYEJCSA-N",
       "note": "Principal backbone sugar of softwood galactoglucomannan (C2 epimer of glucose).",
       "size": "na",
       "showH": false,
       "hhv": 15.5,
       "hhvKind": "fuel",
       "pdb": "pdb/bdman.pdb",
-      "img": "img/bdman.png"
+      "img": "img/bdman.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:28563",
+          "label": "beta-D-mannose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_28563"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:24144",
+            "label": "galactoglucomannan",
+            "relation": "is the principal backbone monomer unit of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_24144"
+          },
+          {
+            "curie": "CHEBI:17020",
+            "label": "glucomannan",
+            "relation": "is a monomer unit of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17020"
+          },
+          {
+            "curie": "CHEBI:61266",
+            "label": "hemicellulose",
+            "relation": "is a constituent sugar of softwood",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_61266"
+          }
+        ]
+      }
     },
     {
       "id": "bdgal",
@@ -71,13 +322,36 @@
       "category": "Sugar monomers",
       "formula": "C6H12O6",
       "smiles": "OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@H]1O",
+      "inchikey": "WQZGKKKJIJFFOK-FPRJBGLDSA-N",
       "note": "Galactoglucomannan side-branch sugar (C4 epimer of glucose).",
       "size": "na",
       "showH": false,
       "hhv": 15.5,
       "hhvKind": "fuel",
       "pdb": "pdb/bdgal.pdb",
-      "img": "img/bdgal.png"
+      "img": "img/bdgal.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:27667",
+          "label": "beta-D-galactose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_27667"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:24144",
+            "label": "galactoglucomannan",
+            "relation": "is a monomer of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_24144"
+          },
+          {
+            "curie": "CHEBI:61266",
+            "label": "hemicellulose",
+            "relation": "is a constituent sugar of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_61266"
+          }
+        ]
+      }
     },
     {
       "id": "bdxyl",
@@ -86,13 +360,42 @@
       "category": "Sugar monomers",
       "formula": "C5H10O5",
       "smiles": "C1[C@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O",
+      "inchikey": "SRBFZHDQGSBBOR-KKQCNMDGSA-N",
       "note": "Pentose backbone of softwood arabinoglucuronoxylan (no C6 CH2OH).",
       "size": "na",
       "showH": false,
       "hhv": 15.0,
       "hhvKind": "fuel",
       "pdb": "pdb/bdxyl.pdb",
-      "img": "img/bdxyl.png"
+      "img": "img/bdxyl.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:28161",
+          "label": "beta-D-xylose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_28161"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:37166",
+            "label": "xylan",
+            "relation": "is the monomer unit of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_37166"
+          },
+          {
+            "curie": "CHEBI:60938",
+            "label": "glucuronoxylan",
+            "relation": "is the backbone monomer of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_60938"
+          },
+          {
+            "curie": "CHEBI:61266",
+            "label": "hemicellulose",
+            "relation": "is a constituent monomer of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_61266"
+          }
+        ]
+      }
     },
     {
       "id": "alaraf",
@@ -101,13 +404,48 @@
       "category": "Sugar monomers",
       "formula": "C5H10O5",
       "smiles": "C([C@H]1[C@@H]([C@H]([C@@H](O1)O)O)O)O",
+      "inchikey": "HMFHBZSHGGEWLO-QMKXCQHVSA-N",
       "note": "Furanose (5-membered) side branch of arabinoglucuronoxylan (PubChem CID 7044039).",
       "size": "na",
       "showH": false,
       "hhv": 15.0,
       "hhvKind": "fuel",
       "pdb": "pdb/alaraf.pdb",
-      "img": "img/alaraf.png"
+      "img": "img/alaraf.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:28772",
+          "label": "alpha-L-arabinofuranose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_28772"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:24300",
+            "label": "glucuronoarabinoxylans",
+            "relation": "is a side-branch residue of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_24300"
+          },
+          {
+            "curie": "CHEBI:22603",
+            "label": "arabinoxylans",
+            "relation": "is a side-branch residue of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_22603"
+          },
+          {
+            "curie": "CHEBI:61266",
+            "label": "hemicellulose",
+            "relation": "is a monomer constituent of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_61266"
+          },
+          {
+            "curie": "CHEBI:30849",
+            "label": "L-arabinose",
+            "relation": "is the alpha-furanose ring form of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_30849"
+          }
+        ]
+      }
     },
     {
       "id": "meglca",
@@ -116,13 +454,48 @@
       "category": "Sugar monomers",
       "formula": "C7H12O7",
       "smiles": "CO[C@H]1[C@@H]([C@H]([C@H](O[C@@H]1C(=O)O)O)O)O",
+      "inchikey": "WGLLPAPKWFDHHV-NRGGUMNKSA-N",
       "note": "Acidic side branch of softwood xylan; C6 oxidized to COOH, O4 methylated (PubChem CID 445994).",
       "size": "na",
       "showH": false,
       "hhv": 14.0,
       "hhvKind": "fuel",
       "pdb": "pdb/meglca.pdb",
-      "img": "img/meglca.png"
+      "img": "img/meglca.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:234000",
+          "label": "4-O-methyl-beta-D-glucuronate",
+          "match": "close",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_234000"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:17856",
+            "label": "glucuronoxylan 4-O-methyl-D-glucuronate",
+            "relation": "is the side-chain residue of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17856"
+          },
+          {
+            "curie": "CHEBI:60938",
+            "label": "glucuronoxylan",
+            "relation": "is a substituent monomer of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_60938"
+          },
+          {
+            "curie": "CHEBI:61266",
+            "label": "hemicellulose",
+            "relation": "is a monomer constituent of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_61266"
+          },
+          {
+            "curie": "CHEBI:171668",
+            "label": "4-O-methyl-alpha-D-glucuronoside",
+            "relation": "is the free-sugar form of the glycosyl unit in",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_171668"
+          }
+        ]
+      }
     },
     {
       "id": "cellobiose",
@@ -131,13 +504,36 @@
       "category": "Cellulose",
       "formula": "C12H22O11",
       "smiles": "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O",
+      "inchikey": "GUBGYTABKSRVRQ-QRZGKKJRSA-N",
       "note": "The cellulose repeating disaccharide; shows the beta-1,4 glycosidic bond.",
       "size": "repeat",
       "showH": false,
       "hhv": 17.3,
       "hhvKind": "fuel",
       "pdb": "pdb/cellobiose.pdb",
-      "img": "img/cellobiose.png"
+      "img": "img/cellobiose.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:36217",
+          "label": "beta-cellobiose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_36217"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:17057",
+            "label": "cellobiose",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17057"
+          },
+          {
+            "curie": "CHEBI:180683",
+            "label": "lignocellulose",
+            "relation": "is a structural fragment of the cellulose component of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_180683"
+          }
+        ]
+      }
     },
     {
       "id": "cellotetraose",
@@ -145,14 +541,31 @@
       "resname": "BGC",
       "category": "Cellulose",
       "formula": "C24H42O21",
-      "smiles": "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@@H](O[C@H]3[C@H](O)[C@@H](O)[C@@H](O[C@H]4[C@H](O)[C@@H](O)[C@H](O)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O",
+      "smiles": "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@H]4[C@H](O)[C@@H](O)[C@H](O)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O",
+      "inchikey": "LUEWUZLMQUOBSB-HGDSAIHNSA-N",
       "note": "Compact cellulose oligomer.",
       "size": "compact",
       "showH": false,
       "hhv": 17.3,
       "hhvKind": "fuel",
       "pdb": "pdb/cellotetraose.pdb",
-      "img": "img/cellotetraose.png"
+      "img": "img/cellotetraose.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:62974",
+          "label": "cellotetraose",
+          "match": "stereo_unspecified",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_62974"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:3523",
+            "label": "cellodextrin",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_3523"
+          }
+        ]
+      }
     },
     {
       "id": "cellohexaose",
@@ -160,14 +573,31 @@
       "resname": "BGC",
       "category": "Cellulose",
       "formula": "C36H62O31",
-      "smiles": "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@@H](O[C@H]3[C@H](O)[C@@H](O)[C@@H](O[C@H]4[C@H](O)[C@@H](O)[C@@H](O[C@H]5[C@H](O)[C@@H](O)[C@@H](O[C@H]6[C@H](O)[C@@H](O)[C@H](O)O[C@@H]6CO)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O",
+      "smiles": "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@H]4[C@H](O)[C@@H](O)[C@H](O[C@H]5[C@H](O)[C@@H](O)[C@H](O[C@H]6[C@H](O)[C@@H](O)[C@H](O)O[C@@H]6CO)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O",
+      "inchikey": "OCIBBXPLUVYKCH-FYTDUCIRSA-N",
       "note": "Standard crystalline-cellulose surrogate; twofold-screw ribbon w/ O3-H...O5 H-bonds.",
       "size": "compact",
       "showH": false,
       "hhv": 17.3,
       "hhvKind": "fuel",
       "pdb": "pdb/cellohexaose.pdb",
-      "img": "img/cellohexaose.png"
+      "img": "img/cellohexaose.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:49533",
+          "label": "beta-D-cellohexaose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_49533"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:3523",
+            "label": "cellodextrin",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_3523"
+          }
+        ]
+      }
     },
     {
       "id": "cellooctaose",
@@ -175,14 +605,31 @@
       "resname": "BGC",
       "category": "Cellulose",
       "formula": "C48H82O41",
-      "smiles": "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@@H](O[C@H]3[C@H](O)[C@@H](O)[C@@H](O[C@H]4[C@H](O)[C@@H](O)[C@@H](O[C@H]5[C@H](O)[C@@H](O)[C@@H](O[C@H]6[C@H](O)[C@@H](O)[C@@H](O[C@H]7[C@H](O)[C@@H](O)[C@@H](O[C@H]8[C@H](O)[C@@H](O)[C@H](O)O[C@@H]8CO)O[C@@H]7CO)O[C@@H]6CO)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O",
+      "smiles": "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@H]4[C@H](O)[C@@H](O)[C@H](O[C@H]5[C@H](O)[C@@H](O)[C@H](O[C@H]6[C@H](O)[C@@H](O)[C@H](O[C@H]7[C@H](O)[C@@H](O)[C@H](O[C@H]8[C@H](O)[C@@H](O)[C@H](O)O[C@@H]8CO)O[C@@H]7CO)O[C@@H]6CO)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O",
+      "inchikey": "RUJILUJOOCOSRO-UNLXIWHUSA-N",
       "note": "Extended cellulose chain for a longer-ribbon figure.",
       "size": "extended",
       "showH": false,
       "hhv": 17.3,
       "hhvKind": "fuel",
       "pdb": "pdb/cellooctaose.pdb",
-      "img": "img/cellooctaose.png"
+      "img": "img/cellooctaose.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:49542",
+          "label": "cellooctaose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_49542"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:3523",
+            "label": "cellodextrin",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_3523"
+          }
+        ]
+      }
     },
     {
       "id": "ggm_compact",
@@ -191,13 +638,42 @@
       "category": "Hemicellulose",
       "formula": "C42H72O36",
       "smiles": "OC[C@H]1O[C@H](OC[C@H]2O[C@@H](O[C@H]3[C@H](O)[C@H](O)[C@H](O[C@H]4[C@H](O)[C@H](O)[C@H](O)O[C@@H]4CO)O[C@@H]3CO)[C@@H](O)[C@@H](O)[C@@H]2O[C@@H]2O[C@H](CO)[C@@H](O[C@@H]3O[C@H](CO)[C@@H](O[C@@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]4O)[C@H](O)[C@@H]3O)[C@H](O)[C@H]2O)[C@H](O)[C@@H](O)[C@H]1O",
+      "inchikey": "POTBIMMSIQANFA-GRHHODFSSA-N",
       "note": "beta-1,4 Man/Glc backbone + alpha-1,6 Gal branch; principal softwood hemicellulose.",
       "size": "compact",
       "showH": false,
       "hhv": 16.0,
       "hhvKind": "fuel",
       "pdb": "pdb/ggm_compact.pdb",
-      "img": "img/ggm_compact.png"
+      "img": "img/ggm_compact.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:24144",
+          "label": "galactoglucomannan",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_24144"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:53463",
+            "label": "heptasaccharide",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_53463"
+          },
+          {
+            "curie": "CHEBI:61298",
+            "label": "D-glucose- and/or D-galactose-substituted mannan",
+            "relation": "is a fragment of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_61298"
+          },
+          {
+            "curie": "GO:0046354",
+            "label": "mannan biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0046354"
+          }
+        ]
+      }
     },
     {
       "id": "ggm_extended",
@@ -206,13 +682,42 @@
       "category": "Hemicellulose",
       "formula": "C76H126O63",
       "smiles": "CC(=O)O[C@@H]1[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O[C@H]3[C@H](O)[C@H](O)[C@H](O[C@H]4[C@H](O)[C@H](O)[C@H](O[C@H]5[C@H](O)[C@H](O)[C@H](O)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO[C@H]3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)O[C@@H]2CO)O[C@H](CO)[C@@H](O[C@@H]2O[C@H](CO)[C@@H](O[C@@H]3O[C@H](CO[C@H]4O[C@H](CO)[C@H](O)[C@H](O)[C@H]4O)[C@@H](O[C@@H]4O[C@H](CO)[C@@H](O[C@@H]5O[C@H](CO)[C@@H](O[C@@H]6O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]6O)[C@H](OC(C)=O)[C@@H]5O)[C@H](O)[C@H]4O)[C@H](O)[C@@H]3O)[C@H](O)[C@@H]2O)[C@@H]1O",
+      "inchikey": "OLJOSNGNYXMYJM-ZKZAVZQXSA-N",
       "note": "Longer GGM backbone with two Gal branches and native O-acetyl groups.",
       "size": "extended",
       "showH": false,
       "hhv": 16.0,
       "hhvKind": "fuel",
       "pdb": "pdb/ggm_extended.pdb",
-      "img": "img/ggm_extended.png"
+      "img": "img/ggm_extended.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:24144",
+          "label": "galactoglucomannan",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_24144"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:61298",
+            "label": "D-glucose- and/or D-galactose-substituted mannan",
+            "relation": "is a fragment of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_61298"
+          },
+          {
+            "curie": "CHEBI:180683",
+            "label": "lignocellulose",
+            "relation": "is a component of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_180683"
+          },
+          {
+            "curie": "GO:0046354",
+            "label": "mannan biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0046354"
+          }
+        ]
+      }
     },
     {
       "id": "agx_compact",
@@ -221,13 +726,48 @@
       "category": "Hemicellulose",
       "formula": "C37H60O31",
       "smiles": "CO[C@H]1[C@H](O)[C@@H](O)[C@@H](O[C@H]2[C@H](O[C@@H]3CO[C@@H](O[C@@H]4CO[C@@H](O[C@@H]5CO[C@@H](O)[C@H](O)[C@H]5O)[C@H](O)[C@H]4O[C@@H]4O[C@@H](CO)[C@H](O)[C@H]4O)[C@H](O)[C@H]3O)OC[C@@H](O[C@@H]3OC[C@@H](O)[C@H](O)[C@H]3O)[C@@H]2O)O[C@@H]1C(=O)O",
+      "inchikey": "NFARUHWBQQFMEZ-HRVLSVISSA-N",
       "note": "beta-1,4 xylan backbone + alpha-1,2 MeGlcA + alpha-1,3 arabinofuranose branches.",
       "size": "compact",
       "showH": false,
       "hhv": 16.0,
       "hhvKind": "fuel",
       "pdb": "pdb/agx_compact.pdb",
-      "img": "img/agx_compact.png"
+      "img": "img/agx_compact.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:28302",
+          "label": "glucuronoarabinoxylan",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_28302"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:60938",
+            "label": "glucuronoxylan",
+            "relation": "is a fragment of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_60938"
+          },
+          {
+            "curie": "CHEBI:22603",
+            "label": "arabinoxylans",
+            "relation": "is a fragment of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_22603"
+          },
+          {
+            "curie": "CHEBI:37166",
+            "label": "xylan",
+            "relation": "is a fragment of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_37166"
+          },
+          {
+            "curie": "GO:0045492",
+            "label": "xylan biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0045492"
+          }
+        ]
+      }
     },
     {
       "id": "agx_extended",
@@ -236,13 +776,48 @@
       "category": "Hemicellulose",
       "formula": "C64H102O53",
       "smiles": "CO[C@H]1[C@H](O)[C@@H](O)[C@@H](O[C@H]2[C@H](O[C@@H]3CO[C@@H](O[C@@H]4CO[C@@H](O[C@@H]5CO[C@@H](O[C@@H]6CO[C@@H](O[C@@H]7CO[C@@H](O[C@@H]8CO[C@@H](O)[C@H](O)[C@H]8O)[C@H](O)[C@H]7O[C@@H]7O[C@@H](CO)[C@H](O)[C@H]7O)[C@H](O[C@H]7O[C@H](C(=O)O)[C@@H](OC)[C@H](O)[C@H]7O)[C@H]6O)[C@H](O)[C@H]5O)[C@H](O)[C@H]4O[C@@H]4O[C@@H](CO)[C@H](O)[C@H]4O)[C@H](O)[C@H]3O)OC[C@@H](O[C@@H]3OC[C@@H](O)[C@H](O)[C@H]3O)[C@@H]2O)O[C@@H]1C(=O)O",
+      "inchikey": "HWXNXOMEJLYEPQ-GDOMOKQCSA-N",
       "note": "Longer xylan backbone with multiple acidic and arabinose branches.",
       "size": "extended",
       "showH": false,
       "hhv": 16.0,
       "hhvKind": "fuel",
       "pdb": "pdb/agx_extended.pdb",
-      "img": "img/agx_extended.png"
+      "img": "img/agx_extended.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:28302",
+          "label": "glucuronoarabinoxylan",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_28302"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:60938",
+            "label": "glucuronoxylan",
+            "relation": "is a representative fragment of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_60938"
+          },
+          {
+            "curie": "CHEBI:22603",
+            "label": "arabinoxylans",
+            "relation": "is a representative fragment of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_22603"
+          },
+          {
+            "curie": "CHEBI:37166",
+            "label": "xylan",
+            "relation": "is a fragment of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_37166"
+          },
+          {
+            "curie": "GO:0045492",
+            "label": "xylan biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0045492"
+          }
+        ]
+      }
     },
     {
       "id": "pcoumaryl",
@@ -251,13 +826,36 @@
       "category": "Lignin",
       "formula": "C9H10O2",
       "smiles": "OC1=CC=C(/C=C/CO)C=C1",
+      "inchikey": "PTNLHDGQWUGONS-OWOJBTEDSA-N",
       "note": "Trace H units in softwood; included for H/G/S contrast (PubChem CID 5280535).",
       "size": "na",
       "showH": false,
       "hhv": 26.5,
       "hhvKind": "fuel",
       "pdb": "pdb/pcoumaryl.pdb",
-      "img": "img/pcoumaryl.png"
+      "img": "img/pcoumaryl.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:64555",
+          "label": "trans-p-coumaryl alcohol",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_64555"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:64477",
+            "label": "monolignol",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64477"
+          },
+          {
+            "curie": "CHEBI:28386",
+            "label": "4-hydroxycinnamyl alcohol",
+            "relation": "E-isomer of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_28386"
+          }
+        ]
+      }
     },
     {
       "id": "coniferyl",
@@ -266,13 +864,42 @@
       "category": "Lignin",
       "formula": "C10H12O3",
       "smiles": "COC1=CC(=CC=C1O)/C=C/CO",
+      "inchikey": "JMFRWRFFLBVWSI-NSCUHMNNSA-N",
       "note": "THE primary softwood (guaiacyl) monolignol (PubChem CID 1549095).",
       "size": "na",
       "showH": false,
       "hhv": 26.5,
       "hhvKind": "fuel",
       "pdb": "pdb/coniferyl.pdb",
-      "img": "img/coniferyl.png"
+      "img": "img/coniferyl.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:17745",
+          "label": "coniferol",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_17745"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:64477",
+            "label": "monolignol",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64477"
+          },
+          {
+            "curie": "CHEBI:64475",
+            "label": "guaiacyl lignin",
+            "relation": "monomer of (softwood G unit)",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64475"
+          },
+          {
+            "curie": "GO:1901063",
+            "label": "guaiacyl lignin biosynthetic process",
+            "relation": "participant in",
+            "iri": "http://purl.obolibrary.org/obo/GO_1901063"
+          }
+        ]
+      }
     },
     {
       "id": "sinapyl",
@@ -281,13 +908,36 @@
       "category": "Lignin",
       "formula": "C11H14O4",
       "smiles": "COC1=CC(=CC(=C1O)OC)/C=C/CO",
+      "inchikey": "LZFOPEXOUVTGJS-ONEGZZNKSA-N",
       "note": "Syringyl monomer; essentially absent from softwood -- caption as the angiosperm contrast (CID 5280507).",
       "size": "na",
       "showH": false,
       "hhv": 26.5,
       "hhvKind": "fuel",
       "pdb": "pdb/sinapyl.pdb",
-      "img": "img/sinapyl.png"
+      "img": "img/sinapyl.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:64557",
+          "label": "trans-sinapyl alcohol",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_64557"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:64477",
+            "label": "monolignol",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64477"
+          },
+          {
+            "curie": "CHEBI:64476",
+            "label": "syringal lignin",
+            "relation": "monomer of (angiosperm S unit)",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64476"
+          }
+        ]
+      }
     },
     {
       "id": "lignin_bo4",
@@ -296,13 +946,42 @@
       "category": "Lignin",
       "formula": "C17H20O6",
       "smiles": "COC1=CC=CC=C1OC(CO)C(O)C2=CC=C(O)C(OC)=C2",
+      "inchikey": "PPZSOILKWHVNNS-UHFFFAOYSA-N",
       "note": "The dominant softwood interunit linkage (~50%); classic beta-O-4 model (PubChem CID 6424189).",
       "size": "na",
       "showH": false,
       "hhv": 26.5,
       "hhvKind": "fuel",
       "pdb": "pdb/lignin_bo4.pdb",
-      "img": "img/lignin_bo4.png"
+      "img": "img/lignin_bo4.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:53650",
+          "label": "guaiacylglycerol-beta-guaiacyl ether",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_53650"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:64475",
+            "label": "guaiacyl lignin",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64475"
+          },
+          {
+            "curie": "CHEBI:17745",
+            "label": "coniferol",
+            "relation": "has monomer unit",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17745"
+          },
+          {
+            "curie": "GO:1901063",
+            "label": "guaiacyl lignin biosynthetic process",
+            "relation": "linkage formed in",
+            "iri": "http://purl.obolibrary.org/obo/GO_1901063"
+          }
+        ]
+      }
     },
     {
       "id": "lignin_b5",
@@ -311,13 +990,42 @@
       "category": "Lignin",
       "formula": "C20H22O6",
       "smiles": "COc1cc(/C=C/CO)cc2c1OC(c1ccc(O)c(OC)c1)C2CO",
+      "inchikey": "KUSXBOZNRPQEON-ONEGZZNKSA-N",
       "note": "beta-5 phenylcoumaran dimer, both rings guaiacyl (PubChem CID 5372367).",
       "size": "na",
       "showH": false,
       "hhv": 26.5,
       "hhvKind": "fuel",
       "pdb": "pdb/lignin_b5.pdb",
-      "img": "img/lignin_b5.png"
+      "img": "img/lignin_b5.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:91184",
+          "label": "dehydrodiconiferyl alcohol",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_91184"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:64475",
+            "label": "guaiacyl lignin",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64475"
+          },
+          {
+            "curie": "CHEBI:17745",
+            "label": "coniferol",
+            "relation": "has monomer unit",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17745"
+          },
+          {
+            "curie": "GO:1901063",
+            "label": "guaiacyl lignin biosynthetic process",
+            "relation": "linkage formed in",
+            "iri": "http://purl.obolibrary.org/obo/GO_1901063"
+          }
+        ]
+      }
     },
     {
       "id": "lignin_bb",
@@ -326,13 +1034,48 @@
       "category": "Lignin",
       "formula": "C20H22O6",
       "smiles": "COC1=C(C=CC(=C1)[C@@H]2[C@H]3CO[C@@H]([C@H]3CO2)C4=CC(=C(C=C4)O)OC)O",
+      "inchikey": "HGXBRUKMWQGOIE-AFHBHXEDSA-N",
       "note": "beta-beta furofuran dimer; also a genuine conifer lignan (keep defined stereo).",
       "size": "na",
       "showH": false,
       "hhv": 26.5,
       "hhvKind": "fuel",
       "pdb": "pdb/lignin_bb.pdb",
-      "img": "img/lignin_bb.png"
+      "img": "img/lignin_bb.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:40",
+          "label": "(+)-pinoresinol",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_40"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:8225",
+            "label": "pinoresinol",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_8225"
+          },
+          {
+            "curie": "CHEBI:25036",
+            "label": "lignan",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_25036"
+          },
+          {
+            "curie": "CHEBI:64475",
+            "label": "guaiacyl lignin",
+            "relation": "is a representative model of the beta-beta linkage in",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64475"
+          },
+          {
+            "curie": "CHEBI:76924",
+            "label": "plant metabolite",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_76924"
+          }
+        ]
+      }
     },
     {
       "id": "lignin_55",
@@ -341,13 +1084,48 @@
       "category": "Lignin",
       "formula": "C20H22O6",
       "smiles": "OC/C=C/c1cc(OC)c(O)c(-c2cc(/C=C/CO)cc(OC)c2O)c1",
+      "inchikey": "LNPUFGIAJJTBEI-GGWOSOGESA-N",
       "note": "5-5 biphenyl C-C linkage (most common softwood C-C bond, often within dibenzodioxocin).",
       "size": "extended",
       "showH": false,
       "hhv": 26.5,
       "hhvKind": "fuel",
       "pdb": "pdb/lignin_55.pdb",
-      "img": "img/lignin_55.png"
+      "img": "img/lignin_55.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:64475",
+          "label": "guaiacyl lignin",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_64475"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:17745",
+            "label": "coniferol",
+            "relation": "is an oxidative-coupling dimer of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17745"
+          },
+          {
+            "curie": "CHEBI:25497",
+            "label": "neolignan",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_25497"
+          },
+          {
+            "curie": "CHEBI:22888",
+            "label": "biphenyls",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_22888"
+          },
+          {
+            "curie": "GO:1901063",
+            "label": "guaiacyl lignin biosynthetic process",
+            "relation": "linkage formed in",
+            "iri": "http://purl.obolibrary.org/obo/GO_1901063"
+          }
+        ]
+      }
     },
     {
       "id": "lignin_trimer",
@@ -356,13 +1134,48 @@
       "category": "Lignin",
       "formula": "C30H34O10",
       "smiles": "COc1cc(C(O)C(CO)Oc2ccc(C3Oc4c(OC)cc(/C=C/CO)cc4C3CO)cc2OC)ccc1O",
+      "inchikey": "VNGVOXIWFLPAFU-SNAWJCMRSA-N",
       "note": "Defined representative guaiacyl trimer combining beta-O-4 + beta-5 (caption as a model, not bulk lignin).",
       "size": "extended",
       "showH": false,
       "hhv": 26.5,
       "hhvKind": "fuel",
       "pdb": "pdb/lignin_trimer.pdb",
-      "img": "img/lignin_trimer.png"
+      "img": "img/lignin_trimer.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:64475",
+          "label": "guaiacyl lignin",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_64475"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:91184",
+            "label": "dehydrodiconiferyl alcohol",
+            "relation": "has substructure",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_91184"
+          },
+          {
+            "curie": "CHEBI:91172",
+            "label": "guaiacylglycerol beta-coniferyl ether",
+            "relation": "shares beta-O-4 guaiacylglycerol ether linkage motif",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_91172"
+          },
+          {
+            "curie": "CHEBI:17745",
+            "label": "coniferol",
+            "relation": "has monomer unit",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17745"
+          },
+          {
+            "curie": "GO:1901063",
+            "label": "guaiacyl lignin biosynthetic process",
+            "relation": "linkages formed in",
+            "iri": "http://purl.obolibrary.org/obo/GO_1901063"
+          }
+        ]
+      }
     },
     {
       "id": "o2",
@@ -371,13 +1184,36 @@
       "category": "Combustion",
       "formula": "O2",
       "smiles": "O=O",
+      "inchikey": "MYMOFIZGZYHOMD-UHFFFAOYSA-N",
       "note": "Oxidant in biomass + O2 -> CO2 + H2O (drawn closed-shell; ground state is a triplet diradical).",
       "size": "na",
       "showH": false,
       "hhv": null,
       "hhvKind": "oxidant",
       "pdb": "pdb/o2.pdb",
-      "img": "img/o2.png"
+      "img": "img/o2.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:15379",
+          "label": "dioxygen",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_15379"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:27140",
+            "label": "triplet dioxygen",
+            "relation": "is a closed-shell depiction of the ground-state spin form",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_27140"
+          },
+          {
+            "curie": "CHEBI:63248",
+            "label": "oxidising agent",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_63248"
+          }
+        ]
+      }
     },
     {
       "id": "co2",
@@ -386,13 +1222,30 @@
       "category": "Combustion",
       "formula": "CO2",
       "smiles": "O=C=O",
+      "inchikey": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
       "note": "Combustion product / photosynthesis substrate.",
       "size": "na",
       "showH": false,
       "hhv": null,
       "hhvKind": "product",
       "pdb": "pdb/co2.pdb",
-      "img": "img/co2.png"
+      "img": "img/co2.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:16526",
+          "label": "carbon dioxide",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_16526"
+        },
+        "represents": [
+          {
+            "curie": "ENVO:01000451",
+            "label": "atmospheric carbon dioxide",
+            "relation": "is a molecular model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_01000451"
+          }
+        ]
+      }
     },
     {
       "id": "h2o",
@@ -401,13 +1254,36 @@
       "category": "Combustion",
       "formula": "H2O",
       "smiles": "O",
+      "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
       "note": "Combustion product; the HHV/LHV distinction hinges on its heat of vaporization.",
       "size": "na",
       "showH": true,
       "hhv": null,
       "hhvKind": "product",
       "pdb": "pdb/h2o.pdb",
-      "img": "img/h2o.png"
+      "img": "img/h2o.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:15377",
+          "label": "water",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_15377"
+        },
+        "represents": [
+          {
+            "curie": "ENVO:01000266",
+            "label": "water vapour",
+            "relation": "is a molecular model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_01000266"
+          },
+          {
+            "curie": "ENVO:00002006",
+            "label": "liquid water",
+            "relation": "is a molecular model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_00002006"
+          }
+        ]
+      }
     },
     {
       "id": "oleic_acid",
@@ -416,13 +1292,42 @@
       "category": "Fats",
       "formula": "C18H34O2",
       "smiles": "CCCCCCCC/C=C\\CCCCCCCC(=O)O",
+      "inchikey": "ZQPPMHVWECSIRJ-KTKRTIGZSA-N",
       "note": "Major fatty acid of pine oleoresin/tall oil; cis double bond gives the chain kink.",
       "size": "na",
       "showH": false,
       "hhv": 39.3,
       "hhvKind": "fuel",
       "pdb": "pdb/oleic_acid.pdb",
-      "img": "img/oleic_acid.png"
+      "img": "img/oleic_acid.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:16196",
+          "label": "oleic acid",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_16196"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:25413",
+            "label": "monounsaturated fatty acid",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_25413"
+          },
+          {
+            "curie": "CHEBI:15904",
+            "label": "long-chain fatty acid",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_15904"
+          },
+          {
+            "curie": "CHEBI:76924",
+            "label": "plant metabolite",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_76924"
+          }
+        ]
+      }
     },
     {
       "id": "palmitic_acid",
@@ -431,13 +1336,42 @@
       "category": "Fats",
       "formula": "C16H32O2",
       "smiles": "CCCCCCCCCCCCCCCC(=O)O",
+      "inchikey": "IPCSVZSSVZVIGE-UHFFFAOYSA-N",
       "note": "Common saturated fatty acid; straight-chain contrast to oleic.",
       "size": "na",
       "showH": false,
       "hhv": 39.0,
       "hhvKind": "fuel",
       "pdb": "pdb/palmitic_acid.pdb",
-      "img": "img/palmitic_acid.png"
+      "img": "img/palmitic_acid.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:15756",
+          "label": "hexadecanoic acid",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_15756"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:39418",
+            "label": "straight-chain saturated fatty acid",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_39418"
+          },
+          {
+            "curie": "CHEBI:26607",
+            "label": "saturated fatty acid",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_26607"
+          },
+          {
+            "curie": "CHEBI:15904",
+            "label": "long-chain fatty acid",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_15904"
+          }
+        ]
+      }
     },
     {
       "id": "triolein",
@@ -446,13 +1380,36 @@
       "category": "Fats",
       "formula": "C57H104O6",
       "smiles": "CCCCCCCC/C=C\\CCCCCCCC(=O)OCC(OC(=O)CCCCCCC/C=C\\CCCCCCCC)COC(=O)CCCCCCC/C=C\\CCCCCCCC",
+      "inchikey": "PHYFQTYBJUILEZ-IUPFWZBJSA-N",
       "note": "Representative triacylglyceride (the storage form of 'fats'); three oleate tails on glycerol.",
       "size": "na",
       "showH": false,
       "hhv": 39.6,
       "hhvKind": "fuel",
       "pdb": "pdb/triolein.pdb",
-      "img": "img/triolein.png"
+      "img": "img/triolein.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:53753",
+          "label": "triolein",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_53753"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:17855",
+            "label": "triglyceride",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17855"
+          },
+          {
+            "curie": "GO:0019432",
+            "label": "triglyceride biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0019432"
+          }
+        ]
+      }
     },
     {
       "id": "tripalmitin",
@@ -461,13 +1418,42 @@
       "category": "Fats",
       "formula": "C51H98O6",
       "smiles": "CCCCCCCCCCCCCCCC(=O)OCC(OC(=O)CCCCCCCCCCCCCCC)COC(=O)CCCCCCCCCCCCCCC",
+      "inchikey": "PVNIQBQSYATKKL-UHFFFAOYSA-N",
       "note": "Saturated triacylglyceride alternative.",
       "size": "na",
       "showH": false,
       "hhv": 39.1,
       "hhvKind": "fuel",
       "pdb": "pdb/tripalmitin.pdb",
-      "img": "img/tripalmitin.png"
+      "img": "img/tripalmitin.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:77393",
+          "label": "tripalmitin",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_77393"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:17855",
+            "label": "triglyceride",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17855"
+          },
+          {
+            "curie": "CHEBI:15756",
+            "label": "hexadecanoic acid",
+            "relation": "has acyl component",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_15756"
+          },
+          {
+            "curie": "GO:0019432",
+            "label": "triglyceride biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0019432"
+          }
+        ]
+      }
     },
     {
       "id": "alpha_pinene",
@@ -476,13 +1462,54 @@
       "category": "Extractives",
       "formula": "C10H16",
       "smiles": "CC1=CC[C@H]2C[C@@H]1C2(C)C",
+      "inchikey": "GRWFGVWFFZKLTI-IUCAKERBSA-N",
       "note": "Dominant Pinus monoterpene; (1S,5S)-(-) enantiomer common in N. American pines (CID 440968).",
       "size": "na",
       "showH": false,
       "hhv": 44.0,
       "hhvKind": "fuel",
       "pdb": "pdb/alpha_pinene.pdb",
-      "img": "img/alpha_pinene.png"
+      "img": "img/alpha_pinene.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:28660",
+          "label": "(-)-alpha-pinene",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_28660"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:36740",
+            "label": "alpha-pinene",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_36740"
+          },
+          {
+            "curie": "CHEBI:35187",
+            "label": "monoterpene",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_35187"
+          },
+          {
+            "curie": "CHEBI:17187",
+            "label": "pinene",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17187"
+          },
+          {
+            "curie": "CHEBI:76924",
+            "label": "plant metabolite",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_76924"
+          },
+          {
+            "curie": "GO:0016099",
+            "label": "monoterpenoid biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0016099"
+          }
+        ]
+      }
     },
     {
       "id": "beta_pinene",
@@ -491,13 +1518,48 @@
       "category": "Extractives",
       "formula": "C10H16",
       "smiles": "CC1([C@H]2CCC(=C)[C@@H]1C2)C",
+      "inchikey": "WTARULDDTDQWMU-IUCAKERBSA-N",
       "note": "Exocyclic-methylene isomer of alpha-pinene; co-occurs in oleoresin (CID 440967).",
       "size": "na",
       "showH": false,
       "hhv": 44.0,
       "hhvKind": "fuel",
       "pdb": "pdb/beta_pinene.pdb",
-      "img": "img/beta_pinene.png"
+      "img": "img/beta_pinene.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:28359",
+          "label": "(-)-beta-pinene",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_28359"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:50025",
+            "label": "beta-pinene",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_50025"
+          },
+          {
+            "curie": "CHEBI:35187",
+            "label": "monoterpene",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_35187"
+          },
+          {
+            "curie": "ENVO:03510018",
+            "label": "resin",
+            "relation": "is a volatile component of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_03510018"
+          },
+          {
+            "curie": "GO:0016099",
+            "label": "monoterpenoid biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0016099"
+          }
+        ]
+      }
     },
     {
       "id": "abietic_acid",
@@ -506,13 +1568,48 @@
       "category": "Extractives",
       "formula": "C20H30O2",
       "smiles": "CC(C)C1=CC2=CC[C@@H]3[C@@]([C@H]2CC1)(CCC[C@@]3(C)C(=O)O)C",
+      "inchikey": "RSWGJHLUYNHPMX-ONCXSQPRSA-N",
       "note": "Signature conifer diterpene resin acid (rosin); conjugated 7,13-diene (PubChem CID 10569).",
       "size": "na",
       "showH": false,
       "hhv": 36.5,
       "hhvKind": "fuel",
       "pdb": "pdb/abietic_acid.pdb",
-      "img": "img/abietic_acid.png"
+      "img": "img/abietic_acid.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:28987",
+          "label": "abietic acid",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_28987"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:36762",
+            "label": "abietane diterpenoid",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_36762"
+          },
+          {
+            "curie": "CHEBI:753451",
+            "label": "rosin",
+            "relation": "is the principal constituent of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_753451"
+          },
+          {
+            "curie": "CHEBI:76924",
+            "label": "plant metabolite",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_76924"
+          },
+          {
+            "curie": "GO:0016102",
+            "label": "diterpenoid biosynthetic process",
+            "relation": "produced by",
+            "iri": "http://purl.obolibrary.org/obo/GO_0016102"
+          }
+        ]
+      }
     },
     {
       "id": "charcoal",
@@ -521,13 +1618,42 @@
       "category": "Fossil carbon",
       "formula": "C24H12",
       "smiles": "c1cc2ccc3ccc4ccc5ccc6ccc1c1c2c3c4c5c61",
+      "inchikey": "VPUGDVKSAQVFFS-UHFFFAOYSA-N",
       "note": "Representative model: coronene, a small graphene-like fused-aromatic sheet. Real charcoal/pyrogenic carbon is defect-rich, polydisperse fused aromatic clusters with residual O and ash.",
       "size": "na",
       "showH": false,
       "hhv": 33.0,
       "hhvKind": "fuel",
       "pdb": "pdb/charcoal.pdb",
-      "img": "img/charcoal.png"
+      "img": "img/charcoal.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:29863",
+          "label": "coronene",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_29863"
+        },
+        "represents": [
+          {
+            "curie": "ENVO:01000560",
+            "label": "charcoal",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_01000560"
+          },
+          {
+            "curie": "CHEBI:91090",
+            "label": "charcoal",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_91090"
+          },
+          {
+            "curie": "CHEBI:35300",
+            "label": "ortho- and peri-fused polycyclic arene",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_35300"
+          }
+        ]
+      }
     },
     {
       "id": "lignite",
@@ -536,13 +1662,48 @@
       "category": "Fossil carbon",
       "formula": "C17H18O7",
       "smiles": "COc1cc(C(=O)O)ccc1OCC(O)c1ccc(O)c(OC)c1",
+      "inchikey": "HGEJILYHSKOLCN-UHFFFAOYSA-N",
       "note": "Representative model: lowest-rank coal, still lignin-derived \u2014 small aromatics with methoxyl, phenol, carboxyl and ether/aliphatic bridges (high O/C). The O-rich end of the rank series.",
       "size": "na",
       "showH": false,
       "hhv": 24.0,
       "hhvKind": "fuel",
       "pdb": "pdb/lignite.pdb",
-      "img": "img/lignite.png"
+      "img": "img/lignite.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:25238",
+          "label": "methoxybenzoic acid",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_25238"
+        },
+        "represents": [
+          {
+            "curie": "ENVO:2000008",
+            "label": "lignite",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_2000008"
+          },
+          {
+            "curie": "ENVO:02000091",
+            "label": "coal",
+            "relation": "is a representative model fragment of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_02000091"
+          },
+          {
+            "curie": "CHEBI:64475",
+            "label": "guaiacyl lignin",
+            "relation": "is derived from",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64475"
+          },
+          {
+            "curie": "CHEBI:67649",
+            "label": "(+)-(7S,8S)-guaiacylglycerol-beta-vanillic acid ether",
+            "relation": "is a close structural analogue of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_67649"
+          }
+        ]
+      }
     },
     {
       "id": "sub_bituminous",
@@ -551,13 +1712,42 @@
       "category": "Fossil carbon",
       "formula": "C18H14O",
       "smiles": "CCc1ccc2ccc3c(O)ccc4ccc1c2c34",
+      "inchikey": "SYNPIRPEXMBGPI-UHFFFAOYSA-N",
       "note": "Representative model: a hydroxy-pyrene with a short alkyl chain \u2014 larger aromatic unit and far less oxygen than lignite, sitting between lignite and bituminous in rank.",
       "size": "na",
       "showH": false,
       "hhv": 28.0,
       "hhvKind": "fuel",
       "pdb": "pdb/sub_bituminous.pdb",
-      "img": "img/sub_bituminous.png"
+      "img": "img/sub_bituminous.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:59659",
+          "label": "pyrenes",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_59659"
+        },
+        "represents": [
+          {
+            "curie": "ENVO:2000009",
+            "label": "sub-bitumous coal",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_2000009"
+          },
+          {
+            "curie": "ENVO:02000091",
+            "label": "coal",
+            "relation": "is a model fragment of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_02000091"
+          },
+          {
+            "curie": "CHEBI:34093",
+            "label": "1-Hydroxypyrene",
+            "relation": "is a 6-ethyl derivative of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_34093"
+          }
+        ]
+      }
     },
     {
       "id": "bituminous",
@@ -566,13 +1756,48 @@
       "category": "Fossil carbon",
       "formula": "C29H24O",
       "smiles": "CC1Cc2ccc3ccc4cc5ccccc5cc4c3c2C1Cc1ccc(O)cc1",
+      "inchikey": "OPTMVYLMALHBLB-UHFFFAOYSA-N",
       "note": "Representative model (Shinn/Wiser-style): fused aromatic clusters linked by short methylene bridges with a hydroaromatic ring and trace oxygen \u2014 the hallmark mid-rank coal motif.",
       "size": "na",
       "showH": false,
       "hhv": 33.0,
       "hhvKind": "fuel",
       "pdb": "pdb/bituminous.pdb",
-      "img": "img/bituminous.png"
+      "img": "img/bituminous.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:33853",
+          "label": "phenols",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_33853"
+        },
+        "represents": [
+          {
+            "curie": "ENVO:2000010",
+            "label": "bitumous coal",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_2000010"
+          },
+          {
+            "curie": "ENVO:02000091",
+            "label": "coal",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_02000091"
+          },
+          {
+            "curie": "CHEBI:51348",
+            "label": "tetraphene",
+            "relation": "has part",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_51348"
+          },
+          {
+            "curie": "CHEBI:35230",
+            "label": "fossil fuel",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_35230"
+          }
+        ]
+      }
     },
     {
       "id": "anthracite",
@@ -581,13 +1806,42 @@
       "category": "Fossil carbon",
       "formula": "C38H16",
       "smiles": "c1cc2ccc3ccc4ccc5ccc6ccc7ccc8ccc1c1c2c2c3c4c3c5c6c4c7c8c1c2c34",
+      "inchikey": "NGQATHDPRGGCHP-UHFFFAOYSA-N",
       "note": "Representative model: a large peri-fused PAH (circumcoronene class) \u2014 highest-rank coal, near-pure fused aromatic carbon approaching graphite (minimal H, ~no O).",
       "size": "na",
       "showH": false,
       "hhv": 34.0,
       "hhvKind": "fuel",
       "pdb": "pdb/anthracite.pdb",
-      "img": "img/anthracite.png"
+      "img": "img/anthracite.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:35300",
+          "label": "ortho- and peri-fused polycyclic arene",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_35300"
+        },
+        "represents": [
+          {
+            "curie": "ENVO:2000011",
+            "label": "anthracite",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_2000011"
+          },
+          {
+            "curie": "ENVO:02000091",
+            "label": "coal",
+            "relation": "is a fragment of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_02000091"
+          },
+          {
+            "curie": "CHEBI:33418",
+            "label": "graphite",
+            "relation": "is a defect-containing finite-sheet approximation of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_33418"
+          }
+        ]
+      }
     },
     {
       "id": "kerogen",
@@ -596,13 +1850,48 @@
       "category": "Fossil carbon",
       "formula": "C26H28OS",
       "smiles": "CCCCCc1cc2ccc3ccc4sc(C(=O)CCCC)cc4c3c2cc1",
+      "inchikey": "APVJNLBHKGETRK-UHFFFAOYSA-N",
       "note": "Representative model: a fused-aromatic core with aliphatic chains, a thiophene (organic sulfur) and a carbonyl \u2014 the insoluble organic matter that cracks to petroleum on burial.",
       "size": "na",
       "showH": false,
       "hhv": 30.0,
       "hhvKind": "fuel",
       "pdb": "pdb/kerogen.pdb",
-      "img": "img/kerogen.png"
+      "img": "img/kerogen.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:38836",
+          "label": "1-benzothiophenes",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_38836"
+        },
+        "represents": [
+          {
+            "curie": "ENVO:01001231",
+            "label": "kerogen",
+            "relation": "is a representative model fragment of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_01001231"
+          },
+          {
+            "curie": "ENVO:01001235",
+            "label": "planktonic kerogen",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_01001235"
+          },
+          {
+            "curie": "CHEBI:38180",
+            "label": "polycyclic heteroarene",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_38180"
+          },
+          {
+            "curie": "CHEBI:76224",
+            "label": "aromatic ketone",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_76224"
+          }
+        ]
+      }
     },
     {
       "id": "crude_oil",
@@ -611,13 +1900,42 @@
       "category": "Fossil carbon",
       "formula": "C42H48",
       "smiles": "CCCCCCc1cc2ccc3c(CCCCCC)cc4ccc5c(CCCCCC)cc6ccc1c1c6c5c4c3c21",
+      "inchikey": "ZHYOPPHNEJESII-UHFFFAOYSA-N",
       "note": "Representative model: a 'continental/island' asphaltene (Yen-Mullins) \u2014 a polycyclic aromatic core with alkyl chains, the canonical heavy molecule of crude oil (a complex mixture).",
       "size": "na",
       "showH": false,
       "hhv": 44.0,
       "hhvKind": "fuel",
       "pdb": "pdb/crude_oil.pdb",
-      "img": "img/crude_oil.png"
+      "img": "img/crude_oil.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:35300",
+          "label": "ortho- and peri-fused polycyclic arene",
+          "match": "broader",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_35300"
+        },
+        "represents": [
+          {
+            "curie": "ENVO:00002984",
+            "label": "petroleum",
+            "relation": "representative model of (asphaltene)",
+            "iri": "http://purl.obolibrary.org/obo/ENVO_00002984"
+          },
+          {
+            "curie": "CHEBI:29863",
+            "label": "coronene",
+            "relation": "aromatic core of the model",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_29863"
+          },
+          {
+            "curie": "CHEBI:35230",
+            "label": "fossil fuel",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_35230"
+          }
+        ]
+      }
     },
     {
       "id": "udp_glucose",
@@ -625,14 +1943,55 @@
       "resname": "UDG",
       "category": "Intermediates",
       "formula": "C15H24N2O17P2",
-      "smiles": "OCC1OC(OP(=O)(O)OP(=O)(O)OCC2OC(n3ccc(=O)[nH]c3=O)C(O)C2O)C(O)C(O)C1O",
-      "note": "Activated glucose (a nucleotide sugar): the substrate cellulose synthase polymerizes into \u03b2-1,4 glucan.",
+      "smiles": "O=c1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H]2O)c(=O)[nH]1",
+      "inchikey": "HSCJRCZFDFQWRP-JZMIEXBBSA-N",
+      "note": "Activated glucose (a nucleotide sugar): the substrate cellulose synthase polymerizes into \u03b2-1,4 glucan. Stereo per ChEBI:46229 (UDP-\u03b1-D-glucose).",
       "size": "na",
       "showH": false,
       "hhv": 22.0,
       "hhvKind": "fuel",
       "pdb": "pdb/udp_glucose.pdb",
-      "img": "img/udp_glucose.png"
+      "img": "img/udp_glucose.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:46229",
+          "label": "UDP-alpha-D-glucose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_46229"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:18066",
+            "label": "UDP-D-glucose",
+            "relation": "is a representative model of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_18066"
+          },
+          {
+            "curie": "CHEBI:61109",
+            "label": "pyrimidine nucleotide-sugar",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_61109"
+          },
+          {
+            "curie": "CHEBI:18246",
+            "label": "(1->4)-beta-D-glucan",
+            "relation": "is the activated glucosyl donor of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_18246"
+          },
+          {
+            "curie": "GO:0030244",
+            "label": "cellulose biosynthetic process",
+            "relation": "participates in",
+            "iri": "http://purl.obolibrary.org/obo/GO_0030244"
+          },
+          {
+            "curie": "GO:0009225",
+            "label": "nucleotide-sugar metabolic process",
+            "relation": "participant in",
+            "iri": "http://purl.obolibrary.org/obo/GO_0009225"
+          }
+        ]
+      }
     },
     {
       "id": "gdp_mannose",
@@ -640,14 +1999,55 @@
       "resname": "GDM",
       "category": "Intermediates",
       "formula": "C16H25N5O16P2",
-      "smiles": "OCC1OC(OP(=O)(O)OP(=O)(O)OCC2OC(n3cnc4c3N=C(N)NC4=O)C(O)C2O)C(O)C(O)C1O",
-      "note": "A nucleotide sugar \u2014 the activated mannose donor for softwood galactoglucomannan, built in the Golgi.",
+      "smiles": "Nc1nc2c(ncn2[C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]3O)[C@@H](O)[C@H]2O)c(=O)[nH]1",
+      "inchikey": "MVMSCBBUIHUTGJ-GDJBGNAASA-N",
+      "note": "A nucleotide sugar \u2014 the activated mannose donor for softwood galactoglucomannan, built in the Golgi. Stereo per ChEBI:15820 (GDP-\u03b1-D-mannose).",
       "size": "na",
       "showH": false,
       "hhv": 22.0,
       "hhvKind": "fuel",
       "pdb": "pdb/gdp_mannose.pdb",
-      "img": "img/gdp_mannose.png"
+      "img": "img/gdp_mannose.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:15820",
+          "label": "GDP-alpha-D-mannose",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_15820"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:21168",
+            "label": "GDP-mannose",
+            "relation": "is a stereo-unspecified model of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_21168"
+          },
+          {
+            "curie": "CHEBI:64711",
+            "label": "purine nucleotide-sugar",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_64711"
+          },
+          {
+            "curie": "CHEBI:24144",
+            "label": "galactoglucomannan",
+            "relation": "is the activated mannosyl donor for biosynthesis of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_24144"
+          },
+          {
+            "curie": "GO:0009225",
+            "label": "nucleotide-sugar metabolic process",
+            "relation": "participant in",
+            "iri": "http://purl.obolibrary.org/obo/GO_0009225"
+          },
+          {
+            "curie": "GO:0046354",
+            "label": "mannan biosynthetic process",
+            "relation": "glycosyl donor for",
+            "iri": "http://purl.obolibrary.org/obo/GO_0046354"
+          }
+        ]
+      }
     },
     {
       "id": "phenylalanine",
@@ -656,13 +2056,48 @@
       "category": "Intermediates",
       "formula": "C9H11NO2",
       "smiles": "N[C@@H](Cc1ccccc1)C(=O)O",
+      "inchikey": "COLNVLDHVKWLRT-QMMMGPOBSA-N",
       "note": "The aromatic amino acid that enters the phenylpropanoid pathway en route to monolignols (lignin).",
       "size": "na",
       "showH": false,
       "hhv": 22.0,
       "hhvKind": "fuel",
       "pdb": "pdb/phenylalanine.pdb",
-      "img": "img/phenylalanine.png"
+      "img": "img/phenylalanine.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:17295",
+          "label": "L-phenylalanine",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_17295"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:33856",
+            "label": "aromatic amino acid",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_33856"
+          },
+          {
+            "curie": "CHEBI:83813",
+            "label": "proteinogenic amino acid",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_83813"
+          },
+          {
+            "curie": "CHEBI:26004",
+            "label": "phenylpropanoid",
+            "relation": "is the biosynthetic precursor of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_26004"
+          },
+          {
+            "curie": "GO:0009699",
+            "label": "phenylpropanoid biosynthetic process",
+            "relation": "precursor in",
+            "iri": "http://purl.obolibrary.org/obo/GO_0009699"
+          }
+        ]
+      }
     },
     {
       "id": "acetyl_coa",
@@ -670,14 +2105,43 @@
       "resname": "COA",
       "category": "Intermediates",
       "formula": "C23H38N7O17P3S",
-      "smiles": "CC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(=O)(O)OP(=O)(O)OCC1OC(n2cnc3c2ncnc3N)C(O)C1OP(=O)(O)O",
-      "note": "The two-carbon building block: feeds fatty-acid synthesis and the MVA isoprenoid route.",
+      "smiles": "CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O",
+      "inchikey": "ZSLZBFCDCINBPY-ZSJPKINUSA-N",
+      "note": "The two-carbon building block: feeds fatty-acid synthesis and the MVA isoprenoid route. Stereo per ChEBI:15351.",
       "size": "na",
       "showH": false,
       "hhv": 22.0,
       "hhvKind": "fuel",
       "pdb": "pdb/acetyl_coa.pdb",
-      "img": "img/acetyl_coa.png"
+      "img": "img/acetyl_coa.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:15351",
+          "label": "acetyl-CoA",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_15351"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:17984",
+            "label": "acyl-CoA",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_17984"
+          },
+          {
+            "curie": "GO:0006633",
+            "label": "fatty acid biosynthetic process",
+            "relation": "is a substrate/building block of",
+            "iri": "http://purl.obolibrary.org/obo/GO_0006633"
+          },
+          {
+            "curie": "GO:0019287",
+            "label": "isopentenyl diphosphate biosynthetic process, mevalonate pathway",
+            "relation": "is a precursor in",
+            "iri": "http://purl.obolibrary.org/obo/GO_0019287"
+          }
+        ]
+      }
     },
     {
       "id": "ipp",
@@ -686,13 +2150,48 @@
       "category": "Intermediates",
       "formula": "C5H12O7P2",
       "smiles": "CC(=C)CCOP(=O)(O)OP(=O)(O)O",
+      "inchikey": "NUHSROFQTUXZQQ-UHFFFAOYSA-N",
       "note": "The universal C5 isoprene unit; condensed into the prenyl diphosphates that make terpenes/resin.",
       "size": "na",
       "showH": false,
       "hhv": 22.0,
       "hhvKind": "fuel",
       "pdb": "pdb/ipp.pdb",
-      "img": "img/ipp.png"
+      "img": "img/ipp.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:16584",
+          "label": "isopentenyl diphosphate",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_16584"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:37841",
+            "label": "isoprenoid phosphate",
+            "relation": "is a member of the class",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_37841"
+          },
+          {
+            "curie": "CHEBI:24913",
+            "label": "isoprenoid",
+            "relation": "is the C5 building-block precursor of",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_24913"
+          },
+          {
+            "curie": "GO:0009240",
+            "label": "isopentenyl diphosphate biosynthetic process",
+            "relation": "is the output of",
+            "iri": "http://purl.obolibrary.org/obo/GO_0009240"
+          },
+          {
+            "curie": "CHEBI:76924",
+            "label": "plant metabolite",
+            "relation": "has role",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_76924"
+          }
+        ]
+      }
     },
     {
       "id": "dmapp",
@@ -701,13 +2200,42 @@
       "category": "Intermediates",
       "formula": "C5H12O7P2",
       "smiles": "CC(C)=CCOP(=O)(O)OP(=O)(O)O",
+      "inchikey": "CBIDRCWHNCKSTO-UHFFFAOYSA-N",
       "note": "The reactive C5 isomer of IPP that primes prenyl-chain elongation toward terpenes.",
       "size": "na",
       "showH": false,
       "hhv": 22.0,
       "hhvKind": "fuel",
       "pdb": "pdb/dmapp.pdb",
-      "img": "img/dmapp.png"
+      "img": "img/dmapp.png",
+      "ontology": {
+        "structure": {
+          "curie": "CHEBI:16057",
+          "label": "prenyl diphosphate",
+          "match": "exact",
+          "iri": "http://purl.obolibrary.org/obo/CHEBI_16057"
+        },
+        "represents": [
+          {
+            "curie": "CHEBI:26250",
+            "label": "prenol phosphate",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_26250"
+          },
+          {
+            "curie": "CHEBI:37841",
+            "label": "isoprenoid phosphate",
+            "relation": "is a",
+            "iri": "http://purl.obolibrary.org/obo/CHEBI_37841"
+          },
+          {
+            "curie": "GO:0050992",
+            "label": "dimethylallyl diphosphate biosynthetic process",
+            "relation": "product of",
+            "iri": "http://purl.obolibrary.org/obo/GO_0050992"
+          }
+        ]
+      }
     }
   ]
 }

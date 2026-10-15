@@ -1,3 +1,33 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: alpha-L-arabinofuranose;
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:28772      alpha-L-arabinofuranose [match=exact]
+REMARK 950 REPRESENTS CHEBI:24300      glucuronoarabinoxylans [is a side-branch
+REMARK 950                             residue of]
+REMARK 950 REPRESENTS CHEBI:22603      arabinoxylans [is a side-branch residue
+REMARK 950                             of]
+REMARK 950 REPRESENTS CHEBI:61266      hemicellulose [is a monomer constituent
+REMARK 950                             of]
+REMARK 950 REPRESENTS CHEBI:30849      L-arabinose [is the alpha-furanose ring
+REMARK 950                             form of]
+REMARK 950 CATEGORY   CHEBI:35381      monosaccharide [chemical class]
+REMARK 950 CATEGORY   GO:0046364       monosaccharide biosynthetic process
+REMARK 950                             [produced by]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  ARA A   1       1.989  -1.152  -0.124  1.00  0.00           C  
 HETATM    2  C2  ARA A   1       0.665  -0.507  -0.520  1.00  0.00           C  
 HETATM    3  C3  ARA A   1      -0.481  -0.873   0.413  1.00  0.00           C  

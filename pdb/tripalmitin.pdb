@@ -1,3 +1,30 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: Tripalmitin (glyceryl tripalmitate);
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:77393      tripalmitin [match=exact]
+REMARK 950 REPRESENTS CHEBI:17855      triglyceride [is a representative model
+REMARK 950                             of]
+REMARK 950 REPRESENTS CHEBI:15756      hexadecanoic acid [has acyl component]
+REMARK 950 REPRESENTS GO:0019432       triglyceride biosynthetic process
+REMARK 950                             [produced by]
+REMARK 950 CATEGORY   CHEBI:18059      lipid [chemical class]
+REMARK 950 CATEGORY   GO:0006633       fatty acid biosynthetic process [acyl
+REMARK 950                             chains produced by]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  TPM A   1       1.429  -0.163   4.696  1.00  0.00           C  
 HETATM    2  C2  TPM A   1       1.650  -1.260   5.724  1.00  0.00           C  
 HETATM    3  C3  TPM A   1       0.576  -2.349   5.695  1.00  0.00           C  

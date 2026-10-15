@@ -12,7 +12,9 @@ Fragments are concatenated with '.' ; the shared labels stitch them into ONE con
 molecule. Because we only swap a substituent token for a ring-bond *at the same position*,
 no chiral atom's neighbor ORDER changes, so every stereocenter is preserved exactly.
 A correctness gate (`_assert_templates`) confirms each all-free fragment canonicalizes to the
-verified monomer, and `build("cellulose:2")` is checked against known beta-cellobiose elsewhere.
+verified monomer, and the self-test (`python polymers.py`) checks cellulose:2 against known
+beta-cellobiose AND cellulose:6 against ChEBI beta-D-cellohexaose (CHEBI:49533) -- the N>=3 case
+is the only one that exercises an internal (both donor and acceptor) residue.
 
 Real bonds => RDKit writes CONECT records for every linkage (what PyMOL needs).
 
@@ -117,8 +119,11 @@ def _finish(smiles, name):
 def cellulose(n):
     if not (2 <= n <= 8):
         raise ValueError("cellulose N must be 2..8 (PDB column / embedding limits)")
+    # MID and CAP are written in the same atom order (C4 C3 C2 C1 O5 C5), so a beta-anomeric C1
+    # carries the SAME chirality tag in both: [C@H]. (MID once had [C@@H] here, which silently
+    # made every internal linkage alpha-1,4 -- caught by the ChEBI beta-D-cellohexaose self-test.)
     FRAG = "OC[C@H]1O[C@@H](O{inner})[C@H](O)[C@@H](O)[C@@H]1O"
-    MID = lambda d, inner: f"[C@H]{d}[C@H](O)[C@@H](O)[C@@H](O{inner})O[C@@H]{d}CO"
+    MID = lambda d, inner: f"[C@H]{d}[C@H](O)[C@@H](O)[C@H](O{inner})O[C@@H]{d}CO"
     CAP = lambda d: f"[C@H]{d}[C@H](O)[C@@H](O)[C@H](O)O[C@@H]{d}CO"   # beta reducing end
     inner = CAP(n)
     for d in range(n - 1, 1, -1):
@@ -246,8 +251,20 @@ if __name__ == "__main__":
     got = Chem.MolToSmiles(cellulose(2))
     want = Chem.MolToSmiles(Chem.MolFromSmiles(known_beta_cellobiose))
     print("cellobiose self-test:", "OK" if got == want else f"FAIL\n  got {got}\n  want {want}")
+    ok = got == want
+    # all-beta cellohexaose, beta reducing end: ChEBI CHEBI:49533 (InChIKey OCIBBXPLUVYKCH-FYTDUCIRSA-N)
+    known_beta_cellohexaose = (
+        "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@H]4"
+        "[C@H](O)[C@@H](O)[C@H](O[C@H]5[C@H](O)[C@@H](O)[C@H](O[C@H]6[C@H](O)[C@@H](O)[C@H](O)"
+        "O[C@@H]6CO)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O")
+    got6 = Chem.MolToInchiKey(cellulose(6))
+    want6 = Chem.MolToInchiKey(Chem.MolFromSmiles(known_beta_cellohexaose))
+    print("cellohexaose self-test (all beta-1,4):",
+          "OK" if got6 == want6 == "OCIBBXPLUVYKCH-FYTDUCIRSA-N" else f"FAIL  got {got6} want {want6}")
+    ok = ok and got6 == want6
     for tok in ("cellulose:6", "ggm:compact", "ggm:extended", "agx:compact",
                 "agx:extended", "lignin:trimer"):
         m = build(tok)
         print(f"  {tok:16s} {rdMolDescriptors.CalcMolFormula(m):16s} "
               f"{m.GetNumAtoms()} heavy atoms, frags={len(Chem.GetMolFrags(m))}")
+    raise SystemExit(0 if ok else 1)

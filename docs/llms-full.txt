@@ -1,0 +1,974 @@
+# Energetics — The molecules that store a forest's energy
+
+Source: https://tyson-swetnam.github.io/energetics-pymol/ · Repository: https://github.com/tyson-swetnam/energetics-pymol
+
+> 46 reproducible 3D molecular models (PDB with CONECT bonds + ray-traced PNG) of the organic molecules that store chemical-bond energy in a Pinus ponderosa (ponderosa pine, conifer/softwood) forest, built for the manuscript "Falk, Swetnam & McKenzie — Ecosystems as energy fields (2026)". Every model is annotated with OBO Foundry ontology terms (ChEBI, GO, ENVO, PO, NCBITaxon).
+
+Key facts for agents:
+
+- Study system is a conifer, so hemicellulose = softwood galactoglucomannan + arabinoglucuronoxylan and lignin = guaiacyl (G) lignin. Cellulose is clade-invariant.
+- Oligomers (cellulose N=2–8, hemicellulose fragments, lignin dimers/trimer) and the fossil-carbon entries are *defined representative models*, not the real randomized macromolecules or materials; cite them as such.
+- Energy values (HHV, MJ/kg) are approximate literature values for the gauge, not measurements. Whole-tree Pinus reference: 20.25 MJ/kg.
+- Ontology `match` levels: `exact` = same full InChIKey as the ChEBI entity; `stereo_unspecified` = same constitution (InChIKey block 1); stereo differs or is undefined; `close` = near-identical entity (e.g. anomer/ionization/tautomer variant); `broader` = ChEBI parent class; no entity exists for this exact model; `none` = no suitable ChEBI entity.
+- Source code and build pipeline: https://github.com/tyson-swetnam/energetics-pymol. Data mirror (CyVerse Data Store, MESA/DuckLake-tracked metadata): iRODS `/iplant/home/tswetnam/energetics-pymol`.
+
+## Project-level ontology terms
+
+- [NCBITaxon:55062](http://purl.obolibrary.org/obo/NCBITaxon_55062) Pinus ponderosa — source organism (study system)
+- [ENVO:01000211](http://purl.obolibrary.org/obo/ENVO_01000211) temperate coniferous forest biome — biome
+- [ENVO:01001243](http://purl.obolibrary.org/obo/ENVO_01001243) forest ecosystem — ecosystem whose bond energy is estimated
+- [PO:0005848](http://purl.obolibrary.org/obo/PO_0005848) secondary xylem — plant tissue (wood) holding the polymers
+- [ENVO:00002040](http://purl.obolibrary.org/obo/ENVO_00002040) wood — environmental material
+- [ENVO:01000155](http://purl.obolibrary.org/obo/ENVO_01000155) organic material — biomass (closest OBO class)
+- [GO:0015979](http://purl.obolibrary.org/obo/GO_0015979) photosynthesis — process that captures the stored energy
+
+## Molecule catalog
+
+### Sugar monomers
+
+Category terms: [CHEBI:35381](http://purl.obolibrary.org/obo/CHEBI_35381) monosaccharide — chemical class; [GO:0046364](http://purl.obolibrary.org/obo/GO_0046364) monosaccharide biosynthetic process — produced by
+
+#### beta-D-glucopyranose
+
+- id: `bdglc` · residue `BGC` · formula C6H12O6
+- SMILES (isomeric): `OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@@H]1O`
+- InChIKey: `WQZGKKKJIJFFOK-VFUOTHLCSA-N`
+- energy: ~15.6 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:15903](http://purl.obolibrary.org/obo/CHEBI_15903) beta-D-glucose — match `exact`
+- represents: [CHEBI:18246](http://purl.obolibrary.org/obo/CHEBI_18246) (1->4)-beta-D-glucan — is the repeat unit (monomer) of
+- represents: [CHEBI:17634](http://purl.obolibrary.org/obo/CHEBI_17634) D-glucose — is the beta-pyranose anomer of
+- represents: [CHEBI:4167](http://purl.obolibrary.org/obo/CHEBI_4167) D-glucopyranose — is a
+- note: Cellulose building block & primary photosynthate (PubChem CID 64689).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/bdglc.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/bdglc.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#bdglc)
+
+#### D-glucose (open-chain, Fischer aldehyde)
+
+- id: `glc_open` · residue `GLC` · formula C6H12O6
+- SMILES (isomeric): `OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C=O`
+- InChIKey: `GZCGUPFRVQAUEE-SLPGGIOYSA-N`
+- energy: ~15.6 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:42758](http://purl.obolibrary.org/obo/CHEBI_42758) aldehydo-D-glucose — match `exact`
+- represents: [CHEBI:17634](http://purl.obolibrary.org/obo/CHEBI_17634) D-glucose — is an open-chain tautomer of
+- represents: [CHEBI:33917](http://purl.obolibrary.org/obo/CHEBI_33917) aldohexose — is a
+- note: Acyclic aldohexose: the photosynthesis product before ring closure (ChEBI aldehydo-D-glucose).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/glc_open.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/glc_open.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#glc_open)
+
+#### beta-D-mannopyranose
+
+- id: `bdman` · residue `MAN` · formula C6H12O6
+- SMILES (isomeric): `OC[C@H]1O[C@@H](O)[C@@H](O)[C@@H](O)[C@@H]1O`
+- InChIKey: `WQZGKKKJIJFFOK-RWOPYEJCSA-N`
+- energy: ~15.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:28563](http://purl.obolibrary.org/obo/CHEBI_28563) beta-D-mannose — match `exact`
+- represents: [CHEBI:24144](http://purl.obolibrary.org/obo/CHEBI_24144) galactoglucomannan — is the principal backbone monomer unit of
+- represents: [CHEBI:17020](http://purl.obolibrary.org/obo/CHEBI_17020) glucomannan — is a monomer unit of
+- represents: [CHEBI:61266](http://purl.obolibrary.org/obo/CHEBI_61266) hemicellulose — is a constituent sugar of softwood
+- note: Principal backbone sugar of softwood galactoglucomannan (C2 epimer of glucose).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/bdman.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/bdman.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#bdman)
+
+#### beta-D-galactopyranose
+
+- id: `bdgal` · residue `GAL` · formula C6H12O6
+- SMILES (isomeric): `OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@H]1O`
+- InChIKey: `WQZGKKKJIJFFOK-FPRJBGLDSA-N`
+- energy: ~15.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:27667](http://purl.obolibrary.org/obo/CHEBI_27667) beta-D-galactose — match `exact`
+- represents: [CHEBI:24144](http://purl.obolibrary.org/obo/CHEBI_24144) galactoglucomannan — is a monomer of
+- represents: [CHEBI:61266](http://purl.obolibrary.org/obo/CHEBI_61266) hemicellulose — is a constituent sugar of
+- note: Galactoglucomannan side-branch sugar (C4 epimer of glucose).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/bdgal.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/bdgal.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#bdgal)
+
+#### beta-D-xylopyranose
+
+- id: `bdxyl` · residue `XYS` · formula C5H10O5
+- SMILES (isomeric): `C1[C@H]([C@@H]([C@H]([C@@H](O1)O)O)O)O`
+- InChIKey: `SRBFZHDQGSBBOR-KKQCNMDGSA-N`
+- energy: ~15.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:28161](http://purl.obolibrary.org/obo/CHEBI_28161) beta-D-xylose — match `exact`
+- represents: [CHEBI:37166](http://purl.obolibrary.org/obo/CHEBI_37166) xylan — is the monomer unit of
+- represents: [CHEBI:60938](http://purl.obolibrary.org/obo/CHEBI_60938) glucuronoxylan — is the backbone monomer of
+- represents: [CHEBI:61266](http://purl.obolibrary.org/obo/CHEBI_61266) hemicellulose — is a constituent monomer of
+- note: Pentose backbone of softwood arabinoglucuronoxylan (no C6 CH2OH).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/bdxyl.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/bdxyl.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#bdxyl)
+
+#### alpha-L-arabinofuranose
+
+- id: `alaraf` · residue `ARA` · formula C5H10O5
+- SMILES (isomeric): `C([C@H]1[C@@H]([C@H]([C@@H](O1)O)O)O)O`
+- InChIKey: `HMFHBZSHGGEWLO-QMKXCQHVSA-N`
+- energy: ~15.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:28772](http://purl.obolibrary.org/obo/CHEBI_28772) alpha-L-arabinofuranose — match `exact`
+- represents: [CHEBI:24300](http://purl.obolibrary.org/obo/CHEBI_24300) glucuronoarabinoxylans — is a side-branch residue of
+- represents: [CHEBI:22603](http://purl.obolibrary.org/obo/CHEBI_22603) arabinoxylans — is a side-branch residue of
+- represents: [CHEBI:61266](http://purl.obolibrary.org/obo/CHEBI_61266) hemicellulose — is a monomer constituent of
+- represents: [CHEBI:30849](http://purl.obolibrary.org/obo/CHEBI_30849) L-arabinose — is the alpha-furanose ring form of
+- note: Furanose (5-membered) side branch of arabinoglucuronoxylan (PubChem CID 7044039).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/alaraf.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/alaraf.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#alaraf)
+
+#### 4-O-methyl-alpha-D-glucuronic acid
+
+- id: `meglca` · residue `MGA` · formula C7H12O7
+- SMILES (isomeric): `CO[C@H]1[C@@H]([C@H]([C@H](O[C@@H]1C(=O)O)O)O)O`
+- InChIKey: `WGLLPAPKWFDHHV-NRGGUMNKSA-N`
+- energy: ~14.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:234000](http://purl.obolibrary.org/obo/CHEBI_234000) 4-O-methyl-beta-D-glucuronate — match `close`
+- represents: [CHEBI:17856](http://purl.obolibrary.org/obo/CHEBI_17856) glucuronoxylan 4-O-methyl-D-glucuronate — is the side-chain residue of
+- represents: [CHEBI:60938](http://purl.obolibrary.org/obo/CHEBI_60938) glucuronoxylan — is a substituent monomer of
+- represents: [CHEBI:61266](http://purl.obolibrary.org/obo/CHEBI_61266) hemicellulose — is a monomer constituent of
+- represents: [CHEBI:171668](http://purl.obolibrary.org/obo/CHEBI_171668) 4-O-methyl-alpha-D-glucuronoside — is the free-sugar form of the glycosyl unit in
+- note: Acidic side branch of softwood xylan; C6 oxidized to COOH, O4 methylated (PubChem CID 445994).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/meglca.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/meglca.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#meglca)
+
+### Intermediates
+
+Category terms: none shared — see each molecule
+
+#### UDP-glucose
+
+- id: `udp_glucose` · residue `UDG` · formula C15H24N2O17P2
+- SMILES (isomeric): `O=c1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H]2O)c(=O)[nH]1`
+- InChIKey: `HSCJRCZFDFQWRP-JZMIEXBBSA-N`
+- energy: ~22.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:46229](http://purl.obolibrary.org/obo/CHEBI_46229) UDP-alpha-D-glucose — match `exact`
+- represents: [CHEBI:18066](http://purl.obolibrary.org/obo/CHEBI_18066) UDP-D-glucose — is a representative model of
+- represents: [CHEBI:61109](http://purl.obolibrary.org/obo/CHEBI_61109) pyrimidine nucleotide-sugar — is a
+- represents: [CHEBI:18246](http://purl.obolibrary.org/obo/CHEBI_18246) (1->4)-beta-D-glucan — is the activated glucosyl donor of
+- represents: [GO:0030244](http://purl.obolibrary.org/obo/GO_0030244) cellulose biosynthetic process — participates in
+- represents: [GO:0009225](http://purl.obolibrary.org/obo/GO_0009225) nucleotide-sugar metabolic process — participant in
+- note: Activated glucose (a nucleotide sugar): the substrate cellulose synthase polymerizes into β-1,4 glucan. Stereo per ChEBI:46229 (UDP-α-D-glucose).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/udp_glucose.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/udp_glucose.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#udp_glucose)
+
+#### GDP-mannose (nucleotide sugar)
+
+- id: `gdp_mannose` · residue `GDM` · formula C16H25N5O16P2
+- SMILES (isomeric): `Nc1nc2c(ncn2[C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]3O)[C@@H](O)[C@H]2O)c(=O)[nH]1`
+- InChIKey: `MVMSCBBUIHUTGJ-GDJBGNAASA-N`
+- energy: ~22.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:15820](http://purl.obolibrary.org/obo/CHEBI_15820) GDP-alpha-D-mannose — match `exact`
+- represents: [CHEBI:21168](http://purl.obolibrary.org/obo/CHEBI_21168) GDP-mannose — is a stereo-unspecified model of
+- represents: [CHEBI:64711](http://purl.obolibrary.org/obo/CHEBI_64711) purine nucleotide-sugar — is a
+- represents: [CHEBI:24144](http://purl.obolibrary.org/obo/CHEBI_24144) galactoglucomannan — is the activated mannosyl donor for biosynthesis of
+- represents: [GO:0009225](http://purl.obolibrary.org/obo/GO_0009225) nucleotide-sugar metabolic process — participant in
+- represents: [GO:0046354](http://purl.obolibrary.org/obo/GO_0046354) mannan biosynthetic process — glycosyl donor for
+- note: A nucleotide sugar — the activated mannose donor for softwood galactoglucomannan, built in the Golgi. Stereo per ChEBI:15820 (GDP-α-D-mannose).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/gdp_mannose.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/gdp_mannose.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#gdp_mannose)
+
+#### L-Phenylalanine
+
+- id: `phenylalanine` · residue `PHE` · formula C9H11NO2
+- SMILES (isomeric): `N[C@@H](Cc1ccccc1)C(=O)O`
+- InChIKey: `COLNVLDHVKWLRT-QMMMGPOBSA-N`
+- energy: ~22.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:17295](http://purl.obolibrary.org/obo/CHEBI_17295) L-phenylalanine — match `exact`
+- represents: [CHEBI:33856](http://purl.obolibrary.org/obo/CHEBI_33856) aromatic amino acid — is a
+- represents: [CHEBI:83813](http://purl.obolibrary.org/obo/CHEBI_83813) proteinogenic amino acid — is a
+- represents: [CHEBI:26004](http://purl.obolibrary.org/obo/CHEBI_26004) phenylpropanoid — is the biosynthetic precursor of
+- represents: [GO:0009699](http://purl.obolibrary.org/obo/GO_0009699) phenylpropanoid biosynthetic process — precursor in
+- note: The aromatic amino acid that enters the phenylpropanoid pathway en route to monolignols (lignin).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/phenylalanine.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/phenylalanine.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#phenylalanine)
+
+#### Acetyl-CoA
+
+- id: `acetyl_coa` · residue `COA` · formula C23H38N7O17P3S
+- SMILES (isomeric): `CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O`
+- InChIKey: `ZSLZBFCDCINBPY-ZSJPKINUSA-N`
+- energy: ~22.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:15351](http://purl.obolibrary.org/obo/CHEBI_15351) acetyl-CoA — match `exact`
+- represents: [CHEBI:17984](http://purl.obolibrary.org/obo/CHEBI_17984) acyl-CoA — is a
+- represents: [GO:0006633](http://purl.obolibrary.org/obo/GO_0006633) fatty acid biosynthetic process — is a substrate/building block of
+- represents: [GO:0019287](http://purl.obolibrary.org/obo/GO_0019287) isopentenyl diphosphate biosynthetic process, mevalonate pathway — is a precursor in
+- note: The two-carbon building block: feeds fatty-acid synthesis and the MVA isoprenoid route. Stereo per ChEBI:15351.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/acetyl_coa.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/acetyl_coa.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#acetyl_coa)
+
+#### Isopentenyl diphosphate (IPP)
+
+- id: `ipp` · residue `IPP` · formula C5H12O7P2
+- SMILES (isomeric): `CC(=C)CCOP(=O)(O)OP(=O)(O)O`
+- InChIKey: `NUHSROFQTUXZQQ-UHFFFAOYSA-N`
+- energy: ~22.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:16584](http://purl.obolibrary.org/obo/CHEBI_16584) isopentenyl diphosphate — match `exact`
+- represents: [CHEBI:37841](http://purl.obolibrary.org/obo/CHEBI_37841) isoprenoid phosphate — is a member of the class
+- represents: [CHEBI:24913](http://purl.obolibrary.org/obo/CHEBI_24913) isoprenoid — is the C5 building-block precursor of
+- represents: [GO:0009240](http://purl.obolibrary.org/obo/GO_0009240) isopentenyl diphosphate biosynthetic process — is the output of
+- represents: [CHEBI:76924](http://purl.obolibrary.org/obo/CHEBI_76924) plant metabolite — has role
+- note: The universal C5 isoprene unit; condensed into the prenyl diphosphates that make terpenes/resin.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/ipp.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/ipp.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#ipp)
+
+#### Dimethylallyl diphosphate (DMAPP)
+
+- id: `dmapp` · residue `DMA` · formula C5H12O7P2
+- SMILES (isomeric): `CC(C)=CCOP(=O)(O)OP(=O)(O)O`
+- InChIKey: `CBIDRCWHNCKSTO-UHFFFAOYSA-N`
+- energy: ~22.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:16057](http://purl.obolibrary.org/obo/CHEBI_16057) prenyl diphosphate — match `exact`
+- represents: [CHEBI:26250](http://purl.obolibrary.org/obo/CHEBI_26250) prenol phosphate — is a
+- represents: [CHEBI:37841](http://purl.obolibrary.org/obo/CHEBI_37841) isoprenoid phosphate — is a
+- represents: [GO:0050992](http://purl.obolibrary.org/obo/GO_0050992) dimethylallyl diphosphate biosynthetic process — product of
+- note: The reactive C5 isomer of IPP that primes prenyl-chain elongation toward terpenes.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/dmapp.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/dmapp.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#dmapp)
+
+### Cellulose
+
+Category terms: [CHEBI:18246](http://purl.obolibrary.org/obo/CHEBI_18246) (1->4)-beta-D-glucan — cellulose; models are oligomers of it; [GO:0030244](http://purl.obolibrary.org/obo/GO_0030244) cellulose biosynthetic process — produced by; [GO:0052324](http://purl.obolibrary.org/obo/GO_0052324) plant-type cell wall cellulose biosynthetic process — produced by
+
+#### Cellobiose (beta-D-Glcp-(1->4)-D-Glcp)
+
+- id: `cellobiose` · residue `BGC` · formula C12H22O11
+- SMILES (isomeric): `OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O`
+- InChIKey: `GUBGYTABKSRVRQ-QRZGKKJRSA-N`
+- energy: ~17.3 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:36217](http://purl.obolibrary.org/obo/CHEBI_36217) beta-cellobiose — match `exact`
+- represents: [CHEBI:17057](http://purl.obolibrary.org/obo/CHEBI_17057) cellobiose — is a
+- represents: [CHEBI:180683](http://purl.obolibrary.org/obo/CHEBI_180683) lignocellulose — is a structural fragment of the cellulose component of
+- note: The cellulose repeating disaccharide; shows the beta-1,4 glycosidic bond.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/cellobiose.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/cellobiose.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#cellobiose)
+
+#### Cellotetraose (cellulose, N=4)
+
+- id: `cellotetraose` · residue `BGC` · formula C24H42O21
+- SMILES (isomeric): `OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@H]4[C@H](O)[C@@H](O)[C@H](O)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O`
+- InChIKey: `LUEWUZLMQUOBSB-HGDSAIHNSA-N`
+- energy: ~17.3 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:62974](http://purl.obolibrary.org/obo/CHEBI_62974) cellotetraose — match `stereo_unspecified`
+- represents: [CHEBI:3523](http://purl.obolibrary.org/obo/CHEBI_3523) cellodextrin — is a
+- note: Compact cellulose oligomer.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/cellotetraose.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/cellotetraose.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#cellotetraose)
+
+#### Cellohexaose (cellulose, N=6)
+
+- id: `cellohexaose` · residue `BGC` · formula C36H62O31
+- SMILES (isomeric): `OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@H]4[C@H](O)[C@@H](O)[C@H](O[C@H]5[C@H](O)[C@@H](O)[C@H](O[C@H]6[C@H](O)[C@@H](O)[C@H](O)O[C@@H]6CO)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O`
+- InChIKey: `OCIBBXPLUVYKCH-FYTDUCIRSA-N`
+- energy: ~17.3 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:49533](http://purl.obolibrary.org/obo/CHEBI_49533) beta-D-cellohexaose — match `exact`
+- represents: [CHEBI:3523](http://purl.obolibrary.org/obo/CHEBI_3523) cellodextrin — is a
+- note: Standard crystalline-cellulose surrogate; twofold-screw ribbon w/ O3-H...O5 H-bonds.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/cellohexaose.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/cellohexaose.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#cellohexaose)
+
+#### Cellooctaose (cellulose, N=8)
+
+- id: `cellooctaose` · residue `BGC` · formula C48H82O41
+- SMILES (isomeric): `OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O[C@H]3[C@H](O)[C@@H](O)[C@H](O[C@H]4[C@H](O)[C@@H](O)[C@H](O[C@H]5[C@H](O)[C@@H](O)[C@H](O[C@H]6[C@H](O)[C@@H](O)[C@H](O[C@H]7[C@H](O)[C@@H](O)[C@H](O[C@H]8[C@H](O)[C@@H](O)[C@H](O)O[C@@H]8CO)O[C@@H]7CO)O[C@@H]6CO)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O`
+- InChIKey: `RUJILUJOOCOSRO-UNLXIWHUSA-N`
+- energy: ~17.3 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:49542](http://purl.obolibrary.org/obo/CHEBI_49542) cellooctaose — match `exact`
+- represents: [CHEBI:3523](http://purl.obolibrary.org/obo/CHEBI_3523) cellodextrin — is a
+- note: Extended cellulose chain for a longer-ribbon figure.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/cellooctaose.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/cellooctaose.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#cellooctaose)
+
+### Hemicellulose
+
+Category terms: [CHEBI:61266](http://purl.obolibrary.org/obo/CHEBI_61266) hemicellulose — defined representative fragment of; [GO:0070592](http://purl.obolibrary.org/obo/GO_0070592) cell wall polysaccharide biosynthetic process — produced by
+
+#### Galactoglucomannan fragment (compact)
+
+- id: `ggm_compact` · residue `GGM` · formula C42H72O36
+- SMILES (isomeric): `OC[C@H]1O[C@H](OC[C@H]2O[C@@H](O[C@H]3[C@H](O)[C@H](O)[C@H](O[C@H]4[C@H](O)[C@H](O)[C@H](O)O[C@@H]4CO)O[C@@H]3CO)[C@@H](O)[C@@H](O)[C@@H]2O[C@@H]2O[C@H](CO)[C@@H](O[C@@H]3O[C@H](CO)[C@@H](O[C@@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]4O)[C@H](O)[C@@H]3O)[C@H](O)[C@H]2O)[C@H](O)[C@@H](O)[C@H]1O`
+- InChIKey: `POTBIMMSIQANFA-GRHHODFSSA-N`
+- energy: ~16.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:24144](http://purl.obolibrary.org/obo/CHEBI_24144) galactoglucomannan — match `broader`
+- represents: [CHEBI:53463](http://purl.obolibrary.org/obo/CHEBI_53463) heptasaccharide — is a
+- represents: [CHEBI:61298](http://purl.obolibrary.org/obo/CHEBI_61298) D-glucose- and/or D-galactose-substituted mannan — is a fragment of
+- represents: [GO:0046354](http://purl.obolibrary.org/obo/GO_0046354) mannan biosynthetic process — produced by
+- note: beta-1,4 Man/Glc backbone + alpha-1,6 Gal branch; principal softwood hemicellulose.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/ggm_compact.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/ggm_compact.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#ggm_compact)
+
+#### Galactoglucomannan fragment (extended, acetylated)
+
+- id: `ggm_extended` · residue `GGM` · formula C76H126O63
+- SMILES (isomeric): `CC(=O)O[C@@H]1[C@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O[C@H]3[C@H](O)[C@H](O)[C@H](O[C@H]4[C@H](O)[C@H](O)[C@H](O[C@H]5[C@H](O)[C@H](O)[C@H](O)O[C@@H]5CO)O[C@@H]4CO)O[C@@H]3CO[C@H]3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)O[C@@H]2CO)O[C@H](CO)[C@@H](O[C@@H]2O[C@H](CO)[C@@H](O[C@@H]3O[C@H](CO[C@H]4O[C@H](CO)[C@H](O)[C@H](O)[C@H]4O)[C@@H](O[C@@H]4O[C@H](CO)[C@@H](O[C@@H]5O[C@H](CO)[C@@H](O[C@@H]6O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]6O)[C@H](OC(C)=O)[C@@H]5O)[C@H](O)[C@H]4O)[C@H](O)[C@@H]3O)[C@H](O)[C@@H]2O)[C@@H]1O`
+- InChIKey: `OLJOSNGNYXMYJM-ZKZAVZQXSA-N`
+- energy: ~16.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:24144](http://purl.obolibrary.org/obo/CHEBI_24144) galactoglucomannan — match `broader`
+- represents: [CHEBI:61298](http://purl.obolibrary.org/obo/CHEBI_61298) D-glucose- and/or D-galactose-substituted mannan — is a fragment of
+- represents: [CHEBI:180683](http://purl.obolibrary.org/obo/CHEBI_180683) lignocellulose — is a component of
+- represents: [GO:0046354](http://purl.obolibrary.org/obo/GO_0046354) mannan biosynthetic process — produced by
+- note: Longer GGM backbone with two Gal branches and native O-acetyl groups.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/ggm_extended.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/ggm_extended.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#ggm_extended)
+
+#### Arabinoglucuronoxylan fragment (compact)
+
+- id: `agx_compact` · residue `AGX` · formula C37H60O31
+- SMILES (isomeric): `CO[C@H]1[C@H](O)[C@@H](O)[C@@H](O[C@H]2[C@H](O[C@@H]3CO[C@@H](O[C@@H]4CO[C@@H](O[C@@H]5CO[C@@H](O)[C@H](O)[C@H]5O)[C@H](O)[C@H]4O[C@@H]4O[C@@H](CO)[C@H](O)[C@H]4O)[C@H](O)[C@H]3O)OC[C@@H](O[C@@H]3OC[C@@H](O)[C@H](O)[C@H]3O)[C@@H]2O)O[C@@H]1C(=O)O`
+- InChIKey: `NFARUHWBQQFMEZ-HRVLSVISSA-N`
+- energy: ~16.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:28302](http://purl.obolibrary.org/obo/CHEBI_28302) glucuronoarabinoxylan — match `broader`
+- represents: [CHEBI:60938](http://purl.obolibrary.org/obo/CHEBI_60938) glucuronoxylan — is a fragment of
+- represents: [CHEBI:22603](http://purl.obolibrary.org/obo/CHEBI_22603) arabinoxylans — is a fragment of
+- represents: [CHEBI:37166](http://purl.obolibrary.org/obo/CHEBI_37166) xylan — is a fragment of
+- represents: [GO:0045492](http://purl.obolibrary.org/obo/GO_0045492) xylan biosynthetic process — produced by
+- note: beta-1,4 xylan backbone + alpha-1,2 MeGlcA + alpha-1,3 arabinofuranose branches.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/agx_compact.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/agx_compact.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#agx_compact)
+
+#### Arabinoglucuronoxylan fragment (extended)
+
+- id: `agx_extended` · residue `AGX` · formula C64H102O53
+- SMILES (isomeric): `CO[C@H]1[C@H](O)[C@@H](O)[C@@H](O[C@H]2[C@H](O[C@@H]3CO[C@@H](O[C@@H]4CO[C@@H](O[C@@H]5CO[C@@H](O[C@@H]6CO[C@@H](O[C@@H]7CO[C@@H](O[C@@H]8CO[C@@H](O)[C@H](O)[C@H]8O)[C@H](O)[C@H]7O[C@@H]7O[C@@H](CO)[C@H](O)[C@H]7O)[C@H](O[C@H]7O[C@H](C(=O)O)[C@@H](OC)[C@H](O)[C@H]7O)[C@H]6O)[C@H](O)[C@H]5O)[C@H](O)[C@H]4O[C@@H]4O[C@@H](CO)[C@H](O)[C@H]4O)[C@H](O)[C@H]3O)OC[C@@H](O[C@@H]3OC[C@@H](O)[C@H](O)[C@H]3O)[C@@H]2O)O[C@@H]1C(=O)O`
+- InChIKey: `HWXNXOMEJLYEPQ-GDOMOKQCSA-N`
+- energy: ~16.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:28302](http://purl.obolibrary.org/obo/CHEBI_28302) glucuronoarabinoxylan — match `broader`
+- represents: [CHEBI:60938](http://purl.obolibrary.org/obo/CHEBI_60938) glucuronoxylan — is a representative fragment of
+- represents: [CHEBI:22603](http://purl.obolibrary.org/obo/CHEBI_22603) arabinoxylans — is a representative fragment of
+- represents: [CHEBI:37166](http://purl.obolibrary.org/obo/CHEBI_37166) xylan — is a fragment of
+- represents: [GO:0045492](http://purl.obolibrary.org/obo/GO_0045492) xylan biosynthetic process — produced by
+- note: Longer xylan backbone with multiple acidic and arabinose branches.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/agx_extended.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/agx_extended.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#agx_extended)
+
+### Lignin
+
+Category terms: [CHEBI:6457](http://purl.obolibrary.org/obo/CHEBI_6457) lignin — monomer precursor or linkage model of; [GO:0009809](http://purl.obolibrary.org/obo/GO_0009809) lignin biosynthetic process — produced by / participant in
+
+#### p-Coumaryl alcohol (H monolignol)
+
+- id: `pcoumaryl` · residue `LIG` · formula C9H10O2
+- SMILES (isomeric): `OC1=CC=C(/C=C/CO)C=C1`
+- InChIKey: `PTNLHDGQWUGONS-OWOJBTEDSA-N`
+- energy: ~26.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:64555](http://purl.obolibrary.org/obo/CHEBI_64555) trans-p-coumaryl alcohol — match `exact`
+- represents: [CHEBI:64477](http://purl.obolibrary.org/obo/CHEBI_64477) monolignol — has role
+- represents: [CHEBI:28386](http://purl.obolibrary.org/obo/CHEBI_28386) 4-hydroxycinnamyl alcohol — E-isomer of
+- note: Trace H units in softwood; included for H/G/S contrast (PubChem CID 5280535).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/pcoumaryl.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/pcoumaryl.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#pcoumaryl)
+
+#### Coniferyl alcohol (G monolignol)
+
+- id: `coniferyl` · residue `LIG` · formula C10H12O3
+- SMILES (isomeric): `COC1=CC(=CC=C1O)/C=C/CO`
+- InChIKey: `JMFRWRFFLBVWSI-NSCUHMNNSA-N`
+- energy: ~26.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:17745](http://purl.obolibrary.org/obo/CHEBI_17745) coniferol — match `exact`
+- represents: [CHEBI:64477](http://purl.obolibrary.org/obo/CHEBI_64477) monolignol — has role
+- represents: [CHEBI:64475](http://purl.obolibrary.org/obo/CHEBI_64475) guaiacyl lignin — monomer of (softwood G unit)
+- represents: [GO:1901063](http://purl.obolibrary.org/obo/GO_1901063) guaiacyl lignin biosynthetic process — participant in
+- note: THE primary softwood (guaiacyl) monolignol (PubChem CID 1549095).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/coniferyl.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/coniferyl.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#coniferyl)
+
+#### Sinapyl alcohol (S monolignol)
+
+- id: `sinapyl` · residue `LIG` · formula C11H14O4
+- SMILES (isomeric): `COC1=CC(=CC(=C1O)OC)/C=C/CO`
+- InChIKey: `LZFOPEXOUVTGJS-ONEGZZNKSA-N`
+- energy: ~26.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:64557](http://purl.obolibrary.org/obo/CHEBI_64557) trans-sinapyl alcohol — match `exact`
+- represents: [CHEBI:64477](http://purl.obolibrary.org/obo/CHEBI_64477) monolignol — has role
+- represents: [CHEBI:64476](http://purl.obolibrary.org/obo/CHEBI_64476) syringal lignin — monomer of (angiosperm S unit)
+- note: Syringyl monomer; essentially absent from softwood -- caption as the angiosperm contrast (CID 5280507).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/sinapyl.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/sinapyl.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#sinapyl)
+
+#### Guaiacylglycerol-beta-guaiacyl ether (beta-O-4)
+
+- id: `lignin_bo4` · residue `LIG` · formula C17H20O6
+- SMILES (isomeric): `COC1=CC=CC=C1OC(CO)C(O)C2=CC=C(O)C(OC)=C2`
+- InChIKey: `PPZSOILKWHVNNS-UHFFFAOYSA-N`
+- energy: ~26.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:53650](http://purl.obolibrary.org/obo/CHEBI_53650) guaiacylglycerol-beta-guaiacyl ether — match `exact`
+- represents: [CHEBI:64475](http://purl.obolibrary.org/obo/CHEBI_64475) guaiacyl lignin — is a representative model of
+- represents: [CHEBI:17745](http://purl.obolibrary.org/obo/CHEBI_17745) coniferol — has monomer unit
+- represents: [GO:1901063](http://purl.obolibrary.org/obo/GO_1901063) guaiacyl lignin biosynthetic process — linkage formed in
+- note: The dominant softwood interunit linkage (~50%); classic beta-O-4 model (PubChem CID 6424189).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_bo4.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/lignin_bo4.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#lignin_bo4)
+
+#### Dehydrodiconiferyl alcohol (beta-5 phenylcoumaran)
+
+- id: `lignin_b5` · residue `LIG` · formula C20H22O6
+- SMILES (isomeric): `COc1cc(/C=C/CO)cc2c1OC(c1ccc(O)c(OC)c1)C2CO`
+- InChIKey: `KUSXBOZNRPQEON-ONEGZZNKSA-N`
+- energy: ~26.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:91184](http://purl.obolibrary.org/obo/CHEBI_91184) dehydrodiconiferyl alcohol — match `exact`
+- represents: [CHEBI:64475](http://purl.obolibrary.org/obo/CHEBI_64475) guaiacyl lignin — is a representative model of
+- represents: [CHEBI:17745](http://purl.obolibrary.org/obo/CHEBI_17745) coniferol — has monomer unit
+- represents: [GO:1901063](http://purl.obolibrary.org/obo/GO_1901063) guaiacyl lignin biosynthetic process — linkage formed in
+- note: beta-5 phenylcoumaran dimer, both rings guaiacyl (PubChem CID 5372367).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_b5.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/lignin_b5.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#lignin_b5)
+
+#### Pinoresinol (beta-beta resinol)
+
+- id: `lignin_bb` · residue `LIG` · formula C20H22O6
+- SMILES (isomeric): `COC1=C(C=CC(=C1)[C@@H]2[C@H]3CO[C@@H]([C@H]3CO2)C4=CC(=C(C=C4)O)OC)O`
+- InChIKey: `HGXBRUKMWQGOIE-AFHBHXEDSA-N`
+- energy: ~26.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:40](http://purl.obolibrary.org/obo/CHEBI_40) (+)-pinoresinol — match `exact`
+- represents: [CHEBI:8225](http://purl.obolibrary.org/obo/CHEBI_8225) pinoresinol — is a
+- represents: [CHEBI:25036](http://purl.obolibrary.org/obo/CHEBI_25036) lignan — is a
+- represents: [CHEBI:64475](http://purl.obolibrary.org/obo/CHEBI_64475) guaiacyl lignin — is a representative model of the beta-beta linkage in
+- represents: [CHEBI:76924](http://purl.obolibrary.org/obo/CHEBI_76924) plant metabolite — has role
+- note: beta-beta furofuran dimer; also a genuine conifer lignan (keep defined stereo).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_bb.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/lignin_bb.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#lignin_bb)
+
+#### 5-5' biphenyl diconiferyl alcohol
+
+- id: `lignin_55` · residue `LIG` · formula C20H22O6
+- SMILES (isomeric): `OC/C=C/c1cc(OC)c(O)c(-c2cc(/C=C/CO)cc(OC)c2O)c1`
+- InChIKey: `LNPUFGIAJJTBEI-GGWOSOGESA-N`
+- energy: ~26.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:64475](http://purl.obolibrary.org/obo/CHEBI_64475) guaiacyl lignin — match `broader`
+- represents: [CHEBI:17745](http://purl.obolibrary.org/obo/CHEBI_17745) coniferol — is an oxidative-coupling dimer of
+- represents: [CHEBI:25497](http://purl.obolibrary.org/obo/CHEBI_25497) neolignan — is a
+- represents: [CHEBI:22888](http://purl.obolibrary.org/obo/CHEBI_22888) biphenyls — is a
+- represents: [GO:1901063](http://purl.obolibrary.org/obo/GO_1901063) guaiacyl lignin biosynthetic process — linkage formed in
+- note: 5-5 biphenyl C-C linkage (most common softwood C-C bond, often within dibenzodioxocin).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_55.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/lignin_55.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#lignin_55)
+
+#### G-(beta-O-4)-G-(beta-5)-G lignin trimer
+
+- id: `lignin_trimer` · residue `LIG` · formula C30H34O10
+- SMILES (isomeric): `COc1cc(C(O)C(CO)Oc2ccc(C3Oc4c(OC)cc(/C=C/CO)cc4C3CO)cc2OC)ccc1O`
+- InChIKey: `VNGVOXIWFLPAFU-SNAWJCMRSA-N`
+- energy: ~26.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:64475](http://purl.obolibrary.org/obo/CHEBI_64475) guaiacyl lignin — match `broader`
+- represents: [CHEBI:91184](http://purl.obolibrary.org/obo/CHEBI_91184) dehydrodiconiferyl alcohol — has substructure
+- represents: [CHEBI:91172](http://purl.obolibrary.org/obo/CHEBI_91172) guaiacylglycerol beta-coniferyl ether — shares beta-O-4 guaiacylglycerol ether linkage motif
+- represents: [CHEBI:17745](http://purl.obolibrary.org/obo/CHEBI_17745) coniferol — has monomer unit
+- represents: [GO:1901063](http://purl.obolibrary.org/obo/GO_1901063) guaiacyl lignin biosynthetic process — linkages formed in
+- note: Defined representative guaiacyl trimer combining beta-O-4 + beta-5 (caption as a model, not bulk lignin).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignin_trimer.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/lignin_trimer.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#lignin_trimer)
+
+### Combustion
+
+Category terms: [ENVO:01000839](http://purl.obolibrary.org/obo/ENVO_01000839) combustion process — reactant or product; [ENVO:01000791](http://purl.obolibrary.org/obo/ENVO_01000791) forest fire — reactant or product; [GO:0009060](http://purl.obolibrary.org/obo/GO_0009060) aerobic respiration — same reactants/products
+
+#### Dioxygen (O2)
+
+- id: `o2` · residue `OXY` · formula O2
+- SMILES (isomeric): `O=O`
+- InChIKey: `MYMOFIZGZYHOMD-UHFFFAOYSA-N`
+- energy: n/a (oxidant — not a fuel)
+- ChEBI structure: [CHEBI:15379](http://purl.obolibrary.org/obo/CHEBI_15379) dioxygen — match `exact`
+- represents: [CHEBI:27140](http://purl.obolibrary.org/obo/CHEBI_27140) triplet dioxygen — is a closed-shell depiction of the ground-state spin form
+- represents: [CHEBI:63248](http://purl.obolibrary.org/obo/CHEBI_63248) oxidising agent — has role
+- note: Oxidant in biomass + O2 -> CO2 + H2O (drawn closed-shell; ground state is a triplet diradical).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/o2.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/o2.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#o2)
+
+#### Carbon dioxide (CO2)
+
+- id: `co2` · residue `CO2` · formula CO2
+- SMILES (isomeric): `O=C=O`
+- InChIKey: `CURLTUGMZLYLDI-UHFFFAOYSA-N`
+- energy: n/a (product — not a fuel)
+- ChEBI structure: [CHEBI:16526](http://purl.obolibrary.org/obo/CHEBI_16526) carbon dioxide — match `exact`
+- represents: [ENVO:01000451](http://purl.obolibrary.org/obo/ENVO_01000451) atmospheric carbon dioxide — is a molecular model of
+- note: Combustion product / photosynthesis substrate.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/co2.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/co2.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#co2)
+
+#### Water (H2O)
+
+- id: `h2o` · residue `HOH` · formula H2O
+- SMILES (isomeric): `O`
+- InChIKey: `XLYOFNOQVPJJNP-UHFFFAOYSA-N`
+- energy: n/a (product — not a fuel)
+- ChEBI structure: [CHEBI:15377](http://purl.obolibrary.org/obo/CHEBI_15377) water — match `exact`
+- represents: [ENVO:01000266](http://purl.obolibrary.org/obo/ENVO_01000266) water vapour — is a molecular model of
+- represents: [ENVO:00002006](http://purl.obolibrary.org/obo/ENVO_00002006) liquid water — is a molecular model of
+- note: Combustion product; the HHV/LHV distinction hinges on its heat of vaporization.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/h2o.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/h2o.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#h2o)
+
+### Fats
+
+Category terms: [CHEBI:18059](http://purl.obolibrary.org/obo/CHEBI_18059) lipid — chemical class; [GO:0006633](http://purl.obolibrary.org/obo/GO_0006633) fatty acid biosynthetic process — acyl chains produced by
+
+#### Oleic acid (18:1 cis-9)
+
+- id: `oleic_acid` · residue `OLA` · formula C18H34O2
+- SMILES (isomeric): `CCCCCCCC/C=C\CCCCCCCC(=O)O`
+- InChIKey: `ZQPPMHVWECSIRJ-KTKRTIGZSA-N`
+- energy: ~39.3 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:16196](http://purl.obolibrary.org/obo/CHEBI_16196) oleic acid — match `exact`
+- represents: [CHEBI:25413](http://purl.obolibrary.org/obo/CHEBI_25413) monounsaturated fatty acid — is a
+- represents: [CHEBI:15904](http://purl.obolibrary.org/obo/CHEBI_15904) long-chain fatty acid — is a
+- represents: [CHEBI:76924](http://purl.obolibrary.org/obo/CHEBI_76924) plant metabolite — has role
+- note: Major fatty acid of pine oleoresin/tall oil; cis double bond gives the chain kink.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/oleic_acid.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/oleic_acid.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#oleic_acid)
+
+#### Palmitic acid (16:0)
+
+- id: `palmitic_acid` · residue `PLM` · formula C16H32O2
+- SMILES (isomeric): `CCCCCCCCCCCCCCCC(=O)O`
+- InChIKey: `IPCSVZSSVZVIGE-UHFFFAOYSA-N`
+- energy: ~39.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:15756](http://purl.obolibrary.org/obo/CHEBI_15756) hexadecanoic acid — match `exact`
+- represents: [CHEBI:39418](http://purl.obolibrary.org/obo/CHEBI_39418) straight-chain saturated fatty acid — is a
+- represents: [CHEBI:26607](http://purl.obolibrary.org/obo/CHEBI_26607) saturated fatty acid — is a representative model of
+- represents: [CHEBI:15904](http://purl.obolibrary.org/obo/CHEBI_15904) long-chain fatty acid — is a
+- note: Common saturated fatty acid; straight-chain contrast to oleic.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/palmitic_acid.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/palmitic_acid.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#palmitic_acid)
+
+#### Triolein (glyceryl trioleate)
+
+- id: `triolein` · residue `TRO` · formula C57H104O6
+- SMILES (isomeric): `CCCCCCCC/C=C\CCCCCCCC(=O)OCC(OC(=O)CCCCCCC/C=C\CCCCCCCC)COC(=O)CCCCCCC/C=C\CCCCCCCC`
+- InChIKey: `PHYFQTYBJUILEZ-IUPFWZBJSA-N`
+- energy: ~39.6 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:53753](http://purl.obolibrary.org/obo/CHEBI_53753) triolein — match `exact`
+- represents: [CHEBI:17855](http://purl.obolibrary.org/obo/CHEBI_17855) triglyceride — is a representative model of
+- represents: [GO:0019432](http://purl.obolibrary.org/obo/GO_0019432) triglyceride biosynthetic process — produced by
+- note: Representative triacylglyceride (the storage form of 'fats'); three oleate tails on glycerol.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/triolein.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/triolein.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#triolein)
+
+#### Tripalmitin (glyceryl tripalmitate)
+
+- id: `tripalmitin` · residue `TPM` · formula C51H98O6
+- SMILES (isomeric): `CCCCCCCCCCCCCCCC(=O)OCC(OC(=O)CCCCCCCCCCCCCCC)COC(=O)CCCCCCCCCCCCCCC`
+- InChIKey: `PVNIQBQSYATKKL-UHFFFAOYSA-N`
+- energy: ~39.1 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:77393](http://purl.obolibrary.org/obo/CHEBI_77393) tripalmitin — match `exact`
+- represents: [CHEBI:17855](http://purl.obolibrary.org/obo/CHEBI_17855) triglyceride — is a representative model of
+- represents: [CHEBI:15756](http://purl.obolibrary.org/obo/CHEBI_15756) hexadecanoic acid — has acyl component
+- represents: [GO:0019432](http://purl.obolibrary.org/obo/GO_0019432) triglyceride biosynthetic process — produced by
+- note: Saturated triacylglyceride alternative.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/tripalmitin.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/tripalmitin.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#tripalmitin)
+
+### Extractives
+
+Category terms: [CHEBI:24913](http://purl.obolibrary.org/obo/CHEBI_24913) isoprenoid — chemical class; [GO:0016114](http://purl.obolibrary.org/obo/GO_0016114) terpenoid biosynthetic process — produced by
+
+#### alpha-Pinene
+
+- id: `alpha_pinene` · residue `APN` · formula C10H16
+- SMILES (isomeric): `CC1=CC[C@H]2C[C@@H]1C2(C)C`
+- InChIKey: `GRWFGVWFFZKLTI-IUCAKERBSA-N`
+- energy: ~44.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:28660](http://purl.obolibrary.org/obo/CHEBI_28660) (-)-alpha-pinene — match `exact`
+- represents: [CHEBI:36740](http://purl.obolibrary.org/obo/CHEBI_36740) alpha-pinene — is a
+- represents: [CHEBI:35187](http://purl.obolibrary.org/obo/CHEBI_35187) monoterpene — is a
+- represents: [CHEBI:17187](http://purl.obolibrary.org/obo/CHEBI_17187) pinene — is a
+- represents: [CHEBI:76924](http://purl.obolibrary.org/obo/CHEBI_76924) plant metabolite — has role
+- represents: [GO:0016099](http://purl.obolibrary.org/obo/GO_0016099) monoterpenoid biosynthetic process — produced by
+- note: Dominant Pinus monoterpene; (1S,5S)-(-) enantiomer common in N. American pines (CID 440968).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/alpha_pinene.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/alpha_pinene.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#alpha_pinene)
+
+#### beta-Pinene
+
+- id: `beta_pinene` · residue `BPN` · formula C10H16
+- SMILES (isomeric): `CC1([C@H]2CCC(=C)[C@@H]1C2)C`
+- InChIKey: `WTARULDDTDQWMU-IUCAKERBSA-N`
+- energy: ~44.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:28359](http://purl.obolibrary.org/obo/CHEBI_28359) (-)-beta-pinene — match `exact`
+- represents: [CHEBI:50025](http://purl.obolibrary.org/obo/CHEBI_50025) beta-pinene — is a
+- represents: [CHEBI:35187](http://purl.obolibrary.org/obo/CHEBI_35187) monoterpene — is a
+- represents: [ENVO:03510018](http://purl.obolibrary.org/obo/ENVO_03510018) resin — is a volatile component of
+- represents: [GO:0016099](http://purl.obolibrary.org/obo/GO_0016099) monoterpenoid biosynthetic process — produced by
+- note: Exocyclic-methylene isomer of alpha-pinene; co-occurs in oleoresin (CID 440967).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/beta_pinene.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/beta_pinene.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#beta_pinene)
+
+#### Abietic acid
+
+- id: `abietic_acid` · residue `ABT` · formula C20H30O2
+- SMILES (isomeric): `CC(C)C1=CC2=CC[C@@H]3[C@@]([C@H]2CC1)(CCC[C@@]3(C)C(=O)O)C`
+- InChIKey: `RSWGJHLUYNHPMX-ONCXSQPRSA-N`
+- energy: ~36.5 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:28987](http://purl.obolibrary.org/obo/CHEBI_28987) abietic acid — match `exact`
+- represents: [CHEBI:36762](http://purl.obolibrary.org/obo/CHEBI_36762) abietane diterpenoid — is a
+- represents: [CHEBI:753451](http://purl.obolibrary.org/obo/CHEBI_753451) rosin — is the principal constituent of
+- represents: [CHEBI:76924](http://purl.obolibrary.org/obo/CHEBI_76924) plant metabolite — has role
+- represents: [GO:0016102](http://purl.obolibrary.org/obo/GO_0016102) diterpenoid biosynthetic process — produced by
+- note: Signature conifer diterpene resin acid (rosin); conjugated 7,13-diene (PubChem CID 10569).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/abietic_acid.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/abietic_acid.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#abietic_acid)
+
+### Fossil carbon
+
+Category terms: none shared — see each molecule
+
+#### Charcoal — polycyclic aromatic cluster
+
+- id: `charcoal` · residue `CHA` · formula C24H12
+- SMILES (isomeric): `c1cc2ccc3ccc4ccc5ccc6ccc1c1c2c3c4c5c61`
+- InChIKey: `VPUGDVKSAQVFFS-UHFFFAOYSA-N`
+- energy: ~33.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:29863](http://purl.obolibrary.org/obo/CHEBI_29863) coronene — match `exact`
+- represents: [ENVO:01000560](http://purl.obolibrary.org/obo/ENVO_01000560) charcoal — is a representative model of
+- represents: [CHEBI:91090](http://purl.obolibrary.org/obo/CHEBI_91090) charcoal — is a representative model of
+- represents: [CHEBI:35300](http://purl.obolibrary.org/obo/CHEBI_35300) ortho- and peri-fused polycyclic arene — is a
+- note: Representative model: coronene, a small graphene-like fused-aromatic sheet. Real charcoal/pyrogenic carbon is defect-rich, polydisperse fused aromatic clusters with residual O and ash.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/charcoal.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/charcoal.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#charcoal)
+
+#### Lignite — O-rich coal fragment
+
+- id: `lignite` · residue `LGN` · formula C17H18O7
+- SMILES (isomeric): `COc1cc(C(=O)O)ccc1OCC(O)c1ccc(O)c(OC)c1`
+- InChIKey: `HGEJILYHSKOLCN-UHFFFAOYSA-N`
+- energy: ~24.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:25238](http://purl.obolibrary.org/obo/CHEBI_25238) methoxybenzoic acid — match `broader`
+- represents: [ENVO:2000008](http://purl.obolibrary.org/obo/ENVO_2000008) lignite — is a representative model of
+- represents: [ENVO:02000091](http://purl.obolibrary.org/obo/ENVO_02000091) coal — is a representative model fragment of
+- represents: [CHEBI:64475](http://purl.obolibrary.org/obo/CHEBI_64475) guaiacyl lignin — is derived from
+- represents: [CHEBI:67649](http://purl.obolibrary.org/obo/CHEBI_67649) (+)-(7S,8S)-guaiacylglycerol-beta-vanillic acid ether — is a close structural analogue of
+- note: Representative model: lowest-rank coal, still lignin-derived — small aromatics with methoxyl, phenol, carboxyl and ether/aliphatic bridges (high O/C). The O-rich end of the rank series.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/lignite.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/lignite.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#lignite)
+
+#### Sub-bituminous — intermediate coal fragment
+
+- id: `sub_bituminous` · residue `SBC` · formula C18H14O
+- SMILES (isomeric): `CCc1ccc2ccc3c(O)ccc4ccc1c2c34`
+- InChIKey: `SYNPIRPEXMBGPI-UHFFFAOYSA-N`
+- energy: ~28.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:59659](http://purl.obolibrary.org/obo/CHEBI_59659) pyrenes — match `broader`
+- represents: [ENVO:2000009](http://purl.obolibrary.org/obo/ENVO_2000009) sub-bitumous coal — is a representative model of
+- represents: [ENVO:02000091](http://purl.obolibrary.org/obo/ENVO_02000091) coal — is a model fragment of
+- represents: [CHEBI:34093](http://purl.obolibrary.org/obo/CHEBI_34093) 1-Hydroxypyrene — is a 6-ethyl derivative of
+- note: Representative model: a hydroxy-pyrene with a short alkyl chain — larger aromatic unit and far less oxygen than lignite, sitting between lignite and bituminous in rank.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/sub_bituminous.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/sub_bituminous.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#sub_bituminous)
+
+#### Bituminous — classic coal model fragment
+
+- id: `bituminous` · residue `BIT` · formula C29H24O
+- SMILES (isomeric): `CC1Cc2ccc3ccc4cc5ccccc5cc4c3c2C1Cc1ccc(O)cc1`
+- InChIKey: `OPTMVYLMALHBLB-UHFFFAOYSA-N`
+- energy: ~33.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:33853](http://purl.obolibrary.org/obo/CHEBI_33853) phenols — match `broader`
+- represents: [ENVO:2000010](http://purl.obolibrary.org/obo/ENVO_2000010) bitumous coal — is a representative model of
+- represents: [ENVO:02000091](http://purl.obolibrary.org/obo/ENVO_02000091) coal — is a representative model of
+- represents: [CHEBI:51348](http://purl.obolibrary.org/obo/CHEBI_51348) tetraphene — has part
+- represents: [CHEBI:35230](http://purl.obolibrary.org/obo/CHEBI_35230) fossil fuel — has role
+- note: Representative model (Shinn/Wiser-style): fused aromatic clusters linked by short methylene bridges with a hydroaromatic ring and trace oxygen — the hallmark mid-rank coal motif.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/bituminous.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/bituminous.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#bituminous)
+
+#### Anthracite — near-graphitic aromatic sheet
+
+- id: `anthracite` · residue `ANT` · formula C38H16
+- SMILES (isomeric): `c1cc2ccc3ccc4ccc5ccc6ccc7ccc8ccc1c1c2c2c3c4c3c5c6c4c7c8c1c2c34`
+- InChIKey: `NGQATHDPRGGCHP-UHFFFAOYSA-N`
+- energy: ~34.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:35300](http://purl.obolibrary.org/obo/CHEBI_35300) ortho- and peri-fused polycyclic arene — match `broader`
+- represents: [ENVO:2000011](http://purl.obolibrary.org/obo/ENVO_2000011) anthracite — is a representative model of
+- represents: [ENVO:02000091](http://purl.obolibrary.org/obo/ENVO_02000091) coal — is a fragment of
+- represents: [CHEBI:33418](http://purl.obolibrary.org/obo/CHEBI_33418) graphite — is a defect-containing finite-sheet approximation of
+- note: Representative model: a large peri-fused PAH (circumcoronene class) — highest-rank coal, near-pure fused aromatic carbon approaching graphite (minimal H, ~no O).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/anthracite.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/anthracite.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#anthracite)
+
+#### Kerogen — Type II (marine) fragment
+
+- id: `kerogen` · residue `KER` · formula C26H28OS
+- SMILES (isomeric): `CCCCCc1cc2ccc3ccc4sc(C(=O)CCCC)cc4c3c2cc1`
+- InChIKey: `APVJNLBHKGETRK-UHFFFAOYSA-N`
+- energy: ~30.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:38836](http://purl.obolibrary.org/obo/CHEBI_38836) 1-benzothiophenes — match `broader`
+- represents: [ENVO:01001231](http://purl.obolibrary.org/obo/ENVO_01001231) kerogen — is a representative model fragment of
+- represents: [ENVO:01001235](http://purl.obolibrary.org/obo/ENVO_01001235) planktonic kerogen — is a representative model of
+- represents: [CHEBI:38180](http://purl.obolibrary.org/obo/CHEBI_38180) polycyclic heteroarene — is a
+- represents: [CHEBI:76224](http://purl.obolibrary.org/obo/CHEBI_76224) aromatic ketone — is a
+- note: Representative model: a fused-aromatic core with aliphatic chains, a thiophene (organic sulfur) and a carbonyl — the insoluble organic matter that cracks to petroleum on burial.
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/kerogen.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/kerogen.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#kerogen)
+
+#### Crude oil — island asphaltene archetype
+
+- id: `crude_oil` · residue `OIL` · formula C42H48
+- SMILES (isomeric): `CCCCCCc1cc2ccc3c(CCCCCC)cc4ccc5c(CCCCCC)cc6ccc1c1c6c5c4c3c21`
+- InChIKey: `ZHYOPPHNEJESII-UHFFFAOYSA-N`
+- energy: ~44.0 MJ/kg (approx. HHV)
+- ChEBI structure: [CHEBI:35300](http://purl.obolibrary.org/obo/CHEBI_35300) ortho- and peri-fused polycyclic arene — match `broader`
+- represents: [ENVO:00002984](http://purl.obolibrary.org/obo/ENVO_00002984) petroleum — representative model of (asphaltene)
+- represents: [CHEBI:29863](http://purl.obolibrary.org/obo/CHEBI_29863) coronene — aromatic core of the model
+- represents: [CHEBI:35230](http://purl.obolibrary.org/obo/CHEBI_35230) fossil fuel — has role
+- note: Representative model: a 'continental/island' asphaltene (Yen-Mullins) — a polycyclic aromatic core with alkyl chains, the canonical heavy molecule of crude oil (a complex mixture).
+- files: [PDB](https://tyson-swetnam.github.io/energetics-pymol/pdb/crude_oil.pdb) · [PNG](https://tyson-swetnam.github.io/energetics-pymol/img/crude_oil.png) · [3D viewer](https://tyson-swetnam.github.io/energetics-pymol/#crude_oil)
+
+---
+
+## Page: How plants build it — and how nature releases it
+
+Source: https://tyson-swetnam.github.io/energetics-pymol/learn.html
+
+From a photon to a forest
+
+## A forest is crystallized sunlight.
+
+Almost every atom of a ponderosa pine is assembled from four free, abundant things: light, air, water, and a pinch of soil minerals. Photosynthesis captures sunlight and writes it into the bonds of a simple sugar — and the tree spends a little of that captured energy to rebuild the sugar into the cellulose, hemicellulose, lignin, fats, and resin whose chemical bonds hold the energy that the study measures. This page follows that build, step by step.
+
+☀ sunlight (energy) CO₂ (air) H₂O (water) N·P·K·Mg… (soil)
+
+photosynthesis (chloroplast) glucose (C₆H₁₂O₆)
+
+…then glucose is rebuilt into five higher-energy molecules — each through its own chain of enzyme reactions:
+
+glucose (the hub)
+
+→ UDP-glucose → cellulose (↗)
+
+→ nucleotide sugars → hemicellulose (↗)
+
+→ phenylalanine → coniferyl alcohol → lignin (↗)
+
+→ acetyl-CoA → fatty acids → fats (↗)
+
+→ IPP · DMAPP → terpenes → resin (↗)
+
+Each arrow runs uphill in energy, paid for by sunlight — and stands for many enzyme-catalysed steps, drawn out in the chapters below. Tap a product to open its 3D model.
+
+The three molecules this page follows make up most of a tree's dry mass — composed in Claude Design from this project's 3D molecule renders.
+
+01
+
+### Capturing the light
+
+Photosynthesis splits water and fixes carbon dioxide from the air into sugar.
+
+Inside a needle's chloroplasts, sunlight does two jobs. It splits water — releasing the oxygen a forest exhales — and uses the energy to grab carbon dioxide from the air and stitch its carbon into sugar. The result is glucose, shipped through the tree as sucrose, the raw material for everything that follows. The headline facts are worth stating plainly: the carbon in wood comes from thin air; the hydrogen and the released oxygen come from water; the energy comes from sunlight.
+
+D-glucose CO₂ H₂O O₂
+
+**Go deeper: the light reactions and the Calvin cycle**
+
+The chloroplast separates the work into two stages. In the light reactions (on the thylakoid membranes), chlorophyll — a porphyrin ring with a single magnesium ion at its heart — funnels light to two reaction centres. At Photosystem II a manganese cluster (Mn₄CaO₅) splits water: 2 H₂O → O₂ + 4 H⁺ + 4 e⁻. The electrons run a "Z-scheme" (PSII → plastoquinone → cytochrome b6f → the copper protein plastocyanin → Photosystem I → ferredoxin), building NADPH, while the proton gradient drives ATP synthase to make ATP.
+
+In the Calvin cycle (in the surrounding stroma), the enzyme RuBisCO attaches CO₂ to a five-carbon acceptor; the product splits into two molecules of 3-phosphoglycerate, which ATP and NADPH reduce to the three-carbon sugar G3P. That reduction is the exact moment solar energy becomes chemical-bond energy. It takes six turns (≈18 ATP + 12 NADPH) to net one extra sugar; five of every six G3P are recycled to regenerate the acceptor. The triose sugar is exported to the cytosol and assembled into sucrose, with surplus carbon banked as starch.
+
+Common myth: the released O₂ does not come from CO₂ — it comes from the water that is split at Photosystem II.
+
+The Calvin cycle — turning CO₂ into sugar (stroma):
+
+CO₂ (from air) →[RuBisCO; + RuBP, fixation]→ 3-phosphoglycerate (2 × C3) →[PGK; ATP]→ 1,3-bisphosphoglycerate →[GAPDH; NADPH → energy stored]→ G3P (triose phosphate) →[6 turns, then cytosol]→ glucose · sucrose
+
+02
+
+### Cellulose — spun at the cell's skin
+
+The main mass of wood is glucose strung into crystalline cables.
+
+Cellulose is the most abundant polymer in wood (~40–45% of softwood) — long chains of glucose linked β-1,4. What makes it special is where it's made: rosette-shaped machines sitting in the cell's outer membrane spin the chains straight out into the wall, where about eighteen of them crystallise side-by-side into a stiff, water-shedding microfibril — the load-bearing cable of wood.
+
+cellohexaose cellobiose β-D-glucose
+
+**Go deeper: UDP-glucose, rosettes, and a machine that walks**
+
+The actual building block isn't free glucose but UDP-glucose — "activated" glucose carrying its own reactive energy (made from sucrose by sucrose synthase, though recent work shows other routes can supply it too). Cellulose-synthase (CesA) proteins assemble into six-lobed rosettes in the plasma membrane — current evidence favours ≈18 subunits, built from three secondary-wall isoforms (conifers express the orthologous triplet in xylem). Each cycle adds one glucose to the non-reducing end, releasing UDP; because alternate units are flipped 180°, the true repeat is cellobiose, and the β linkage (not the α of starch) is exactly why cellulose is rigid and indigestible.
+
+As the new fibril crystallises and anchors in the wall, the resistance pushes the enzyme forward through the fluid membrane — the machine walks while the fibril stays put. Cortical microtubules beneath the membrane act as guide rails (via the CSI1/POM2 tether), setting the grain of the wood. This is the headline contrast with the matrix sugars next door, which are made indoors in the Golgi.
+
+Sugar to crystalline fibre, at the plasma membrane:
+
+sucrose (from the phloem) →[sucrose synthase; + UDP]→ UDP-glucose (activated) →[CesA rosette; plasma membrane · β-1,4]→ β-1,4-glucan chain →[H-bonding; crystallization]→ cellulose microfibril
+
+03
+
+### Hemicellulose — assembled indoors, shipped out
+
+The flexible matrix that ties the cellulose cables together.
+
+Hemicelluloses fill the space between cellulose fibrils and lignin. In softwoods the main one is galactoglucomannan, with a minor arabinoglucuronoxylan — branched chains built from a toolkit of several different sugars. Unlike cellulose, they are assembled inside the Golgi and delivered to the wall in vesicles.
+
+galactoglucomannan arabinoglucuronoxylan mannose xylose
+
+**Go deeper: nucleotide sugars and Golgi glycosyltransferases**
+
+First the cytosol builds a set of activated nucleotide sugars from the central hub UDP-glucose: UDP-galactose, UDP-glucuronic acid → UDP-xylose → UDP-arabinose, plus GDP-mannose from the fructose-6-phosphate pool. These are imported into the Golgi, where the chains are polymerised and decorated. The galactoglucomannan backbone is built by a cellulose-synthase-like enzyme (CSLA, using GDP-sugars) — but the xylan backbone is built by entirely different families (GT43/GT47), and the branches are added by yet others: galactose, 4-O-methyl-glucuronic acid (its methyl from the cofactor SAM), and arabinofuranose, plus O-acetyl groups from acetyl-CoA.
+
+Worth knowing: all these sugars share the same (CH₂O)ₙ make-up, so a mannose-rich matrix is no more energy-dense than a xylose-rich one. Conifer wood burns hot because of its lignin and resin, not its hemicellulose.
+
+Building the sugar toolkit (cytosol), then assembling in the Golgi:
+
+UDP-glucose (the hub) →[UGD; 2 NAD⁺]→ UDP-glucuronic acid →[UXS; − CO₂ (decarboxylation)]→ UDP-xylose →[4-epimerase / mutase; → UDP-arabinose]→ UDP-Xyl · UDP-Ara · UDP-Gal · GDP-Man (nucleotide sugars) →[Golgi glycosyltransferases; CSLA · GT43/47 · branches]→ galactoglucomannan · xylan
+
+04
+
+### Lignin — the glue that makes wood
+
+A tough, energy-dense aromatic network, polymerised by chemistry alone.
+
+Lignin is what turns soft cellulose into wood: a water-shedding, decay-resistant, energy-dense polymer that fills and stiffens the wall. Conifers build it almost entirely from one monomer, coniferyl alcohol, which is exported into the wall and then linked together by a template-free radical reaction — so every lignin molecule is a unique, irregular network rather than a regular polymer.
+
+coniferyl alcohol β-O-4 linkage pinoresinol sinapyl (hardwood)
+
+**Go deeper: the shikimate & phenylpropanoid pathways, then radical coupling**
+
+Stage 1 — make the amino acid. In plastids, the seven-step shikimate pathway condenses two photosynthetic intermediates (PEP and erythrose-4-phosphate) into the amino acid phenylalanine (its nitrogen drawn from soil). Animals lack this pathway — which is why phenylalanine is "essential" in our diet, and why the herbicide glyphosate, which blocks one shikimate enzyme, kills plants but not us.
+
+Stage 2 — the phenylpropanoid trunk. PAL strips the amino group (→ cinnamic acid); a P450 enzyme adds a hydroxyl (→ p-coumaric acid, using O₂); 4CL attaches coenzyme A. Stage 3 — the monolignol branch. A methyl group from the cofactor SAM installs the single methoxyl that defines a guaiacyl unit, and two NADPH-driven reductions finish coniferyl alcohol. Softwoods make essentially no sinapyl (syringyl) alcohol because they lack the enzyme F5H — which is exactly why softwood lignin is guaiacyl-rich.
+
+In the wall, copper laccases (using O₂) and iron peroxidases (using H₂O₂) pull one electron off each monomer's phenol, making a radical; two radicals couple — most often at the β-O-4 ether, also β-5, β-β, and 5-5. There's no DNA template, so the bonds form by chemistry alone, giving a different, irregular network every time — though "dirigent" proteins can steer specific couplings (such as the symmetric pinoresinol). Because lignin's aromatic rings are far more reduced than sugar rings, it is the most energy-dense major fraction of wood (~23–26 MJ/kg).
+
+**the monolignol pathway → coniferyl alcohol:** phenylalanine (from the shikimate pathway) →[PAL; − NH₃]→ cinnamic acid →[C4H · P450; + O₂]→ p-coumaric acid →[4CL; + CoA, ATP]→ p-coumaroyl-CoA →[HCT → C3′H → CCoAOMT; + OCH₃ (from SAM) = guaiacyl]→ feruloyl-CoA →[CCR; NADPH]→ coniferaldehyde →[CAD; NADPH]→ coniferyl alcohol (the softwood monolignol) →[laccase · peroxidase; O₂ / H₂O₂ · radical coupling]→ lignin network
+
+05
+
+### Fats — concentrating the energy
+
+The most energy-dense molecule a plant makes, built from two-carbon units.
+
+Fats pack more energy per gram than anything else a plant builds, because their long carbon chains are highly reduced — rich in C–H bonds and almost free of oxygen. Plants assemble them from sugar-derived two-carbon units, mostly as a concentrated reserve in seeds.
+
+oleic acid triolein palmitic acid
+
+**Go deeper: plastid fatty-acid synthesis and the Kennedy pathway**
+
+Sugar is broken down to acetyl-CoA, and fatty acids are built inside the plastid by a bacteria-like assembly line. The committed step is acetyl-CoA carboxylase (making malonyl-CoA); condensing enzymes then add two carbons per cycle — each followed by NADPH-driven reductions — up to 16- and 18-carbon saturated chains. The first double bond, which makes oleic acid, is added by a separate soluble stearoyl-ACP Δ9 desaturase. The chains are then exported to the endoplasmic reticulum and assembled three-at-a-time onto a glycerol backbone (the Kennedy pathway) to make a triacylglycerol, stored in oil bodies. Conifers add an unusual signature: a Δ5 desaturase makes "pinolenic"-type fatty acids found almost nowhere else.
+
+Why so energy-rich: combustion energy tracks how reduced a molecule is. Fats yield ~37–39 kJ/g versus ~16–17 kJ/g for carbohydrates, whose ring carbons already each carry an oxygen.
+
+**sugar → two-carbon units → fat:** glucose →[glycolysis → PDH; in the plastid]→ acetyl-CoA (2-carbon unit) →[ACCase; ATP, + CO₂ (committed step)]→ malonyl-CoA →[fatty-acid synthase; 7 cycles, NADPH]→ stearoyl-ACP (18:0, saturated) →[stearoyl-ACP Δ9 desaturase; adds the double bond]→ oleic acid (18:1) →[Kennedy pathway; ×3 on glycerol, at the ER]→ triacylglycerol
+
+06
+
+### Resin — the volatile, flammable fraction
+
+A small, energy-dense, defensive fraction that also drives how conifers burn.
+
+Conifers make oleoresin — the turpentine (pinenes) and rosin (resin acids) you can smell in a pine forest. It floods wounds to repel and trap bark beetles and seal injuries, and because it is a highly reduced hydrocarbon, it is extraordinarily energy-dense — a few percent of the biomass that carries an outsized share of stored energy and helps resinous conifer fuels burn so fiercely.
+
+α-pinene β-pinene abietic acid
+
+**Go deeper: the isoprenoid pathways and resin ducts**
+
+Terpenoids are built from a universal five-carbon unit (isopentenyl diphosphate) made by two routes — the MEP pathway in plastids and the MVA pathway in the cytosol. Joining these units gives a C10 precursor that terpene synthases cyclise into the pinenes (conifer versions unusually need manganese), and a C20 precursor that a bifunctional diterpene synthase folds into abietadiene; cytochrome P450 enzymes then oxidise it to resin acids like abietic acid. The finished oleoresin is stored under pressure in a network of resin ducts lined by living cells, and the whole system is switched up by wound signals (jasmonate) — making resin a regulated immune response. At ~40–44 MJ/kg, in the range of petroleum fuels, it is costly to make, so the tree is deliberately banking captured energy into a high-density defensive reserve.
+
+From two-carbon and three-carbon units to the volatile (turpentine) and solid (rosin) fractions:
+
+**monoterpenes → turpentine:** acetyl-CoA · pyruvate + G3P →[MVA · MEP; cytosol / plastid]→ IPP + DMAPP (C5 units) →[GPP synthase]→ geranyl-PP (C10) →[pinene synthase; Mn²⁺]→ α / β-pinene
+
+**diterpenes → resin acids:** IPP + DMAPP →[GGPP synthase]→ geranylgeranyl-PP (C20) →[abietadiene synthase; bifunctional cyclase]→ abietadiene →[CYP720B · P450; 3 × O₂ oxidation]→ abietic acid
+
+07
+
+### Where every atom comes from
+
+Mostly air and water — with a pinch of soil minerals as the tools, not the fuel.
+
+Step back and the accounting is striking. The bulk of a tree — the carbon skeleton that holds the energy — is built from CO₂ in the air and water. The soil supplies only small quantities of mineral nutrients, and crucially these are never the fuel: they are the catalysts, cofactors, and cross-linkers that build and run the machinery, and they mostly stay behind as ash when wood burns.
+
+- Nitrogen — the usual limiting nutrient; every enzyme and amino acid, chlorophyll, and the huge pool of RuBisCO. Conifers take it up mostly as ammonium and fungal-delivered organic N.
+- Phosphorus — the backbone of ATP, NADPH, DNA, membranes, and the activated nucleotide sugars that feed wall-building.
+- Magnesium sits at the centre of every chlorophyll; potassium runs the stomata that admit CO₂; sulfur builds cysteine and the methyl-donor SAM; calcium cross-links the wall.
+- Iron, manganese, copper — catalytic metals that split water and shuttle electrons in photosynthesis, and that power the very laccases and peroxidases that build lignin.
+
+Pines don't forage alone: they are ectomycorrhizal, partnering with fungi that sheath the root tips and mine nitrogen and phosphorus far beyond the root's reach, traded for photosynthetic sugar.
+
+Part II · releasing it
+
+## How nature releases it
+
+Building ran uphill. Releasing runs back down — and there are three main routes: fire, herbivory, and decay. All three do the same chemistry in the end: they oxidize the tree's reduced carbon back to CO₂ and water, returning the solar energy banked in its bonds (minus whatever the burner, browser, or fungus keeps for itself).
+
+But a tree is not chemically uniform — and what each part is made of controls how it burns, whether anything can eat it, and how fast it rots. Energy and decay-resistance both rise with lignin and extractives; the fine, foliage-rich parts are where the easy energy lives:
+
+cellulose hemicellulose lignin extractives (resin, terpenes, fats) protein · ash · suberin
+
+- needles (fine fuel) cellulose 26%, hemicellulose 19%, lignin 40%, extractives 12%, other 3%
+- cones cellulose 37%, hemicellulose 24%, lignin 28%, extractives 9%, other 2%
+- fine twigs (fine fuel) cellulose 38%, hemicellulose 20%, lignin 30%, extractives 8%, other 4%
+- bark (heat shield) cellulose 25%, hemicellulose 13%, lignin 34%, extractives 19%, other 9%
+- sapwood cellulose 43%, hemicellulose 20%, lignin 28%, extractives 4%, other 5%
+- heartwood cellulose 40%, hemicellulose 20%, lignin 29%, extractives 8%, other 3%
+- roots cellulose 38%, hemicellulose 20%, lignin 32%, extractives 5%, other 5%
+
+Approximate dry-mass composition for a pine; ranges vary widely with species, age, site, and assay (e.g. needle data from loblolly pine; heartwood gains resin acids as living cells die). Sapwood and heartwood hold most of the tree's mass and energy — yet in a fire they usually survive, while the lignin- and resin-rich fine fuels carry the flame.
+
+08
+
+### Fire — unzipping the polymers
+
+A flame doesn't burn solid wood; it burns the gas the wood gives off when heated.
+
+Combustion happens in stages. Heat first drives off water, then pyrolysis cracks the cell-wall polymers into flammable gases and tar — and that is what the visible flame burns — leaving behind a carbon-rich char. The polymers come apart at different temperatures, and lignin leaves the most char. Conifer resin and terpenes, with very low flash points (~32 °C) and high energy, help fine fuels catch. Crucially, real fires are incomplete: needles, twigs, and bark flakes carry the flame, while the energy-dense trunk and roots mostly char or survive — so most of a forest's stored energy is not released in any one fire, and some carbon is locked away as long-lived charcoal.
+
+**Go deeper: the thermal staircase, char, and incomplete combustion**
+
+Each polymer has its own decomposition window. Hemicellulose is least stable and goes first (~220–315 °C); cellulose follows in a sharp burst (~315–400 °C, peak ~340 °C); and lignin decomposes slowly across a huge range (~160–900 °C), yielding ~40–45% of its mass as char. Cellulose pyrolysis is endothermic (it soaks up heat), while hemicellulose and lignin are exothermic.
+
+- water (drying) (~110–200 °C)
+- hemicellulose (char ~23%) (~260–350 °C)
+- cellulose (char ~8%) (~350–430 °C)
+- lignin (char ~45%) (~200–900 °C)
+- ~100 °C 300 500 700 900 °C
+
+About 70% of dry wood leaves as volatiles that feed the flame; the rest is char that glows and smolders. Burning efficiency is measured by the modified combustion efficiency (MCE): vigorous flaming runs ~0.95–0.99, while smoldering char drops to ~0.65–0.85, releasing more carbon monoxide and smoke. Char oxidation can account for roughly a third of the energy in vegetation fuels — but much char never fully burns. A pine charcoal is ~50–90% carbon and can persist in soils for decades to millennia, so fire both releases energy and banks a slow-cycling carbon residue.
+
+Worth knowing: even a crown fire consumes only ~56–66% of the canopy foliage, and almost none of the bole — incomplete combustion is the rule, not the exception.
+
+09
+
+### Herbivory — renting a microbe
+
+Most of a tree is indigestible to animals — unless they borrow the right enzymes.
+
+Animals eat plants to capture the same bond energy, but there's a catch: no animal makes the enzyme to digest cellulose, and lignin is essentially indigestible. So herbivores either eat the easy, energy-rich tissues — sugars, starch, fats, and protein in foliage and seeds, digested directly to ATP — or they rent gut microbes that ferment cellulose into short-chain fatty acids the animal can absorb (deer and other ruminants, horses, and termites all do this). In conifer forests vertebrate browsing is modest, but insects — above all bark beetles — can kill whole landscapes; conifers fight back with the very terpene resin that also makes them flammable.
+
+forest ~1–10%
+
+terrestrial average ~18%
+
+grassland (Serengeti) ~66%
+
+**Go deeper: gut fermentation and how the energy becomes ATP**
+
+A ruminant (deer, elk) houses trillions of microbes that do make cellulases. In the rumen, microbes depolymerise cellulose to sugars and ferment them to volatile fatty acids — acetate, propionate, and butyrate (roughly 70:20:10 on browse) — which the animal absorbs through the gut wall and oxidises for energy. These VFAs supply ~70–80% of a ruminant's energy; the microbes themselves are then digested as protein. Termites do the same for wood, their gut symbionts removing 74–99% of the cellulose.
+
+**how a browser extracts wood energy:** cellulose · hemicellulose →[microbial cellulases; rumen / hindgut symbionts]→ sugars →[fermentation; → acetate · propionate · butyrate]→ volatile fatty acids (absorbed by the animal) →[β-oxidation · TCA · ox-phos; in mitochondria]→ ATP (~30–32 per glucose)
+
+Lignin's last trick: it passes through the gut almost untouched and physically shields the digestible sugars, which is why woody, lignin-rich tissue is poor forage — and why the easy calories are in young needles, sap, and seeds (fat at ~9 kcal/g vs ~4 for carbohydrate). Soluble sugars, starch, fat, and protein need no microbes — the animal's own enzymes handle them directly.
+
+10
+
+### Decay — the slow fire
+
+Fungi and microbes burn wood at room temperature, over years instead of minutes.
+
+Most biomass is neither burned nor eaten — it is decomposed, mostly by fungi. White-rot fungi are the only organisms that fully dismantle lignin, using the same kind of oxidative enzymes (laccases and peroxidases) that built it, and they take the cellulose too. Brown-rot fungi — characteristic of conifer deadwood — skip enzymes for the cellulose and instead deploy a chemical bomb: a Fenton reaction that makes hydroxyl radicals to shred the carbohydrate, leaving a brown, lignin-rich crumble. Bacteria, water, and litter invertebrates pitch in. All of them respire the reduced carbon back to CO₂ + water + heat — the same total energy as burning, just released slowly. Lignin, extractives, and dense heartwood resist all this, which is why heartwood and bark last, and roughly 10–30% of the carbon ends up stabilised in soil rather than respired.
+
+**Go deeper: white rot vs brown rot, and how long it lingers**
+
+**white rot:** lignin + cellulose →[laccase · LiP · MnP; O₂ / H₂O₂ oxidation]→ cracked aromatics + sugars →[respiration]→ CO₂ + H₂O + heat
+
+**brown rot (conifer-associated):** cellulose + hemicellulose →[Fenton: Fe²⁺ + H₂O₂; → hydroxyl radical (OH•)]→ depolymerised sugars (+ brown lignin residue) →[respiration]→ CO₂ + H₂O + heat
+
+Decay speed tracks composition. Ponderosa needle litter turns over in ~6–13 years (k ≈ 0.08–0.18 yr⁻¹); a fallen white-fir log takes a half-life of ~14 years, and large conifer logs persist for 50–120 years. Gymnosperm wood decays roughly 2–3× slower than angiosperm wood (occasionally 10× for rot-resistant species), and standing dead snags decay far slower than logs on the moist ground. Of the carbon that is decomposed, ~70–90% is respired straight back to CO₂; the remainder becomes humus and soil organic matter — the forest's long-term carbon (and energy) savings account.
+
+Full circle: the enzymes white-rot fungi use to take lignin apart are mechanistic cousins of the laccases and peroxidases the tree used to build it — the same oxidative chemistry, run in reverse.
+
+11
+
+### Charcoal — the carbon that escapes
+
+Burn wood incompletely and you forge a carbon almost nothing can break down.
+
+Not all of it comes straight back as CO₂. When fire burns wood incompletely, it forges a fraction — commonly 10–15%, sometimes up to ~30% — into charcoal (pyrogenic carbon). Heat drives off the volatiles and rearranges what remains into fused sheets of aromatic carbon, approaching the structure of graphite. The microbes and the very enzymes that rot wood find almost nothing to grip, so charcoal persists 10–100× longer than the wood it came from: centuries to millennia in soils, and — once buried in sediment — hundreds of millions of years in rock, as the fossil charcoal (fusain / inertinite) that fills ancient coal. The reduced carbon's chemical energy stays locked in those aromatic bonds the whole time (charcoal is itself a fuel). So fire isn't only a release: it also banks a slow, globally large carbon-and-energy sink — about 256 million tonnes of carbon a year, with the oldest charcoal ~420 million years old, the earliest trace of wildfire on Earth.
+
+charcoal (coronene) lignite bituminous anthracite kerogen crude oil
+
+Representative 3D models — open any in the gallery. Coal, char, kerogen and oil are heterogeneous materials, so each is a defensible stand-in, not the real substance.
+
+respired / decayed years–decades
+
+charcoal in soil centuries–millennia
+
+coal · oil · fossil charcoal 10⁶–10⁸ years
+
+**Go deeper: why charcoal is so stable — and what it records**
+
+Charring temperature sets the structure. Above ~400 °C the leftover carbon condenses into polycyclic aromatic clusters (often >7 fused rings); as temperature climbs the carbon content rises from ~48% in raw wood to ~85% at 600 °C and ~94% at 800 °C, shedding the oxygen-bearing "handles" enzymes need. The interior carbons are bonded only to other carbons, which is why condensed pyrogenic carbon is one of Earth's most decay-resistant organic pools — though it's a continuum, and lightly-charred material is far more labile (some field studies see surprisingly fast loss of that fraction).
+
+Globally, fire converts ~256 Tg C/yr (≈12% of fire's carbon emissions) into pyrogenic carbon, which accumulates to roughly ~200 Pg C in soils and ~480–1440 Pg C in marine sediments. Buried and lithified, charcoal becomes inertinite, a coal maceral that is literally fossil wildfire: Carboniferous coals (≈359–299 Ma) are inertinite-rich (~15–20%, locally 40–50%). Because charcoal only forms and spreads when atmospheric oxygen sits in a "fire window" (≈16–35%), the inertinite in those coals also works as a paleo-oxygen gauge — pointing to a Late-Paleozoic O₂ peak around ~28–30%, well above today's 21%, which fed the era's intense, frequent fires.
+
+a vignette · deep time
+
+#### Peat, coal, and oil — the long-term vaults
+
+Charcoal is the fast end of geological carbon storage; given the right graveyard, ordinary biomass joins it. Where decay stalls, whole forests' worth of carbon — and the sunlight banked in it — can be locked away for hundreds of millions of years.
+
+Peat. In waterlogged, anoxic, acidic bogs the decomposers choke and plant litter only half-rots, piling up as peat. It is the first step — and already a giant store: the world's peatlands hold >600 Gt of carbon, more than all living vegetation combined, accumulating at only ~20 g C per m² per year. The great coal swamps of the Carboniferous were lignin-rich peat-forming forests buried under a high-oxygen sky.
+
+Coal. Bury peat under sediment, heat, and time and it coalifies, shedding water and oxygen and concentrating carbon at each step. Heat — not pressure or mere age — is the master control:
+
+**coalification — carbon concentrates with heat & time:** peat (~60% C) →[burial · heat; millions of years]→ lignite (~70% C) →[deeper · hotter]→ sub-bituminous → bituminous (~75–90% C) →[highest rank]→ anthracite (>90% C)
+
+Oil & gas come from a different graveyard — not wood, but marine algae and plankton sinking into anoxic seafloor mud. Buried into the "oil window," their kerogen cracks into liquid petroleum, and hotter still into natural gas:
+
+**oil & gas — from marine plankton:** algae · plankton →[anoxic burial; → kerogen]→ kerogen →[oil window; ~60–120 °C · 2–4 km deep]→ crude oil →[hotter (>150 °C)]→ natural gas
+
+Peat, coal, and oil are all ancient stored sunlight — the same reduced-carbon chemical energy a forest banks each summer, kept for 10⁶–10⁸ years. Burning fossil fuels simply withdraws it, releasing in a century what took a hundred million years to save.
+
+### It all comes back as heat
+
+Building these molecules runs uphill: sunlight lifts low-energy CO₂ and water into the high-energy C–H and C–C bonds of reduced carbon. The more reduced the molecule, the more energy it stores — which is why the same forest holds its energy so unevenly:
+
+carbohydrate (cellulose) ~17 MJ/kg
+
+lignin ~26 MJ/kg
+
+fats ~39 MJ/kg
+
+resin terpenes ~44 MJ/kg
+
+Combustion — or slow decay — simply runs the whole thing backwards: the reduced carbon falls back to CO₂ and water, releasing the solar energy banked in its bonds. That released enthalpy, summed across hundreds of thousands of trees, is what Ecosystems as energy fields measures for a whole landscape.
+
+Explore the molecules in 3D →
+
+Built with RDKit & PyMOL. Biochemistry compiled for the manuscript Ecosystems as energy fields (Falk, Swetnam & McKenzie, 2026); figures are defined representatives, captioned as such.

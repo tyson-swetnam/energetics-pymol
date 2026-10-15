@@ -1,0 +1,26 @@
+# robots.txt — Energetics (energetics-pymol), a GitHub Pages project site.
+# Everything here is public, static and safe to crawl, index and use for AI
+# retrieval. Machine-readable entry points for LLM agents:
+#   https://tyson-swetnam.github.io/energetics-pymol/llms.txt       (index)
+#   https://tyson-swetnam.github.io/energetics-pymol/llms-full.txt  (entire site as one Markdown file)
+#   https://tyson-swetnam.github.io/energetics-pymol/molecules.json (structured catalog incl. OBO ontology terms)
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Meta-ExternalAgent
+Allow: /
+
+Sitemap: https://tyson-swetnam.github.io/energetics-pymol/sitemap.xml

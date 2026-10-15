@@ -1,3 +1,31 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: Pinoresinol (beta-beta resinol);
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:40         (+)-pinoresinol [match=exact]
+REMARK 950 REPRESENTS CHEBI:8225       pinoresinol [is a]
+REMARK 950 REPRESENTS CHEBI:25036      lignan [is a]
+REMARK 950 REPRESENTS CHEBI:64475      guaiacyl lignin [is a representative
+REMARK 950                             model of the beta-beta linkage in]
+REMARK 950 REPRESENTS CHEBI:76924      plant metabolite [has role]
+REMARK 950 CATEGORY   CHEBI:6457       lignin [monomer precursor or linkage
+REMARK 950                             model of]
+REMARK 950 CATEGORY   GO:0009809       lignin biosynthetic process [produced by
+REMARK 950                             / participant in]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  LIG A   1      -5.179   0.959   1.318  1.00  0.00           C  
 HETATM    2  O1  LIG A   1      -4.918   1.663   0.110  1.00  0.00           O  
 HETATM    3  C2  LIG A   1      -3.969   1.128  -0.723  1.00  0.00           C  

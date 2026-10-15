@@ -1,3 +1,30 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: Abietic acid;
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:28987      abietic acid [match=exact]
+REMARK 950 REPRESENTS CHEBI:36762      abietane diterpenoid [is a]
+REMARK 950 REPRESENTS CHEBI:753451     rosin [is the principal constituent of]
+REMARK 950 REPRESENTS CHEBI:76924      plant metabolite [has role]
+REMARK 950 REPRESENTS GO:0016102       diterpenoid biosynthetic process
+REMARK 950                             [produced by]
+REMARK 950 CATEGORY   CHEBI:24913      isoprenoid [chemical class]
+REMARK 950 CATEGORY   GO:0016114       terpenoid biosynthetic process [produced
+REMARK 950                             by]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  ABT A   1       5.557   0.136  -0.602  1.00  0.00           C  
 HETATM    2  C2  ABT A   1       4.775   0.645   0.613  1.00  0.00           C  
 HETATM    3  C3  ABT A   1       5.095   2.126   0.850  1.00  0.00           C  

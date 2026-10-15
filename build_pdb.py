@@ -10,6 +10,7 @@ Pipeline (per the verified toolchain):
     -> MMFF94 optimize (UFF fallback)
     -> set HETATM residue/atom/chain names
     -> MolToPDBFile(flavor=0)   <-- writes CONECT records for every bond
+    -> prepend COMPND + REMARK 950 OBO ontology annotations (ontology.py)
     -> re-read & validate: formula matches, canonical SMILES round-trips, CONECT present
 
 Run directly to build one or all molecules:
@@ -26,6 +27,7 @@ from rdkit.Chem import AllChem, rdMolDescriptors
 from rdkit import RDLogger
 
 import molecules
+import ontology
 import polymers
 
 RDLogger.DisableLog("rdApp.warning")
@@ -52,11 +54,13 @@ def get_mol(rec) -> Chem.Mol:
 
 
 def check_stereo(rec, mol):
-    """Refuse to build sugars/lignans that have UNDEFINED ring stereocenters."""
+    """Refuse to build sugars (incl. nucleotide sugars / CoA among the Intermediates) that have
+    UNDEFINED carbon stereocenters. Phosphate P atoms are excluded: they are flagged as
+    possible centers but are not stereogenic (tautomeric P-OH/P=O)."""
     Chem.AssignStereochemistry(mol, cleanIt=True, force=True)
     centers = Chem.FindMolChiralCenters(mol, includeUnassigned=True, useLegacyImplementation=False)
-    undef = [idx for idx, lab in centers if lab == "?"]
-    if undef and rec["category"] in ("Sugar monomers", "Cellulose", "Hemicellulose"):
+    undef = [idx for idx, lab in centers if lab == "?" and mol.GetAtomWithIdx(idx).GetSymbol() == "C"]
+    if undef and rec["category"] in ("Sugar monomers", "Cellulose", "Hemicellulose", "Intermediates"):
         raise ValueError(f"{rec['id']}: {len(undef)} undefined stereocenter(s) at atoms {undef} "
                          f"-- carbohydrate stereochemistry must be fully specified")
 
@@ -142,6 +146,8 @@ def _set_atom_name(atom, info, counts):
 
 def write_pdb(rec, molH, path):
     Chem.MolToPDBFile(molH, path, flavor=0)  # flavor=0 -> CONECT records written
+    if rec["id"] in ontology.MOLECULE_TERMS:   # missing terms -> reported as [FAIL] by validate()
+        ontology.annotate_pdb(path, rec["id"])  # COMPND + REMARK 950 OBO terms (ignored by readers)
 
 
 # --------------------------------------------------------------------------------------
@@ -159,6 +165,9 @@ def validate(rec, molH, path):
         conect = sum(1 for ln in fh if ln.startswith("CONECT"))
     if conect == 0 and molH.GetNumBonds() > 0:
         errs.append("no CONECT records written")
+
+    # 2b) OBO ontology header present and current
+    errs += [e.split(": ", 1)[1] for e in ontology.check() if e.startswith(rec["id"] + ":")]
 
     # 3) round-trip: re-read PDB, compare canonical SMILES (connectivity/stereo preserved)
     back = Chem.MolFromPDBFile(path, removeHs=False, sanitize=True)

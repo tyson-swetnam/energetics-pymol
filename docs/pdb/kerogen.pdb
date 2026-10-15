@@ -1,3 +1,28 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: Kerogen - Type II (marine) fragment;
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:38836      1-benzothiophenes [match=broader]
+REMARK 950 REPRESENTS ENVO:01001231    kerogen [is a representative model
+REMARK 950                             fragment of]
+REMARK 950 REPRESENTS ENVO:01001235    planktonic kerogen [is a representative
+REMARK 950                             model of]
+REMARK 950 REPRESENTS CHEBI:38180      polycyclic heteroarene [is a]
+REMARK 950 REPRESENTS CHEBI:76224      aromatic ketone [is a]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  KER A   1      -6.899   3.903  -1.415  1.00  0.00           C  
 HETATM    2  C2  KER A   1      -5.995   2.766  -0.963  1.00  0.00           C  
 HETATM    3  C3  KER A   1      -4.538   3.219  -0.862  1.00  0.00           C  

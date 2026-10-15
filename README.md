@@ -78,12 +78,61 @@ and a persistent 3D viewer that swaps between **Mol\*** and **3Dmol.js** per mol
 its data + assets after changing the manifest:
 
 ```bash
-python build_site.py     # writes docs/molecules.json and copies pdb/ + renders/ into docs/
+python build_site.py     # writes docs/molecules.json (+ llms/robots/sitemap/JSON-LD) and copies pdb/ + renders/ into docs/
 ```
 
 The site shell (`docs/index.html`, `style.css`, `app.js`) is hand-authored; `build_site.py`
 only regenerates the data so the gallery stays in sync with `molecules.py`. Pages serves from
 `main` → `/docs`.
+
+## Ontology annotations (OBO Foundry)
+
+Every model is tagged with [OBO Foundry](https://obofoundry.org/) terms, resolved against the
+EMBL-EBI Ontology Lookup Service (OLS4) and adversarially cross-checked (InChIKey comparison
+for the structure term). `ontology.py` holds the term tables in four layers:
+
+| layer | ontology | example |
+|-------|----------|---------|
+| **structure** — what the modeled structure *is* | ChEBI | β-D-glucose (`CHEBI:15903`), with an honest `match` level: `exact` / `stereo_unspecified` / `close` / `broader` |
+| **represents** — what the model stands for | ChEBI, GO, ENVO | galactoglucomannan, monolignol (role), mannan biosynthetic process, coal, … |
+| **category** — shared by a manifest category | GO, ChEBI, ENVO | cellulose biosynthetic process, … |
+| **project** — the whole collection | NCBITaxon, ENVO, PO, GO | *Pinus ponderosa*, coniferous forest, secondary xylem, … |
+
+The terms are written into each `pdb/<id>.pdb` as a `COMPND` name plus `REMARK 950` records
+(an unassigned wwPDB remark number; RDKit, PyMOL, Mol\* and 3Dmol ignore them, so coordinates
+and CONECT records are untouched). Lines are fixed-column (tag / CURIE / label `[relation]`) and
+the IRI of any CURIE is `http://purl.obolibrary.org/obo/<PREFIX>_<ID>`. `build_pdb.py` writes them on every build and gates on them;
+to refresh headers without rebuilding coordinates:
+
+```bash
+python ontology.py --annotate   # rewrite REMARK 950 blocks in place, then check
+python ontology.py --check      # every manifest id annotated + every PDB header current
+```
+
+## Data Store mirror (CyVerse / MESA + DuckLake)
+
+The PDBs are mirrored to the CyVerse Data Store at `/iplant/home/tswetnam/energetics-pymol`,
+enrolled as a **MESA project** (`mesa.enabled=true`; metadata history in a DuckLake catalog under
+`.mesa/ducklake/`). Each `pdb/*.pdb` data object carries the same ontology terms as iRODS AVUs
+in MESA's canonical form — `attribute=<ontology>.<label slug>` (lower-cased, whitespace → `_`,
+other punctuation dropped, e.g. `chebi.14betadglucan`), `unit=<CURIE>`, `value=<role>`
+(`structure:<match>` / `represents` / `category` / `project`) — plus `energetics.molecule_id`,
+`.name`, `.category`, `.formula`, `.inchikey` and `.smiles`. The collection root carries the
+project terms and a DataCite 4.x record. Find every file tied to a term by its CURIE, e.g. all
+cellulose-related models: search AVUs with `unit = CHEBI:18246`.
+
+## Agent-readable site files
+
+`build_site.py` also writes, for search engines and LLM agents (no timestamps, so rebuilds are
+byte-stable): `docs/robots.txt`, `docs/sitemap.xml`, `docs/llms.txt` (the
+[llms.txt](https://llmstxt.org/) index), `docs/llms-full.txt` (the whole site — catalog,
+ontology terms and the explainer text — as one Markdown file), and `docs/molecules.jsonld`
+(a schema.org `Dataset` of Bioschemas `MolecularEntity` records linked to ChEBI).
+
+> GitHub Pages serves this project under `/energetics-pymol/`, but crawlers only honour
+> `robots.txt` at the host root (`tyson-swetnam.github.io/robots.txt`, i.e. the user-site repo).
+> The project-level copy documents intent and points agents at `llms.txt`; mirror its
+> `Sitemap:` line into the root `robots.txt` for it to take effect.
 
 ## Provenance & caveats
 

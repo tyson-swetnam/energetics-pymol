@@ -1,3 +1,30 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: Galactoglucomannan fragment (compact);
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:24144      galactoglucomannan [match=broader]
+REMARK 950 REPRESENTS CHEBI:53463      heptasaccharide [is a]
+REMARK 950 REPRESENTS CHEBI:61298      D-glucose- and/or D-galactose-substituted
+REMARK 950                             mannan [is a fragment of]
+REMARK 950 REPRESENTS GO:0046354       mannan biosynthetic process [produced by]
+REMARK 950 CATEGORY   CHEBI:61266      hemicellulose [defined representative
+REMARK 950                             fragment of]
+REMARK 950 CATEGORY   GO:0070592       cell wall polysaccharide biosynthetic
+REMARK 950                             process [produced by]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  O1  GGM A   1      14.266  -3.836  -2.348  1.00  0.00           O  
 HETATM    2  C1  GGM A   1      13.578  -3.339  -1.202  1.00  0.00           C  
 HETATM    3  C2  GGM A   1      12.530  -2.298  -1.611  1.00  0.00           C  

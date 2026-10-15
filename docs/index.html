@@ -20,6 +20,99 @@
 <script src="https://cdn.jsdelivr.net/npm/3dmol@2.5.5/build/3Dmol-min.js"></script>
 
 <link rel="stylesheet" href="style.css">
+<link rel="alternate" type="text/plain" title="LLM-readable index (llms.txt)" href="llms.txt">
+<link rel="alternate" type="text/plain" title="Entire site as Markdown (llms-full.txt)" href="llms-full.txt">
+<link rel="alternate" type="application/ld+json" title="Dataset metadata (JSON-LD, ChEBI-linked)" href="molecules.jsonld">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<!-- build_site:dataset-jsonld -->
+<script type="application/ld+json">
+{
+  "@context": [
+    "https://schema.org/",
+    {
+      "dct": "http://purl.org/dc/terms/"
+    }
+  ],
+  "@type": "Dataset",
+  "@id": "https://tyson-swetnam.github.io/energetics-pymol/",
+  "dct:conformsTo": {
+    "@id": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE"
+  },
+  "name": "Energetics — The molecules that store a forest's energy",
+  "description": "46 reproducible 3D molecular models (PDB with CONECT bonds + ray-traced PNG) of the organic molecules that store chemical-bond energy in a Pinus ponderosa (ponderosa pine, conifer/softwood) forest, built for the manuscript \"Falk, Swetnam & McKenzie — Ecosystems as energy fields (2026)\". Every model is annotated with OBO Foundry ontology terms (ChEBI, GO, ENVO, PO, NCBITaxon).",
+  "url": "https://tyson-swetnam.github.io/energetics-pymol/",
+  "sameAs": {
+    "@id": "https://github.com/tyson-swetnam/energetics-pymol"
+  },
+  "citation": "Falk, Swetnam & McKenzie — Ecosystems as energy fields (2026)",
+  "keywords": [
+    "Pinus ponderosa",
+    "temperate coniferous forest biome",
+    "forest ecosystem",
+    "secondary xylem",
+    "wood",
+    "organic material",
+    "photosynthesis",
+    "Sugar monomers",
+    "Intermediates",
+    "Cellulose",
+    "Hemicellulose",
+    "Lignin",
+    "Combustion",
+    "Fats",
+    "Extractives",
+    "Fossil carbon"
+  ],
+  "about": [
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_55062",
+      "name": "Pinus ponderosa"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/ENVO_01000211",
+      "name": "temperate coniferous forest biome"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/ENVO_01001243",
+      "name": "forest ecosystem"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0005848",
+      "name": "secondary xylem"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/ENVO_00002040",
+      "name": "wood"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/ENVO_01000155",
+      "name": "organic material"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0015979",
+      "name": "photosynthesis"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://tyson-swetnam.github.io/energetics-pymol/molecules.jsonld",
+      "encodingFormat": "application/ld+json"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://tyson-swetnam.github.io/energetics-pymol/molecules.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://tyson-swetnam.github.io/energetics-pymol/llms-full.txt",
+      "encodingFormat": "text/markdown"
+    }
+  ]
+}
+</script>
+<!-- /build_site:dataset-jsonld -->
 </head>
 <body data-viewer-bg="dark">
 

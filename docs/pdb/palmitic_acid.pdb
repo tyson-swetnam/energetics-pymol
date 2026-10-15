@@ -1,3 +1,30 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: Palmitic acid (16-0);
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:15756      hexadecanoic acid [match=exact]
+REMARK 950 REPRESENTS CHEBI:39418      straight-chain saturated fatty acid [is
+REMARK 950                             a]
+REMARK 950 REPRESENTS CHEBI:26607      saturated fatty acid [is a representative
+REMARK 950                             model of]
+REMARK 950 REPRESENTS CHEBI:15904      long-chain fatty acid [is a]
+REMARK 950 CATEGORY   CHEBI:18059      lipid [chemical class]
+REMARK 950 CATEGORY   GO:0006633       fatty acid biosynthetic process [acyl
+REMARK 950                             chains produced by]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  PLM A   1      -7.098   0.151  -1.906  1.00  0.00           C  
 HETATM    2  C2  PLM A   1      -6.632  -0.413  -0.573  1.00  0.00           C  
 HETATM    3  C3  PLM A   1      -5.277   0.134  -0.115  1.00  0.00           C  

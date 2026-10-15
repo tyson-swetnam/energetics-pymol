@@ -1,3 +1,29 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: Lignite - O-rich coal fragment;
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:25238      methoxybenzoic acid [match=broader]
+REMARK 950 REPRESENTS ENVO:2000008     lignite [is a representative model of]
+REMARK 950 REPRESENTS ENVO:02000091    coal [is a representative model fragment
+REMARK 950                             of]
+REMARK 950 REPRESENTS CHEBI:64475      guaiacyl lignin [is derived from]
+REMARK 950 REPRESENTS CHEBI:67649      (+)-(7S,8S)-guaiacylglycerol-beta-vanilli
+REMARK 950                             c acid ether [is a close structural
+REMARK 950                             analogue of]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  LGN A   1       2.740  -2.606   1.156  1.00  0.00           C  
 HETATM    2  O1  LGN A   1       2.099  -1.342   1.048  1.00  0.00           O  
 HETATM    3  C2  LGN A   1       2.853  -0.280   0.624  1.00  0.00           C  

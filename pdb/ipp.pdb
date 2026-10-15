@@ -1,3 +1,29 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: Isopentenyl diphosphate (IPP);
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:16584      isopentenyl diphosphate [match=exact]
+REMARK 950 REPRESENTS CHEBI:37841      isoprenoid phosphate [is a member of the
+REMARK 950                             class]
+REMARK 950 REPRESENTS CHEBI:24913      isoprenoid [is the C5 building-block
+REMARK 950                             precursor of]
+REMARK 950 REPRESENTS GO:0009240       isopentenyl diphosphate biosynthetic
+REMARK 950                             process [is the output of]
+REMARK 950 REPRESENTS CHEBI:76924      plant metabolite [has role]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  IPP A   1       3.979  -0.162  -0.182  1.00  0.00           C  
 HETATM    2  C2  IPP A   1       3.100  -1.029   0.676  1.00  0.00           C  
 HETATM    3  C3  IPP A   1       3.485  -2.257   1.061  1.00  0.00           C  

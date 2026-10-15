@@ -1,3 +1,30 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: beta-D-xylopyranose;
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:28161      beta-D-xylose [match=exact]
+REMARK 950 REPRESENTS CHEBI:37166      xylan [is the monomer unit of]
+REMARK 950 REPRESENTS CHEBI:60938      glucuronoxylan [is the backbone monomer
+REMARK 950                             of]
+REMARK 950 REPRESENTS CHEBI:61266      hemicellulose [is a constituent monomer
+REMARK 950                             of]
+REMARK 950 CATEGORY   CHEBI:35381      monosaccharide [chemical class]
+REMARK 950 CATEGORY   GO:0046364       monosaccharide biosynthetic process
+REMARK 950                             [produced by]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  XYS A   1       0.231  -0.941   1.437  1.00  0.00           C  
 HETATM    2  C2  XYS A   1      -0.974  -0.113   0.969  1.00  0.00           C  
 HETATM    3  C3  XYS A   1      -0.590   0.823  -0.180  1.00  0.00           C  

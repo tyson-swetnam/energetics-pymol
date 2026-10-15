@@ -1,3 +1,27 @@
+COMPND    MOL_ID: 1;
+COMPND   2 MOLECULE: Anthracite - near-graphitic aromatic sheet;
+REMARK 950 OBO FOUNDRY ONTOLOGY ANNOTATIONS (energetics-pymol ontology.py)
+REMARK 950 resolved via EMBL-EBI OLS4; IRI = http://purl.obolibrary.org/obo/
+REMARK 950   + CURIE with ':' as '_'. STRUCTURE match levels: exact,
+REMARK 950   stereo_unspecified, close, broader (see ontology.MATCH_LEVELS)
+REMARK 950 STRUCTURE  CHEBI:35300      ortho- and peri-fused polycyclic arene
+REMARK 950                             [match=broader]
+REMARK 950 REPRESENTS ENVO:2000011     anthracite [is a representative model of]
+REMARK 950 REPRESENTS ENVO:02000091    coal [is a fragment of]
+REMARK 950 REPRESENTS CHEBI:33418      graphite [is a defect-containing
+REMARK 950                             finite-sheet approximation of]
+REMARK 950 PROJECT    NCBITaxon:55062  Pinus ponderosa [source organism (study
+REMARK 950                             system)]
+REMARK 950 PROJECT    ENVO:01000211    temperate coniferous forest biome [biome]
+REMARK 950 PROJECT    ENVO:01001243    forest ecosystem [ecosystem whose bond
+REMARK 950                             energy is estimated]
+REMARK 950 PROJECT    PO:0005848       secondary xylem [plant tissue (wood)
+REMARK 950                             holding the polymers]
+REMARK 950 PROJECT    ENVO:00002040    wood [environmental material]
+REMARK 950 PROJECT    ENVO:01000155    organic material [biomass (closest OBO
+REMARK 950                             class)]
+REMARK 950 PROJECT    GO:0015979       photosynthesis [process that captures the
+REMARK 950                             stored energy]
 HETATM    1  C1  ANT A   1       4.458  -2.865  -0.047  1.00  0.00           C  
 HETATM    2  C2  ANT A   1       5.012  -1.633   0.021  1.00  0.00           C  
 HETATM    3  C3  ANT A   1       4.196  -0.393   0.063  1.00  0.00           C  

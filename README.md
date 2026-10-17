@@ -131,8 +131,8 @@ ontology terms and the explainer text — as one Markdown file), and `docs/molec
 
 > GitHub Pages serves this project under `/energetics-pymol/`, but crawlers only honour
 > `robots.txt` at the host root (`tyson-swetnam.github.io/robots.txt`, i.e. the user-site repo).
-> The project-level copy documents intent and points agents at `llms.txt`; mirror its
-> `Sitemap:` line into the root `robots.txt` for it to take effect.
+> The project-level copy documents intent and points agents at `llms.txt`; the root
+> `robots.txt` carries this project's `Sitemap:` line and agent pointers — keep them in sync.
 
 ## Provenance & caveats
 
